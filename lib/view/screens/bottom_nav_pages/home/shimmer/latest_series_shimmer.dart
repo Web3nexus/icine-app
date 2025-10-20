@@ -4,7 +4,7 @@ import 'package:play_lab/core/utils/my_color.dart';
 import 'package:shimmer/shimmer.dart';
 
 class LatestSeriesShimmer extends StatelessWidget {
-  const LatestSeriesShimmer({Key? key}) : super(key: key);
+  const LatestSeriesShimmer({super.key});
 
   @override
   Widget build(BuildContext context) {

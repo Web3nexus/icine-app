@@ -14,7 +14,7 @@ import '../../../../../constants/my_strings.dart';
 import '../../../bottom_nav_pages/home/widget/custom_network_image/custom_network_image.dart';
 
 class EpisodeWidget extends StatefulWidget {
-  const EpisodeWidget({Key? key}) : super(key: key);
+  const EpisodeWidget({super.key});
 
   @override
   State<EpisodeWidget> createState() => _EpisodeWidgetState();

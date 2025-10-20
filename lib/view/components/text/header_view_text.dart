@@ -10,10 +10,10 @@ class HeaderViewText extends StatelessWidget {
   final bool isShowMoreVisible;
 
   const HeaderViewText({
-    Key? key,
+    super.key,
     required this.header,
     this.isShowMoreVisible=true
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

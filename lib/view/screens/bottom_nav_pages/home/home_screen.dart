@@ -1,4 +1,3 @@
-import 'dart:async';
 import 'dart:io';
 
 import 'package:google_mobile_ads/google_mobile_ads.dart' as ads;
@@ -36,7 +35,7 @@ import 'package:play_lab/view/components/custom_text_field.dart';
 import 'package:play_lab/view/components/show_more_row/show_more_row.dart';
 
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+  const HomeScreen({super.key});
 
   @override
   _HomeScreenState createState() => _HomeScreenState();

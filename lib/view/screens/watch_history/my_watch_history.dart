@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:play_lab/core/utils/dimensions.dart';
 import 'package:play_lab/core/utils/my_color.dart';
-import 'package:play_lab/core/utils/styles.dart';
 import 'package:play_lab/data/controller/my_watch_history_controller/my_watch_history_controller.dart';
 import 'package:play_lab/data/repo/mywatch_repo/my_watch_history_repo.dart';
 import 'package:play_lab/data/services/api_service.dart';
@@ -17,7 +16,7 @@ import '../bottom_nav_pages/home/widget/custom_network_image/custom_network_imag
 import '../wish_list/widget/wish_list_shimmer.dart';
 
 class MyWatchHistoryScreen extends StatefulWidget {
-  const MyWatchHistoryScreen({Key? key}) : super(key: key);
+  const MyWatchHistoryScreen({super.key});
 
   @override
   State<MyWatchHistoryScreen> createState() => _MyWatchHistoryScreenState();
@@ -67,7 +66,7 @@ class _MyWatchHistoryScreenState extends State<MyWatchHistoryScreen> {
     return GetBuilder<MyWatchHistoryController>(builder: (controller)=>Scaffold(
       backgroundColor: MyColor.secondaryColor,
       appBar:const CustomAppBar(title:MyStrings.myHistory),
-      body:controller.isLoading? const WishlistShimmer(isShowCircle: false,) :  controller.movieList.isEmpty?const NoDataFoundScreen():
+      body:controller.isLoading? const WishlistShimmer(isShowCircle: false,) :  controller.movieList.isEmpty ?? true?const NoDataFoundScreen():
       Padding(
         padding: const EdgeInsets.only(top:15),
         child:  ListView.builder(

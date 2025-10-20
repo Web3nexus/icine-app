@@ -8,7 +8,7 @@ import '../../../../../constants/my_strings.dart';
 
 class ButtonNext extends StatelessWidget {
   final Callback press;
-  const ButtonNext({Key? key,required this.press}) : super(key: key);
+  const ButtonNext({super.key,required this.press});
 
   @override
   Widget build(BuildContext context) {

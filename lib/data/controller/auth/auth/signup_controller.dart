@@ -70,7 +70,7 @@ class SignUpController extends GetxController {
       isLoading = false;
       update();
       return;
-    } if(errors.isNotEmpty){
+    } if(errors.isNotEmpty ?? false){
       isLoading = false;
       update();
       return;
@@ -89,20 +89,20 @@ class SignUpController extends GetxController {
   bool checkAndAddError() {
     bool isValid = true;
 
-    if (userNameController.text.isEmpty) {
+    if (userNameController.text.isEmpty ?? true) {
       isValid = false;
       addError(error: MyStrings.kUserNameNullError);
     }
-    if (mobileController.text.isEmpty) {
+    if (mobileController.text.isEmpty ?? true) {
       isValid = false;
       addError(error: MyStrings.kPhoneNumberNullError);
     }
-    if (emailController.text.isEmpty) {
+    if (emailController.text.isEmpty ?? true) {
       isValid = false;
       addError(error: MyStrings.kEmailNullError);
     }
 
-    if (passwordController.text.isEmpty) {
+    if (passwordController.text.isEmpty ?? true) {
       isValid = false;
       addError(error: MyStrings.kInvalidPassError);
     }
@@ -145,7 +145,7 @@ class SignUpController extends GetxController {
   }
 
   bool isValidPassword(String value) {
-    if (value.isEmpty) {
+    if (value.isEmpty ?? true) {
       return false;
     } else {
       if (checkPasswordStrength) {
@@ -232,7 +232,7 @@ class SignUpController extends GetxController {
       final GoogleSignInAuthentication googleAuth = await googleUser.authentication;
       String accessToken = googleAuth.accessToken??'';
 
-      if(accessToken.isEmpty){
+      if(accessToken.isEmpty ?? true){
         await GoogleSignIn().signOut();
         CustomSnackbar.showCustomSnackbar(errorList: [MyStrings.noAccessTokenFound], msg: [], isError: true);
       } else{

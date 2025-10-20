@@ -10,7 +10,7 @@ import '../../shimmer/portrait_movie_shimmer.dart';
 import '../custom_network_image/custom_network_image.dart';
 
 class FeaturedMovieWidget extends StatefulWidget {
-  const FeaturedMovieWidget({Key? key}) : super(key: key);
+  const FeaturedMovieWidget({super.key});
 
   @override
   State<FeaturedMovieWidget> createState() => _FeaturedMovieWidgetState();

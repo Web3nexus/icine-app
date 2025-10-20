@@ -99,7 +99,7 @@ class HomeController extends GetxController {
       if(popUpAdsModel.status?.toLowerCase() == MyStrings.success.toLowerCase()){
         String image = popUpAdsModel.data?.advertise?.content?.image ?? '';
         String imagePath = popUpAdsModel.data?.imagePath ?? '';
-        if(image.isNotEmpty){
+        if(image.isNotEmpty ?? false){
           popAdsUrl = '${UrlContainer.baseUrl}$imagePath/$image';
           popAdsClickUrl = popUpAdsModel.data?.advertise?.content?.link ?? '';
           await Future.delayed(const Duration(seconds: 5));
@@ -128,7 +128,7 @@ class HomeController extends GetxController {
    ResponseModel model=await homeRepo.getFeaturedMovie();
    if(model.statusCode==200){
      FeaturedMovieResponseModel featuredMovieModel= FeaturedMovieResponseModel.fromJson(jsonDecode(model.responseJson));
-     if(featuredMovieModel.data!=null && featuredMovieModel.data?.featured !=null && featuredMovieModel.data!.featured!.isNotEmpty){
+     if(featuredMovieModel.data!=null && featuredMovieModel.data?.featured !=null && featuredMovieModel.data!.featured!.isNotEmpty ?? false){
        featuredMovieList.clear();
        featuredMovieList.addAll(featuredMovieModel.data!.featured!);
        featuredMovieImagePath=featuredMovieModel.data?.portraitPath??'';
@@ -144,7 +144,7 @@ class HomeController extends GetxController {
    ResponseModel model=await homeRepo.getFreeZoneMovie(1);
    if(model.statusCode==200){
      free_zone.FreeZoneResponseModel freeZoneModel= free_zone.FreeZoneResponseModel.fromJson(jsonDecode(model.responseJson));
-      if(freeZoneModel.data!=null && freeZoneModel.data?.freeZone?.data !=null && freeZoneModel.data!.freeZone!.data!.isNotEmpty){
+      if(freeZoneModel.data!=null && freeZoneModel.data?.freeZone?.data !=null && freeZoneModel.data!.freeZone!.data!.isNotEmpty ?? false){
         freeZoneList.clear();
         freeZoneList.addAll(freeZoneModel.data!.freeZone!.data!);
         freeZoneImagePath=freeZoneModel.data?.portraitPath??'';
@@ -161,7 +161,7 @@ class HomeController extends GetxController {
    if(model.statusCode==200){
        LatestSeriesResponseModel latestSeries=LatestSeriesResponseModel.fromJson(jsonDecode(model.responseJson));
 
-       if(latestSeries.data!=null && latestSeries.data?.latest !=null && latestSeries.data!.latest!.isNotEmpty){
+       if(latestSeries.data!=null && latestSeries.data?.latest !=null && latestSeries.data!.latest!.isNotEmpty ?? false){
          latestSeriesList.clear();
          latestSeriesList.addAll(latestSeries.data!.latest!);
          latestSeriesImagePath=latestSeries.data?.landscapePath??'';
@@ -184,7 +184,7 @@ class HomeController extends GetxController {
    if(model.statusCode==200){
       LiveTvResponseModel televisionModel=LiveTvResponseModel.fromJson(jsonDecode(model.responseJson));
       if(televisionModel.data!=null) {
-        if(televisionModel.data?.televisions?.data!=null && televisionModel.data!.televisions!.data!.isNotEmpty){
+        if(televisionModel.data?.televisions?.data!=null && televisionModel.data!.televisions!.data!.isNotEmpty ?? false){
           televisionList.clear();
           televisionList.addAll(televisionModel.data!.televisions!.data!);
           televisionImagePath=televisionModel.data?.imagePath??'';
@@ -202,7 +202,7 @@ class HomeController extends GetxController {
    ResponseModel model=await homeRepo.getRecentMovie();
    if(model.statusCode==200){
        RecentlyAddedResponseModel recentModel=RecentlyAddedResponseModel.fromJson(jsonDecode(model.responseJson));
-       if(recentModel.data?.recent!=null && recentModel.data!.recent!.isNotEmpty){
+       if(recentModel.data?.recent!=null && recentModel.data!.recent!.isNotEmpty ?? false){
          recentlyAddedList.clear();
          recentlyAddedList.addAll(recentModel.data!.recent!);
          recentlyAddedImagePath=recentModel.data?.portraitPath??'';
@@ -237,7 +237,7 @@ class HomeController extends GetxController {
    if(model.statusCode==200){
 
       TrailerMovieResponseModel trailerModel=TrailerMovieResponseModel.fromJson(jsonDecode(model.responseJson));
-      if(trailerModel.data?.trailer !=null && trailerModel.data!.trailer!.isNotEmpty ){
+      if(trailerModel.data?.trailer !=null && trailerModel.data!.trailer!.isNotEmpty ?? false ){
         trailerMovieList.clear();
         trailerMovieList.addAll(trailerModel.data!.trailer!);
         trailerImagePath=trailerModel.data?.portraitPath??'';
@@ -260,7 +260,7 @@ class HomeController extends GetxController {
    if(model.statusCode==200){
        SliderResponseModel sliderModel=SliderResponseModel.fromJson(jsonDecode(model.responseJson));
        if(sliderModel.data!=null) {
-         if(sliderModel.data?.sliders!=null && sliderModel.data!.sliders!.isNotEmpty){
+         if(sliderModel.data?.sliders!=null && sliderModel.data!.sliders!.isNotEmpty ?? false){
            sliderList.clear();
            sliderList.addAll(sliderModel.data!.sliders!);
            sliderImagePath=sliderModel.data?.path??'';
@@ -325,7 +325,7 @@ class HomeController extends GetxController {
  bool isGuest(){
    homeRepo.apiClient.initToken();
    String token = homeRepo.apiClient.token;
-   if(token.isEmpty) {
+   if(token.isEmpty ?? true) {
       return true;
     }
     return false;

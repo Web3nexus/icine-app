@@ -36,7 +36,7 @@ class SubCategoryController extends GetxController{
       SubCategoryResponseModel subCategoryResponse=SubCategoryResponseModel.fromJson(jsonDecode(model.responseJson));
       List<Data>?tempSubCategoryList=subCategoryResponse.mainData?.subcategories?.data;
       nextPageUrl=subCategoryResponse.mainData?.subcategories?.nextPageUrl;
-      if(tempSubCategoryList !=null && !(tempSubCategoryList==[]) )
+      if (tempSubCategoryList!.isNotEmpty)
       {
         if(page==1){
           subCategoryList.clear();

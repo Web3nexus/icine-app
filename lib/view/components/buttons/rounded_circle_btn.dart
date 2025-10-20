@@ -9,12 +9,12 @@ class RoundedCircleButton extends StatelessWidget {
   final VoidCallback press;
   final Color color, textColor;
   const RoundedCircleButton({
-    Key? key,
+    super.key,
     required this.text,
     required this.press,
     this.color = MyColor.primaryColor,
     this.textColor = Colors.white,
-  }):super(key: key) ;
+  }) ;
 
   @override
   Widget build(BuildContext context) {

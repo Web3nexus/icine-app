@@ -23,7 +23,7 @@ class NavigationDrawerWidget extends StatefulWidget {
   static const padding = EdgeInsets.symmetric(horizontal: 20);
   static NavigationItem navigationItem = NavigationItem.profileSetting;
 
-  const NavigationDrawerWidget({Key? key}) : super(key: key);
+  const NavigationDrawerWidget({super.key});
 
   @override
   State<NavigationDrawerWidget> createState() => _NavigationDrawerWidgetState();
@@ -278,7 +278,7 @@ class _NavigationDrawerWidgetState extends State<NavigationDrawerWidget> {
 
   bool isAuthorized() {
     String? value = Get.find<LoginRepo>().apiClient.sharedPreferences.getString(SharedPreferenceHelper.accessTokenKey);
-    return value == null ? false : value.isEmpty ? false : true;
+    return value!.isEmpty ?? true ? false : true;
   }
 
   void logOutUser() async {

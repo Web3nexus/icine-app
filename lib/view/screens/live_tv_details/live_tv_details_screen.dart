@@ -2,7 +2,6 @@ import 'package:play_lab/core/utils/my_color.dart';
 import 'package:play_lab/data/controller/live_tv_details_controller/live_tv_details_controller.dart';
 import 'package:play_lab/data/repo/live_tv_repo/live_tv_repo.dart';
 import 'package:play_lab/data/services/api_service.dart';
-import 'package:play_lab/view/components/header_light_text.dart';
 import 'package:play_lab/view/components/text/header_view_text.dart';
 import 'package:chewie/chewie.dart';
 import 'package:flutter/material.dart';
@@ -10,15 +9,12 @@ import 'package:get/get.dart';
 import 'package:play_lab/view/screens/live_tv_details/widget/live_tv_details_shimmer_widget.dart';
 import 'package:play_lab/view/screens/live_tv_details/widget/related_item_list.dart';
 import '../../../constants/my_strings.dart';
-import '../../../core/utils/dimensions.dart';
 import '../../components/custom_sized_box.dart';
-import '../../components/buttons/category_button.dart';
-import '../../components/small_text.dart';
 import '../movie_details/widget/body_widget/team_row.dart';
 import '../movie_details/widget/details_text_widget/details_text.dart';
 
 class LiveTvDetailsScreen extends StatefulWidget {
-  const LiveTvDetailsScreen({Key? key}) : super(key: key);
+  const LiveTvDetailsScreen({super.key});
 
   @override
   State<LiveTvDetailsScreen> createState() => _LiveTvDetailsScreenState();

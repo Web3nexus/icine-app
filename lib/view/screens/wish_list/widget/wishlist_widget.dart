@@ -16,7 +16,7 @@ import '../../bottom_nav_pages/home/widget/custom_network_image/custom_network_i
 
 
 class WishlistWidget extends StatefulWidget {
-  const WishlistWidget({Key? key}) : super(key: key);
+  const WishlistWidget({super.key});
 
   @override
   State<WishlistWidget> createState() => _WishlistWidgetState();
@@ -63,7 +63,7 @@ class _WishlistWidgetState extends State<WishlistWidget> {
     return GetBuilder<WishListController>(builder: (controller)=>controller.isLoading?  SizedBox(
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
-        child: const WishlistShimmer()):controller.wishlist.isEmpty?const NoDataFoundScreen(paddingTop: 150,):ListView.builder(
+        child: const WishlistShimmer()):controller.wishlist.isEmpty ?? true?const NoDataFoundScreen(paddingTop: 150,):ListView.builder(
       shrinkWrap: true,
       controller: _controller,
         itemCount: controller.wishlist.length+1,

@@ -28,7 +28,7 @@ class LiveTvController extends GetxController implements GetxService{
       LiveTvResponseModel televisionModel=LiveTvResponseModel.fromJson(jsonDecode(model.responseJson));
       nextPageUrl = televisionModel.data?.televisions?.nextPageUrl??'';
       if(televisionModel.data!=null) {
-        if(televisionModel.data?.televisions?.data != null && televisionModel.data!.televisions!.data!.isNotEmpty){
+        if(televisionModel.data?.televisions?.data != null && televisionModel.data!.televisions!.data!.isNotEmpty ?? false){
           televisionList.clear();
           televisionList.addAll(televisionModel.data!.televisions!.data!);
           televisionImagePath = televisionModel.data?.imagePath??'';
@@ -47,7 +47,7 @@ class LiveTvController extends GetxController implements GetxService{
       LiveTvResponseModel televisionModel=LiveTvResponseModel.fromJson(jsonDecode(model.responseJson));
       nextPageUrl = televisionModel.data?.televisions?.nextPageUrl??'';
       if(televisionModel.data!=null) {
-        if(televisionModel.data?.televisions?.data != null && televisionModel.data!.televisions!.data!.isNotEmpty){
+        if(televisionModel.data?.televisions?.data != null && televisionModel.data!.televisions!.data!.isNotEmpty ?? false){
           televisionList.addAll(televisionModel.data!.televisions!.data!);
           televisionImagePath = televisionModel.data?.imagePath??'';
         }
@@ -56,7 +56,7 @@ class LiveTvController extends GetxController implements GetxService{
   }
 
   bool hasNext() {
-    return nextPageUrl != null  && nextPageUrl!.isNotEmpty && nextPageUrl != 'null'? true : false;
+    return nextPageUrl != null  && nextPageUrl!.isNotEmpty ?? false && nextPageUrl != 'null'? true : false;
   }
 
   void clearAllData(){

@@ -9,7 +9,7 @@ class ShowMoreRowWidget extends StatelessWidget {
   final String value;
   final Callback press;
   final bool isShowMoreVisible;
-  const ShowMoreRowWidget({Key? key,this.isShowMoreVisible=true, required this.value,required this.press}) : super(key: key);
+  const ShowMoreRowWidget({super.key,this.isShowMoreVisible=true, required this.value,required this.press});
 
   @override
   Widget build(BuildContext context) {

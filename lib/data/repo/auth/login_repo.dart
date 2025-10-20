@@ -1,7 +1,6 @@
 import 'dart:convert';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:get/get.dart';
-import 'package:http/http.dart' as http;
 import 'package:play_lab/constants/method.dart';
 import 'package:play_lab/constants/my_strings.dart';
 import 'package:play_lab/data/model/global/response_model/response_model.dart';
@@ -123,7 +122,7 @@ class LoginRepo extends GetConnect {
     }
     FirebaseMessaging firebaseMessaging = FirebaseMessaging.instance;
     bool success = false;
-    if (deviceToken.isEmpty) {
+    if (deviceToken.isEmpty ?? true) {
       firebaseMessaging.getToken().then((fcmDeviceToken) async {
         success = await sendUpdatedToken(fcmDeviceToken ?? '');
       });

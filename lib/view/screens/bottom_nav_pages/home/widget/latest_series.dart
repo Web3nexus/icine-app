@@ -8,7 +8,7 @@ import '../../../bottom_nav_pages/home/widget/custom_network_image/custom_networ
 import '../shimmer/latest_series_shimmer.dart';
 
 class LatestSeries extends StatelessWidget {
-  const LatestSeries({Key? key}) : super(key: key);
+  const LatestSeries({super.key});
 
   @override
   Widget build(BuildContext context) {

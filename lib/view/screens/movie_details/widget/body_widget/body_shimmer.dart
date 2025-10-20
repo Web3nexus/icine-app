@@ -4,7 +4,7 @@ import '../../../bottom_nav_pages/home/shimmer/custom_shimmer_effect.dart';
 
 
 class MovieDetailsShimmer extends StatelessWidget {
-  const MovieDetailsShimmer({Key? key}) : super(key: key);
+  const MovieDetailsShimmer({super.key});
 
   @override
   Widget build(BuildContext context) {

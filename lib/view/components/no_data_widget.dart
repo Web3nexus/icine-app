@@ -14,10 +14,10 @@ class NoDataFoundScreen extends StatefulWidget {
   final double paddingTop;
 
   const NoDataFoundScreen({
-    Key? key,
+    super.key,
     this.message = MyStrings.noDataFound,
     this.paddingTop = 6,
-  }) : super(key: key);
+  });
 
 
   @override

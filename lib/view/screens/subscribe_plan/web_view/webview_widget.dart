@@ -5,7 +5,7 @@ import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class MyWebViewWidget extends StatefulWidget {
-  const MyWebViewWidget({Key? key, required this.url}) : super(key: key);
+  const MyWebViewWidget({super.key, required this.url});
 
   final String url;
 

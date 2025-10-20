@@ -46,7 +46,7 @@ class AddNewDepositController extends GetxController {
   setPaymentMethod(Methods?method,String price){
     paymentMethod=method;
     String amt = price;
-    mainAmount = amt.isEmpty?0:double.tryParse(amt)??0;
+    mainAmount = amt.isEmpty ?? true?0:double.tryParse(amt)??0;
     depositLimit='${CustomValueConverter.twoDecimalPlaceFixedWithoutRounding(method?.minAmount?.toString()??'-1')} - ${CustomValueConverter.roundDoubleAndRemoveTrailingZero(method?.maxAmount?.toString()??'-1')} $currency';
     charge='${CustomValueConverter.twoDecimalPlaceFixedWithoutRounding(method?.fixedCharge?.toString()??'0')} + ${CustomValueConverter.twoDecimalPlaceFixedWithoutRounding(method?.percentCharge?.toString()??'0')} %';
     changeInfoWidgetValue(mainAmount);
@@ -77,13 +77,13 @@ class AddNewDepositController extends GetxController {
     depositMethodResponseModel=await depositRepo.getDepositMethod();
     paymentMethodList.clear();
 
-    if(depositMethodResponseModel.code==200){
+      if(depositMethodResponseModel.code==200){
 
       List<Methods>?l=depositMethodResponseModel.data?.methods;
-      if(l!=null && l.isNotEmpty){
-        paymentMethodList.addAll(l);
+      if(l!=null && l.isNotEmpty ?? false){
+        paymentMethodList.addAll(l ?? []);
       }
-      if(paymentMethodList.isNotEmpty){
+      if(paymentMethodList.isNotEmpty ?? false){
         try{
           paymentMethod = paymentMethodList[0];
           setPaymentMethod(paymentMethod,price);
@@ -102,7 +102,7 @@ class AddNewDepositController extends GetxController {
 
   void submitDeposit(String price)async{
     String amount=price;
-    if(amount.isEmpty){
+    if(amount.isEmpty ?? true){
       return;
     }
     double amount1=0;
@@ -136,7 +136,7 @@ class AddNewDepositController extends GetxController {
     setStatusFalse();
   }else{
     String redirectUrl=mo.data?.redirectUrl??'';
-    if(redirectUrl.isEmpty){
+    if(redirectUrl.isEmpty ?? true){
       List<String>error=[MyStrings.invalidPaymentUrl];
       CustomSnackbar.showCustomSnackbar(errorList:error, msg: [''], isError: false);
     }else{

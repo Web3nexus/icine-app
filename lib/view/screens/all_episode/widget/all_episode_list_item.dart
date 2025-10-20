@@ -12,7 +12,7 @@ import '../../../../core/utils/url_container.dart';
 import '../../bottom_nav_pages/home/shimmer/grid_shimmer.dart';
 
 class AllEpisodeListWidget extends StatefulWidget {
-  const AllEpisodeListWidget({Key? key}) : super(key: key);
+  const AllEpisodeListWidget({super.key});
 
   @override
   State<AllEpisodeListWidget> createState() => _AllEpisodeListWidgetState();

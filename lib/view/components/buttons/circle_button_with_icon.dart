@@ -20,7 +20,7 @@ class SocialLoginButton extends StatelessWidget {
   final Color textColor;
 
   const SocialLoginButton(
-      {Key? key,
+      {super.key,
       this.imageUrl = '',
       this.fromAsset=false,
       this.circleSize=25,
@@ -31,8 +31,7 @@ class SocialLoginButton extends StatelessWidget {
       this.text = '',
       required this.press,
       this.textColor = MyColor.colorWhite,
-      this.icon = Icons.clear})
-      : super(key: key);
+      this.icon = Icons.clear});
 
   @override
   Widget build(BuildContext context) {

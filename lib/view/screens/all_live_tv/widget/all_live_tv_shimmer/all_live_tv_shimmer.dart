@@ -4,7 +4,7 @@ import '../../../../../core/utils/my_color.dart';
 import '../live_tv_grid_item/live_tv_grid_item.dart';
 
 class AllLiveTvShimmer extends StatelessWidget {
-  const AllLiveTvShimmer({Key? key}) : super(key: key);
+  const AllLiveTvShimmer({super.key});
 
   @override
   Widget build(BuildContext context) {

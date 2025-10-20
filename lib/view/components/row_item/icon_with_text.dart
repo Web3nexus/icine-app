@@ -14,7 +14,7 @@ class IconWithText extends StatelessWidget {
   final double iconSpace;
   final Color textColor;
 
-  const IconWithText({Key? key,
+  const IconWithText({super.key,
     this.textColor = MyColor.colorWhite,
     this.iconSpace = 5,
     this.textSize=Dimensions.fontSmall,
@@ -22,7 +22,7 @@ class IconWithText extends StatelessWidget {
     this.isRating=true,
     required this.icon,
     required this.text
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

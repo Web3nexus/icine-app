@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:get/get_rx/src/rx_typedefs/rx_typedefs.dart';
 
 import '../../../core/utils/dimensions.dart';
@@ -12,11 +11,11 @@ class ShowMoreText extends StatelessWidget {
   final bool isShowMoreVisible;
 
   const ShowMoreText({
-    Key? key,
+    super.key,
     this.isShowMoreVisible=true,
     required this.headerText,
     required this.press
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

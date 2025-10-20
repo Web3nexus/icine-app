@@ -11,7 +11,7 @@ void showLanguageDialog(String languageList, Locale selectedLocal, BuildContext 
   MainLanguageResponseModel model = MainLanguageResponseModel.fromJson(language);
 
   List<MyLanguageModel>langList = [];
-  if(model.data?.languages !=null && model.data!.languages!.isNotEmpty){
+  if(model.data?.languages !=null && model.data!.languages!.isNotEmpty ?? false){
 
     for (var listItem in model.data!.languages!) {
       MyLanguageModel model = MyLanguageModel(languageCode: listItem.code ?? '', countryCode: listItem.name ?? '', languageName: listItem.name ?? '');

@@ -19,7 +19,7 @@ class DialogItem extends StatelessWidget {
   final Duration slideChangeDuration;
 
   const DialogItem({
-    Key? key,
+    super.key,
     required this.context,
     required this.images,
     this.fromNetwork = true,
@@ -34,7 +34,7 @@ class DialogItem extends StatelessWidget {
     this.slideChangeDuration = const Duration(seconds: 6),
     this.autoSlide = false,
     this.customCloseButton,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

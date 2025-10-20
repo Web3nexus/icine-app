@@ -18,7 +18,7 @@ class CustomNetworkImage extends StatelessWidget {
   final bool showPlaceHolder;
   final bool showErrorImage;
 
-  const CustomNetworkImage({Key? key,
+  const CustomNetworkImage({super.key,
     this.height=110,
     this.width=320,
     this.fromSplash=false,
@@ -31,7 +31,7 @@ class CustomNetworkImage extends StatelessWidget {
     this.boxFit=BoxFit.cover,
     this.errorImage=Icons.error_outline_outlined,
     this.showErrorImage = true,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

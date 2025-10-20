@@ -3,7 +3,6 @@ import 'dart:convert';
 import '../../../constants/method.dart';
 import '../../../constants/my_strings.dart';
 import '../../../core/utils/url_container.dart';
-import 'package:http/http.dart' as http;
 
 import '../../../view/components/show_custom_snackbar.dart';
 import '../../model/authorization/authorization_response_model.dart';

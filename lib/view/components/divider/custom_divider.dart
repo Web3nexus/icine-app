@@ -9,10 +9,10 @@ class CustomDivider extends StatelessWidget {
   final Color color;
 
   const CustomDivider({
-    Key? key,
+    super.key,
     this.space = Dimensions.space20,
     this.color = MyColor.borderColor
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

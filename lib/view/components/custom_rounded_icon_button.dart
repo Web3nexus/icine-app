@@ -16,7 +16,7 @@ class CustomRoundedIconButton extends StatelessWidget {
   final double radius;
 
   const CustomRoundedIconButton(
-      {Key? key,
+      {super.key,
       required this.press,
       this.color = MyColor.primaryColor,
       this.textColor = Colors.white,
@@ -27,8 +27,7 @@ class CustomRoundedIconButton extends StatelessWidget {
       this.iconColor=MyColor.red,
       this.isCircle=true,
       this.radius=12,
-      this.verticalMargin = 0})
-      : super(key: key);
+      this.verticalMargin = 0});
 
   @override
   Widget build(BuildContext context) {

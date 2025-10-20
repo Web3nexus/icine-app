@@ -7,7 +7,7 @@ import '../../core/utils/dimensions.dart';
 import '../../core/utils/styles.dart';
 
 class HeaderText extends StatelessWidget {
-   const HeaderText({Key? key,required this.text,this.textStyle=mulishBold,this.isChange=false, }) : super(key: key);
+   const HeaderText({super.key,required this.text,this.textStyle=mulishBold,this.isChange=false, });
   final String text;
   final bool isChange;
   final TextStyle textStyle;

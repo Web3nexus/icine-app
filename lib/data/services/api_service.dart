@@ -102,7 +102,7 @@ class ApiClient extends GetxService{
       } else {
         return ResponseModel(false, 'Something Wrong', 499, response.body);
       }
-    } on SocketException catch(e) {
+    } on SocketException {
       return ResponseModel(false, 'No Internet Connection', 503, '');
     } on FormatException {
       return ResponseModel(false, 'Bad Response Format!', 400, '');
@@ -150,7 +150,7 @@ class ApiClient extends GetxService{
 
   bool isPaidUser(){
     String expDate = sharedPreferences.getString(SharedPreferenceHelper.expiredDate)??'';
-    if(expDate.isEmpty){
+    if(expDate.isEmpty ?? true){
       return false;
     } else{
       bool isSubscriptionEnd = DateConverter.isDateOver(expDate);
@@ -193,7 +193,7 @@ class ApiClient extends GetxService{
       return false;
     }
     String  token =  sharedPreferences.getString(SharedPreferenceHelper.accessTokenKey)??'';
-    if(token.isEmpty){
+    if(token.isEmpty ?? true){
       return true;
     } else{
       bool isShowAdsToSubscriber = model.data?.generalSetting?.videoAdSubscriptionUser.toString() == '0' ? false : true;

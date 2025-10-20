@@ -17,7 +17,7 @@ import 'widget/sub_title_widget/sub_title_widget.dart';
 import 'widget/title_widget/title_widget.dart';
 
 class OnBoardingScreen extends StatefulWidget {
-  const OnBoardingScreen({Key? key}) : super(key: key);
+  const OnBoardingScreen({super.key});
 
   @override
   State<OnBoardingScreen> createState() => _OnBoardingScreenState();

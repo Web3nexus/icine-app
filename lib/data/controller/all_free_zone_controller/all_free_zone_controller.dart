@@ -39,9 +39,9 @@ class AllFreeZoneController extends GetxController{
       portraitImagePath=freeZoneResponse.data?.portraitPath??'';
       nextPageUrl=freeZoneResponse.data?.freeZone?.nextPageUrl??'';
 
-      if(tempMovieList !=null && !(tempMovieList==[]) )
+      if (tempMovieList!.isNotEmpty)
       {
-       movieList.clear();
+        movieList.clear();
         movieList.addAll(tempMovieList);
       }
       updateStatus(false);
@@ -62,7 +62,7 @@ class AllFreeZoneController extends GetxController{
      FreeZoneResponseModel allMovieResponseModel=FreeZoneResponseModel.fromJson(jsonDecode(model.responseJson));
       List<Data>?tempMovieList=allMovieResponseModel.data?.freeZone?.data;
       nextPageUrl=allMovieResponseModel.data?.freeZone?.nextPageUrl;
-      if(tempMovieList !=null && !(tempMovieList==[]) )
+      if (tempMovieList!.isNotEmpty)
       {
         movieList.addAll(tempMovieList);
       }

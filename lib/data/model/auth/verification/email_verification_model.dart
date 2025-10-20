@@ -44,7 +44,7 @@ class EmailVerificationModel {
     if (_message != null) {
       map['message'] = _message!.toJson();
     }
-    if (_redirectUrl.isNotEmpty) {
+    if (_redirectUrl.isNotEmpty ?? false) {
       map['redirect_url'] = _redirectUrl;
     }
     return map;

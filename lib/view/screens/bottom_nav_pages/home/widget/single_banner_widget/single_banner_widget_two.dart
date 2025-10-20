@@ -10,7 +10,7 @@ import '../../../../../components/dialog/subscribe_now_dialog.dart';
 import '../custom_network_image/custom_network_image.dart';
 
 class SecondSingleBannerWidget extends StatefulWidget {
-  const SecondSingleBannerWidget({Key? key}) : super(key: key);
+  const SecondSingleBannerWidget({super.key});
 
   @override
   State<SecondSingleBannerWidget> createState() => _SecondSingleBannerWidgetState();
@@ -19,7 +19,7 @@ class SecondSingleBannerWidget extends StatefulWidget {
 class _SecondSingleBannerWidgetState extends State<SecondSingleBannerWidget> {
   @override
   Widget build(BuildContext context) {
-    return GetBuilder<HomeController>(builder: (controller)=>controller.singleBannerImageLoading || controller.singleBannerList.isEmpty || controller.singleBannerList.length<2?
+    return GetBuilder<HomeController>(builder: (controller)=>controller.singleBannerImageLoading || controller.singleBannerList.isEmpty ?? true || controller.singleBannerList.length<2?
     Container(
       width: double.infinity,
       height: 160,

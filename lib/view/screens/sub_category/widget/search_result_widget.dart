@@ -20,7 +20,7 @@ class SearchResultListWidget extends StatefulWidget {
   final String searchText;
   final int categoryId;
   final int subCategoryId;
-  const SearchResultListWidget({Key? key,this.searchText='',this.categoryId=-1,this.subCategoryId=-1}) : super(key: key);
+  const SearchResultListWidget({super.key,this.searchText='',this.categoryId=-1,this.subCategoryId=-1});
 
   @override
   State<SearchResultListWidget> createState() => _SearchResultListWidgetState();
@@ -72,7 +72,7 @@ class _SearchResultListWidgetState extends State<SearchResultListWidget> {
   Widget build(BuildContext context) {
     Get.find<MySearchController>().changeSubCategoryId(widget.subCategoryId);
     return GetBuilder<MySearchController>(builder: (controller)=>controller.isLoading?const Flexible(child: GridShimmer()):
-        controller.movieList.isEmpty?const Flexible(child: NoDataFoundScreen()):
+        controller.movieList.isEmpty ? const Flexible(child: NoDataFoundScreen()) :
         Flexible(
           child: AnimationLimiter(
             child: GridView.builder(

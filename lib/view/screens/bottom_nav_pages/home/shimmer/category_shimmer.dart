@@ -3,7 +3,7 @@ import 'package:play_lab/core/utils/my_color.dart';
 import 'custom_shimmer_effect.dart';
 
 class CategoryShimmer extends StatelessWidget {
-  const CategoryShimmer({Key? key}) : super(key: key);
+  const CategoryShimmer({super.key});
 
 
   @override

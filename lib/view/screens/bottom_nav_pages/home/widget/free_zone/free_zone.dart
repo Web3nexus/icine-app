@@ -10,7 +10,7 @@ import '../../shimmer/portrait_movie_shimmer.dart';
 import '../custom_network_image/custom_network_image.dart';
 
 class FreeZoneWidget extends StatefulWidget {
-  const FreeZoneWidget({Key? key}) : super(key: key);
+  const FreeZoneWidget({super.key});
 
   @override
   State<FreeZoneWidget> createState() => _FreeZoneWidgetState();

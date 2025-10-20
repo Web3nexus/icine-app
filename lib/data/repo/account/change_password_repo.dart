@@ -26,7 +26,7 @@ class ChangePasswordRepo{
     ResponseModel responseModel= await apiClient.request(url, Method.postMethod, params,passHeader: true);
     if(responseModel.statusCode==200){
      CommonApiResponseModel model=CommonApiResponseModel.fromJson(jsonDecode(responseModel.responseJson));
-     if(model.message?.success!=null && model.message!.success!.isNotEmpty){
+     if(model.message?.success!=null && model.message!.success!.isNotEmpty ?? false){
       CustomSnackbar.showCustomSnackbar(errorList: [], msg: [model.message?.success??MyStrings.passwordChanged], isError: false);
       return true;
      }else{

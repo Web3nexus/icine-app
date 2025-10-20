@@ -13,7 +13,7 @@ import '../../../../../components/row_item/icon_with_text.dart';
 import '../../shimmer/banner_shimmer.dart';
 
 class SliderWidget extends StatefulWidget {
-  const SliderWidget({Key? key}) : super(key: key);
+  const SliderWidget({super.key});
 
   @override
   State<SliderWidget> createState() => _SliderWidgetState();

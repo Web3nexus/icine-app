@@ -20,7 +20,7 @@ import 'widget/video_player_widget/video_player_widget.dart';
 class MovieDetailsScreen extends StatefulWidget {
   final int itemId;
   final int episodeId;
-  const MovieDetailsScreen({Key? key,required this.itemId,required this.episodeId}) : super(key: key);
+  const MovieDetailsScreen({super.key,required this.itemId,required this.episodeId});
 
   @override
   State<MovieDetailsScreen> createState() => _MovieDetailsScreenState();

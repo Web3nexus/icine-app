@@ -4,7 +4,7 @@ import '../../bottom_nav_pages/home/shimmer/custom_shimmer_effect.dart';
 
 class WishlistShimmer extends StatelessWidget {
   final bool isShowCircle;
-  const WishlistShimmer({Key? key,this.isShowCircle=true}) : super(key: key);
+  const WishlistShimmer({super.key,this.isShowCircle=true});
 
   @override
   Widget build(BuildContext context) {
@@ -31,11 +31,11 @@ class WishlistShimmer extends StatelessWidget {
                     const SizedBox(
                       width: 10,
                     ),
-                    Column(
+                    const Column(
                       crossAxisAlignment:
                       CrossAxisAlignment.start,
                       mainAxisAlignment: MainAxisAlignment.start,
-                      children: const [
+                      children: [
                        MyShimmerEffectUI.rectangular(height: 20,width: 100,),
                          SizedBox(
                           height: 10,

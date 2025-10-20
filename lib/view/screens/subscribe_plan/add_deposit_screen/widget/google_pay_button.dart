@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:pay/pay.dart';
@@ -14,10 +13,10 @@ class MyGooglePayButton extends StatelessWidget {
   final String planName;
 
   const MyGooglePayButton({
-    Key? key,
+    super.key,
     required this.price,
     required this.planName
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

@@ -33,7 +33,7 @@ class CustomTextFieldForPhone extends StatefulWidget {
   final VoidCallback? onSubmit;
   final bool isEnabled;
 
- const CustomTextFieldForPhone({Key?key,
+ const CustomTextFieldForPhone({super.key,
       this.hintText = '',
         this.controller,
         this.focusNode,
@@ -55,7 +55,7 @@ class CustomTextFieldForPhone extends StatefulWidget {
         this.isPassword = false,
         this.suffixIconUrl,
         this.prefixIconUrl,
-        this.isSearch = false,}):super(key: key);
+        this.isSearch = false,});
 
   @override
   State<CustomTextFieldForPhone> createState() => _CustomTextFieldForPhoneState();

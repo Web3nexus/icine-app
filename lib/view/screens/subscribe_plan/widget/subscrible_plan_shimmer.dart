@@ -5,7 +5,7 @@ import '../../bottom_nav_pages/home/shimmer/custom_shimmer_effect.dart';
 
 
 class SubscribePlanShimmer extends StatelessWidget {
-  const SubscribePlanShimmer({Key? key}) : super(key: key);
+  const SubscribePlanShimmer({super.key});
 
   @override
   Widget build(BuildContext context) {

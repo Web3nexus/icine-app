@@ -18,8 +18,7 @@ import '../../../components/buttons/rounded_button.dart';
 import '../../../components/otp_field_widget/otp_field_widget.dart';
 
 class EmailVerificationScreen extends StatefulWidget {
-  const EmailVerificationScreen({Key? key, required this.needSmsVerification,required this.isProfileCompleteEnabled})
-      : super(key: key);
+  const EmailVerificationScreen({super.key, required this.needSmsVerification,required this.isProfileCompleteEnabled});
 
   final bool needSmsVerification;
   final bool isProfileCompleteEnabled;
@@ -57,7 +56,7 @@ class _EmailVerificationScreenState extends State<EmailVerificationScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return  Stack(
+    return Stack(
       children: [
         const MyBgWidget(),
         WillPopScope(
@@ -66,7 +65,7 @@ class _EmailVerificationScreenState extends State<EmailVerificationScreen> {
           },
           child: Scaffold(
             backgroundColor: Colors.transparent,
-            appBar: const CustomAppBar(title: MyStrings.emailVerification,isShowBackBtn: true,fromAuth: true,textColor: MyColor.colorWhite,bgColor: Colors.transparent,),
+            appBar: CustomAppBar(title: MyStrings.emailVerification,isShowBackBtn: true,fromAuth: true,textColor: MyColor.colorWhite,bgColor: Colors.transparent,),
             body: GetBuilder<EmailVerificationController>(
               builder: (controller) => controller.dataLoading
                   ? const SizedBox(

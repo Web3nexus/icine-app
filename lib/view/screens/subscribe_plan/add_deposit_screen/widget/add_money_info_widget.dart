@@ -4,13 +4,12 @@ import 'package:get/get.dart';
 import '../../../../../constants/my_strings.dart';
 import '../../../../../core/utils/dimensions.dart';
 import '../../../../../core/utils/my_color.dart';
-import '../../../../../core/utils/my_images.dart';
 import '../../../../../data/controller/deposit_controller/add_new_deposit_controller.dart';
 import '../../../../components/divider/custom_divider.dart';
 import 'custom_row.dart';
 
 class AddMoneyInfoWidget extends StatelessWidget {
-  const AddMoneyInfoWidget({Key? key}) : super(key: key);
+  const AddMoneyInfoWidget({super.key});
 
   @override
   Widget build(BuildContext context) {

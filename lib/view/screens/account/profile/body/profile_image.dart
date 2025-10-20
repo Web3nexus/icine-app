@@ -8,11 +8,11 @@ class ProfileWidget extends StatefulWidget {
   final VoidCallback onClicked;
   final bool isEdit;
 
-   const ProfileWidget({Key? key,
+   const ProfileWidget({super.key,
     required this.imagePath,
     required this.onClicked,
     this.isEdit = false
-  }) : super(key: key);
+  });
 
   @override
   State<ProfileWidget> createState() => _ProfileWidgetState();

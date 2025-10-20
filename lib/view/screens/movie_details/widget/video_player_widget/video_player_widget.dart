@@ -4,13 +4,12 @@ import 'package:get/get.dart';
 import 'package:play_lab/core/utils/my_color.dart';
 import 'package:play_lab/core/utils/url_container.dart';
 import 'package:play_lab/data/controller/movie_details_controller/movie_details_controller.dart';
-import 'package:play_lab/view/screens/movie_details/widget/video_player_widget/add_player.dart';
 import 'package:play_lab/view/screens/sub_category/widget/player_shimmer_effect/player_shimmer_widget.dart';
 import 'player_pre_loader_image.dart';
 
 
 class VideoPlayerWidget extends StatefulWidget {
-  const VideoPlayerWidget({Key? key}) : super(key: key);
+  const VideoPlayerWidget({super.key});
 
   @override
   State<VideoPlayerWidget> createState() => _VideoPlayerWidgetState();
@@ -37,7 +36,7 @@ class _VideoPlayerWidgetState extends State<VideoPlayerWidget> {
           },
         ),
       );
-    } else if (controller.lockVideo || controller.videoUrl.isEmpty){
+    } else if (controller.lockVideo || controller.videoUrl.isEmpty ?? true){
       return PlayerPreLoaderImage(
         image: '${UrlContainer.baseUrl}${controller.playerAssetPath}${controller.playerImage}',
         isShowLoader: controller.videoUrl.isEmpty && !controller.lockVideo,

@@ -8,16 +8,16 @@ class WillPopWidget extends StatelessWidget {
   final Widget child;
   final String nextRoute;
 
-  const WillPopWidget({Key? key,
+  const WillPopWidget({super.key,
     required this.child,
     this.nextRoute = ''
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
     return WillPopScope(
         onWillPop: () async {
-          if(nextRoute.isEmpty){
+          if(nextRoute.isEmpty ?? true){
             showExitDialog(context);
             return Future.value(false);
           }else{

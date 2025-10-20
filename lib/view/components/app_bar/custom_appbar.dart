@@ -22,7 +22,7 @@ class CustomAppBar extends StatefulWidget implements PreferredSizeWidget{
   final bool isActionImage;
   final Color? textColor;
 
-  const CustomAppBar({Key? key,
+  const CustomAppBar({super.key,
     this.isProfileCompleted=false,
     this.fromAuth = false,
     this.isTitleCenter = false,
@@ -36,7 +36,7 @@ class CustomAppBar extends StatefulWidget implements PreferredSizeWidget{
     this.isActionIconAlignEnd = false,
     this.isActionImage = true,
     this.textColor
-  }) : super(key: key);
+  });
 
   @override
   State<CustomAppBar> createState() => _CustomAppBarState();

@@ -13,7 +13,7 @@ import 'package:google_mobile_ads/google_mobile_ads.dart' as ads;
 import '../../../data/repo/wish_list_repo/wish_list_repo.dart';
 
 class WishListScreen extends StatefulWidget {
-  const WishListScreen({Key? key}) : super(key: key);
+  const WishListScreen({super.key});
 
   @override
   State<WishListScreen> createState() => _WishListScreenState();

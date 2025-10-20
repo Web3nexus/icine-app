@@ -30,8 +30,8 @@ class DepositController extends GetxController implements GetxService{
     depositList.clear();
     List<Data>?tempDepositList=depositModel.mainData?.deposits?.data;
     nextPageUrl=depositModel.mainData?.deposits?.nextPageUrl??'';
-    if(tempDepositList!=null && tempDepositList.isNotEmpty){
-      depositList.addAll(tempDepositList);
+    if(tempDepositList!.isNotEmpty ?? false){
+      depositList.addAll(tempDepositList ?? []);
     }
 
     isLoading = false;
@@ -46,14 +46,14 @@ class DepositController extends GetxController implements GetxService{
     depositModel = await depositRepo.loadAllDepositHistory( page,);
     List<Data>?tempDepositList=depositModel.mainData?.deposits?.data;
     nextPageUrl=depositModel.mainData?.deposits?.nextPageUrl??'';
-    if(tempDepositList!=null && !(tempDepositList==[])){
-      depositList.addAll(tempDepositList);
+    if(!(tempDepositList==[])){
+      depositList.addAll(tempDepositList ?? []);
     }
     update();
   }
 
   bool hasNext(){
-    if(nextPageUrl!=null && nextPageUrl!.isNotEmpty){
+    if(nextPageUrl!=null && nextPageUrl!.isNotEmpty ?? false){
       return true;
     }else{
       return false;

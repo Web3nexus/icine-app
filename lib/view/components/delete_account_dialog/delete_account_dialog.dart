@@ -36,7 +36,7 @@ showDeleteDialog(BuildContext context){
 }
 
 class DialogBody extends StatefulWidget {
-  const DialogBody({Key? key}) : super(key: key);
+  const DialogBody({super.key});
 
   @override
   State<DialogBody> createState() => _DialogBodyState();

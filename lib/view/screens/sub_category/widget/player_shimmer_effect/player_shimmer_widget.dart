@@ -10,10 +10,10 @@ class PlayerShimmerWidget extends StatelessWidget {
   final bool fromLiveTv;
 
   const PlayerShimmerWidget({
-    Key? key,
+    super.key,
     this.fromLiveTv=true,
     this.press
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

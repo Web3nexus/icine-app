@@ -5,12 +5,9 @@ import 'package:play_lab/core/route/route.dart';
 import 'package:play_lab/core/utils/dimensions.dart';
 import 'package:play_lab/core/utils/styles.dart';
 import 'package:play_lab/view/components/buttons/rounded_button.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import '../../../core/utils/my_color.dart';
-import '../buttons/category_button.dart';
 
 
   showLoginDialog(BuildContext context,{bool fromDetails = false}){

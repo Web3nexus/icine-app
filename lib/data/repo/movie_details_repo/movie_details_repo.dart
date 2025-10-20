@@ -19,11 +19,11 @@ class MovieDetailsRepo{
     String token=apiClient.sharedPreferences.getString(SharedPreferenceHelper.accessTokenKey)??'';
     String url='';
     if(episodeId==-1 ||episodeId == 0){
-      url = '${UrlContainer.baseUrl}${token.isEmpty?UrlContainer.watchVideoEndPoint:UrlContainer.watchVideoPaidEndPoint}=$itemId';
+      url = '${UrlContainer.baseUrl}${token.isEmpty ?? true?UrlContainer.watchVideoEndPoint:UrlContainer.watchVideoPaidEndPoint}=$itemId';
     }else{
-      url = '${UrlContainer.baseUrl}${token.isEmpty?UrlContainer.watchVideoEndPoint:UrlContainer.watchVideoPaidEndPoint}=$itemId&episode_id=$episodeId';
+      url = '${UrlContainer.baseUrl}${token.isEmpty ?? true?UrlContainer.watchVideoEndPoint:UrlContainer.watchVideoPaidEndPoint}=$itemId&episode_id=$episodeId';
     }
-    if(token.isEmpty){
+    if(token.isEmpty ?? true){
       response = await apiClient.request(url, Method.getMethod, null);
     }else{
       response = await apiClient.request(url, Method.getMethod, null,passHeader: true);
@@ -39,7 +39,7 @@ class MovieDetailsRepo{
     //for episode we should send episode id on the other scenario we don't need to send episode id
 
    String url='';
-    if(token.isEmpty){
+    if(token.isEmpty ?? true){
      if(episodeId==-1){
         url='${UrlContainer.baseUrl}${UrlContainer.playVideoEndPoint}=$itemId';
       }else{

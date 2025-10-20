@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:play_lab/core/helper/string_format_helper.dart';
 import 'package:play_lab/core/utils/my_color.dart';
 import 'package:play_lab/view/components/app_bar/custom_appbar.dart';
 
@@ -10,7 +9,7 @@ import '../../../../data/repo/deposit_repo/deposit_repo.dart';
 import 'body.dart';
 
 class AddDepositScreen extends StatefulWidget {
-  const AddDepositScreen({Key? key}) : super(key: key);
+  const AddDepositScreen({super.key});
 
   @override
   State<AddDepositScreen> createState() => _AddDepositScreenState();

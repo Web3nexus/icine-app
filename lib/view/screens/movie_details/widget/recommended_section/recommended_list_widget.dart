@@ -12,7 +12,7 @@ import '../../../bottom_nav_pages/home/shimmer/portrait_movie_shimmer.dart';
 
 
 class RecommendedListWidget extends StatefulWidget {
-  const RecommendedListWidget({Key? key}) : super(key: key);
+  const RecommendedListWidget({super.key});
 
   @override
   State<RecommendedListWidget> createState() => _RecommendedListWidgetState();

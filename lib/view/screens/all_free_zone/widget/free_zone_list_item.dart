@@ -12,7 +12,7 @@ import '../../bottom_nav_pages/home/widget/custom_network_image/custom_network_i
 
 
 class AllFreeZoneListWidget extends StatefulWidget {
-  const AllFreeZoneListWidget({Key? key}) : super(key: key);
+  const AllFreeZoneListWidget({super.key});
 
   @override
   State<AllFreeZoneListWidget> createState() => _AllFreeZoneListWidgetState();

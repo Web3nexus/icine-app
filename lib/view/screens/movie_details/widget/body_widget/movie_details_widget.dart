@@ -6,7 +6,6 @@ import 'package:play_lab/data/controller/movie_details_controller/movie_details_
 import 'package:play_lab/view/components/custom_sized_box.dart';
 import 'package:play_lab/view/components/buttons/category_button.dart';
 import 'package:play_lab/view/components/buttons/custom_icon_button.dart';
-import 'package:play_lab/view/components/header_light_text.dart';
 import 'package:play_lab/view/components/row_item/icon_with_text.dart';
 import 'package:play_lab/view/components/row_item/header_row.dart';
 import 'package:play_lab/view/screens/movie_details/widget/body_widget/team_row.dart';
@@ -18,7 +17,7 @@ import '../details_text_widget/details_text.dart';
 import 'body_shimmer.dart';
 
 class MovieDetailsBodyWidget extends StatefulWidget {
-  const MovieDetailsBodyWidget({Key? key}) : super(key: key);
+  const MovieDetailsBodyWidget({super.key});
 
   @override
   State<MovieDetailsBodyWidget> createState() => _MovieDetailsBodyWidgetState();

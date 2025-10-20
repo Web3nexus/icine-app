@@ -20,7 +20,7 @@ import 'package:play_lab/view/components/nav_drawer/custom_nav_drawer.dart';
 
 
 class AllMovieScreen extends StatefulWidget {
-  const AllMovieScreen({Key? key}) : super(key: key);
+  const AllMovieScreen({super.key});
 
   @override
   State<AllMovieScreen> createState() => _AllMovieScreenState();
@@ -89,7 +89,7 @@ class _AllMovieScreenState extends State<AllMovieScreen> {
         body: Stack(
           children: [
 
-            !controller.isLoading && controller.movieList.isEmpty?const NoDataFoundScreen(): const AllMovieListWidget(),
+            !controller.isLoading && controller.movieList.isEmpty ?? true?const NoDataFoundScreen(): const AllMovieListWidget(),
             if (_bannerAd != null)
               Align(
                 alignment: Alignment.bottomCenter,

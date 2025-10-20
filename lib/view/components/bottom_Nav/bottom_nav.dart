@@ -11,8 +11,7 @@ import '../../../core/route/route.dart';
 class CustomBottomNav extends StatefulWidget {
   final int currentIndex;
 
-  const CustomBottomNav({Key? key, required this.currentIndex})
-      : super(key: key);
+  const CustomBottomNav({super.key, required this.currentIndex});
 
   @override
   State<CustomBottomNav> createState() => _CustomBottomNavState();

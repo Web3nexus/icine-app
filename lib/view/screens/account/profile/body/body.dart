@@ -14,7 +14,7 @@ import '../../../../components/buttons/rounded_button.dart';
 
 
 class Body extends StatelessWidget {
-  const Body({Key? key,this.comeFrom='profile'}) : super(key: key);
+  const Body({super.key,this.comeFrom='profile'});
   final String comeFrom;
 
   @override
@@ -57,10 +57,10 @@ class Body extends StatelessWidget {
                   focusNode: controller.firstNameFocusNode,
                   controller: controller.firstNameController,
                   onChanged: (value) {
-                    if (value.isNotEmpty) {
+                    if (value?.isNotEmpty ?? false) {
                       controller.removeError(error:MyStrings.kFirstNameNullError);
                     }
-                    if (value.isEmpty) {
+                    if (value?.isEmpty ?? true) {
                       controller.addError(error:MyStrings.kFirstNameNullError);
                     }
                     return;
@@ -79,10 +79,10 @@ class Body extends StatelessWidget {
                   focusNode: controller.lastNameFocusNode,
                   controller: controller.lastNameController,
                   onChanged: (value) {
-                    if (value.isNotEmpty) {
+                    if (value?.isNotEmpty ?? false) {
                       controller.removeError(error:MyStrings.kLastNameNullError);
                     }
-                    if (value.isEmpty) {
+                    if (value?.isEmpty ?? true) {
                       controller.addError(error:MyStrings.kLastNameNullError);
                     }
                     return;
@@ -130,10 +130,10 @@ class Body extends StatelessWidget {
                   controller: controller.addressController,
                   onSuffixTap: () {},
                   onChanged: (value) {
-                    if (value.isNotEmpty) {
+                    if (value?.isNotEmpty ?? false) {
                       controller.removeError(error:MyStrings.kPassNullError);
                     }
-                    if (value.isEmpty) {
+                    if (value?.isEmpty ?? true) {
                       controller.addError(error:MyStrings.kPassNullError);
                     }
                     return;

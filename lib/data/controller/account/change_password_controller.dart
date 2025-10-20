@@ -43,15 +43,15 @@ class ChangePasswordController extends GetxController  {
     String currentPass = currentPassController.text.toString();
     String password = passController.text.toString();
 
-    if (errors.isEmpty) {
+    if (errors.isEmpty ?? true) {
 
-      if (currentPass.isEmpty) {
+      if (currentPass.isEmpty ?? true) {
         addError(error: MyStrings.currentPassNullError);
         update();
         return;
       }
 
-      if (password.isEmpty) {
+      if (password.isEmpty ?? true) {
         addError(error: MyStrings.currentPassNullError);
         update();
         return;

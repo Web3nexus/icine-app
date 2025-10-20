@@ -19,7 +19,7 @@ import 'dart:io';
 class Body extends StatefulWidget {
   final String price;
   final String planName;
- const Body({Key? key,required this.price,required this.planName}) : super(key: key);
+ const Body({super.key,required this.price,required this.planName});
 
   @override
   State<Body> createState() => _BodyState();

@@ -28,7 +28,7 @@ class CategoryController extends GetxController{
          List<Data>?tempCategoryList=categoryResponse.data?.categories?.data;
          nextPageUrl=categoryResponse.data?.categories?.nextPageUrl;
 
-         if(tempCategoryList !=null && !(tempCategoryList==[]) )
+         if (tempCategoryList!.isNotEmpty)
          {
            categoryList.clear();
            categoryList.addAll(tempCategoryList);
@@ -53,8 +53,8 @@ class CategoryController extends GetxController{
            List<Data>?tempCategoryList=categoryResponse.data?.categories?.data;
            nextPageUrl=categoryResponse.data?.categories?.nextPageUrl;
 
-           if(tempCategoryList !=null && !(tempCategoryList==[]) ) {
-              if(page==1){
+           if (tempCategoryList!.isNotEmpty) {
+             if(page==1){
                categoryList.clear();
              }
              categoryList.addAll(tempCategoryList);

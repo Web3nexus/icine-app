@@ -17,7 +17,7 @@ class LocalizationController extends GetxController {
 
   Locale _locale = Locale(MyStrings.myLanguages[0].languageCode, MyStrings.myLanguages[0].countryCode);
   bool _isLtr = true;
-  List<MyLanguageModel> _languages = [];
+  final List<MyLanguageModel> _languages = [];
 
   Locale get locale => _locale;
   bool get isLtr => _isLtr;

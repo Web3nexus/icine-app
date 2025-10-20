@@ -3,7 +3,7 @@ import '../../../../../../core/utils/dimensions.dart';
 
 class DividerSection extends StatelessWidget {
   final double topSpace;
-  const DividerSection({Key? key,this.topSpace = Dimensions.spaceBetweenCategory}) : super(key: key);
+  const DividerSection({super.key,this.topSpace = Dimensions.spaceBetweenCategory});
 
   @override
   Widget build(BuildContext context) {

@@ -18,7 +18,7 @@ import 'package:google_mobile_ads/google_mobile_ads.dart' as ads;
 
 
 class AllEpisodeScreen extends StatefulWidget {
-  const AllEpisodeScreen({Key? key}) : super(key: key);
+  const AllEpisodeScreen({super.key});
 
   @override
   State<AllEpisodeScreen> createState() => _AllEpisodeScreenState();
@@ -95,7 +95,7 @@ class _AllEpisodeScreenState extends State<AllEpisodeScreen> {
               ),
             Padding(
               padding: const EdgeInsets.only(left: 10,right: 10,top: 10,bottom: 10),
-              child: !controller.isLoading && controller.episodeList.isEmpty?const NoDataFoundScreen():const AllEpisodeListWidget()
+              child: !controller.isLoading && controller.episodeList.isEmpty ?? true?const NoDataFoundScreen():const AllEpisodeListWidget()
             ),
           ],
         ),

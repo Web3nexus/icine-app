@@ -40,7 +40,7 @@ class CustomTextField extends StatefulWidget {
 
 
   const CustomTextField({
-        Key? key,
+        super.key,
         this.hintText = '',
         this.controller,
         this.borderRadius=4,
@@ -67,7 +67,7 @@ class CustomTextField extends StatefulWidget {
         this.suffixIconUrl,
         this.prefixIcon,
         this.errorText,
-        this.isSearch = false,}) : super(key: key);
+        this.isSearch = false,});
 
   @override
   State<CustomTextField> createState() => _CustomTextFieldState();

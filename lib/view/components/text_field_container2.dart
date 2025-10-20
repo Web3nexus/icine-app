@@ -14,13 +14,13 @@ class TextFieldContainer2 extends StatelessWidget {
   final String? prefixWidgetValue;
 
   const TextFieldContainer2({
-    Key? key,
+    super.key,
     required this.child,
     this.fillColor=MyColor.textFieldColor,
     required this.onTap,
     this.isShowSuffixView = false,
     this.prefixWidgetValue,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

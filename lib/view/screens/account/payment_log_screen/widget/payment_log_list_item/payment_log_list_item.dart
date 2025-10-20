@@ -13,7 +13,7 @@ import '../../../../../../view/components/buttons/custom_rounded_button.dart';
 import '../../../../../../view/components/custom_rounded_icon_button.dart';
 
 class DepositHistoryListItem extends StatelessWidget {
-  const DepositHistoryListItem({Key? key,required this.listItem,required this.index,required this.currency}) : super(key: key);
+  const DepositHistoryListItem({super.key,required this.listItem,required this.index,required this.currency});
   final Data listItem;
   final int index;
   final String currency;

@@ -1,7 +1,6 @@
 
 import 'dart:async';
 import 'package:get/get.dart';
-import 'package:pin_code_fields/pin_code_fields.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../../../../constants/my_strings.dart';
 import '../../../../core/helper/shared_pref_helper.dart';
@@ -41,7 +40,7 @@ class EmailVerificationController extends GetxController {
 
 verifyEmail(String text)async{
 
-   if(text.isEmpty){
+   if(text.isEmpty ?? true){
      return;
    }
 

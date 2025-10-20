@@ -13,7 +13,7 @@ import '../../../constants/my_strings.dart';
 import '../../../core/utils/url_container.dart';
 
 class AllLiveTvScreen extends StatefulWidget {
-  const AllLiveTvScreen({Key? key}) : super(key: key);
+  const AllLiveTvScreen({super.key});
 
   @override
   State<AllLiveTvScreen> createState() => _AllLiveTvScreenState();

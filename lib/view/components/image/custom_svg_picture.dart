@@ -9,7 +9,7 @@ class CustomSvgPicture extends StatelessWidget {
   final double height,width;
   final Color color;
   final BoxFit? fit;
-  const CustomSvgPicture({Key? key,this.fit,required this.image,this.height = 20,this.width = 20,this.color = MyColor.primaryColor}) : super(key: key);
+  const CustomSvgPicture({super.key,this.fit,required this.image,this.height = 20,this.width = 20,this.color = MyColor.primaryColor});
 
   @override
   Widget build(BuildContext context) {

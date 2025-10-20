@@ -3,13 +3,11 @@
 import 'dart:convert';
 
 import 'package:firebase_messaging/firebase_messaging.dart';
-import 'package:http/http.dart' as http;
 import 'package:play_lab/constants/method.dart';
 import 'package:play_lab/data/services/api_service.dart';
 
 import '../../../core/helper/shared_pref_helper.dart';
 import '../../../core/utils/url_container.dart';
-import '../../../view/components/show_custom_snackbar.dart';
 import '../../model/auth/registration_response_model.dart';
 import '../../model/auth/sign_up_model/sign_up_model.dart';
 import '../../model/global/response_model/response_model.dart';
@@ -54,7 +52,7 @@ class SignupRepo {
     }
     FirebaseMessaging firebaseMessaging = FirebaseMessaging.instance;
     bool success = false;
-    if (deviceToken.isEmpty) {
+    if (deviceToken.isEmpty ?? true) {
       firebaseMessaging.getToken().then((fcmDeviceToken) async {
         success = await sendUpdatedToken(fcmDeviceToken ?? '');
       });

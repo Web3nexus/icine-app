@@ -7,7 +7,7 @@ import '../../../../../core/utils/styles.dart';
 
 class TitleWidget extends StatelessWidget {
   final String text;
-  const TitleWidget({Key? key,required this.text}) : super(key: key);
+  const TitleWidget({super.key,required this.text});
 
   @override
   Widget build(BuildContext context) {

@@ -12,7 +12,7 @@ class HeaderRow extends StatelessWidget {
   final Callback onShowMorePress;
   final IconData icon;
   final bool isShowMoreVisible;
-  const HeaderRow({Key? key,this.isShowMoreVisible=true,this.icon=Icons.play_arrow_outlined,required this.heading,required this.onShowMorePress}) : super(key: key);
+  const HeaderRow({super.key,this.isShowMoreVisible=true,this.icon=Icons.play_arrow_outlined,required this.heading,required this.onShowMorePress});
 
   @override
   Widget build(BuildContext context) {

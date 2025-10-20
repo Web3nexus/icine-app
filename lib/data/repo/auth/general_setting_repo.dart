@@ -51,10 +51,8 @@ class GeneralSettingRepo {
     if (sharedPreferences.containsKey(SharedPreferenceHelper.generalSettingKey)) {
       String? obj =
       sharedPreferences.getString(SharedPreferenceHelper.generalSettingKey);
-      if(obj!=null){
-        model=GeneralSettingsResponseModel.fromJson(jsonDecode(obj));
-      }
-      model=GeneralSettingsResponseModel();
+      model=GeneralSettingsResponseModel.fromJson(jsonDecode(obj!));
+          model=GeneralSettingsResponseModel();
       return model;
     } else {
       model=GeneralSettingsResponseModel();

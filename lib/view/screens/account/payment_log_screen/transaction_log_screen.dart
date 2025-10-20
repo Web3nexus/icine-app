@@ -12,7 +12,7 @@ import '../../../components/app_bar/custom_appbar.dart';
 import '../../../components/nav_drawer/custom_nav_drawer.dart';
 
 class PaymentLogsScreen extends StatefulWidget {
-  const PaymentLogsScreen({Key? key}) : super(key: key);
+  const PaymentLogsScreen({super.key});
 
   @override
   State<PaymentLogsScreen> createState() => _PaymentLogsScreenState();
@@ -62,7 +62,7 @@ class _PaymentLogsScreenState extends State<PaymentLogsScreen> {
               body: controller.isLoading
                   ? const SizedBox(
                       child: Center(child: CircularProgressIndicator(color: MyColor.primaryColor)),)
-                  : controller.depositList.isEmpty
+                  : controller.depositList.isEmpty ?? true
                       ? const NoDataFoundScreen(message: MyStrings.noTrxFound)
                       : Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 5),

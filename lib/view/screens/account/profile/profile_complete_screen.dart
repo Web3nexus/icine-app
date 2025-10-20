@@ -10,7 +10,7 @@ import '../../../../data/services/api_service.dart';
 import '../profile/body/body.dart';
 
 class ProfileCompleteScreen extends StatefulWidget {
-  const ProfileCompleteScreen({Key? key}) : super(key: key);
+  const ProfileCompleteScreen({super.key});
 
   @override
   State<ProfileCompleteScreen> createState() => _ProfileCompleteScreenState();

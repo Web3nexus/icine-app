@@ -1,5 +1,3 @@
-import 'package:play_lab/data/model/category/category_response_model.dart';
-import 'package:play_lab/main.dart';
 
 import '../auth/registration_response_model.dart';
 

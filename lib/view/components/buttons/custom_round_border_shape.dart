@@ -7,11 +7,11 @@ import '../../../core/utils/styles.dart';
 class RoundedBorderContainer extends StatelessWidget {
 
   const RoundedBorderContainer({
-    Key? key,required this.text,
+    super.key,required this.text,
     this.borderColor=MyColor.primaryColor,
     this.bgColor,
     this.textColor=MyColor.primaryColor
-  }) : super(key: key);
+  });
 
   final Color textColor,borderColor;
   final Color? bgColor;

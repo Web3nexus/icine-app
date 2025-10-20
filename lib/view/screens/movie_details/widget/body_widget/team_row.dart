@@ -6,7 +6,7 @@ import 'package:play_lab/core/utils/styles.dart';
 class TeamRow extends StatelessWidget {
   final String firstText;
   final String secondText;
-  const TeamRow({Key? key,required this.firstText,required this.secondText}) : super(key: key);
+  const TeamRow({super.key,required this.firstText,required this.secondText});
 
   @override
   Widget build(BuildContext context) {

@@ -12,7 +12,7 @@ class CategoryButton extends StatelessWidget {
   final double verticalPadding;
   final double textSize;
   const CategoryButton({
-    Key? key,
+    super.key,
     required this.text,
     this.horizontalPadding=3,
     this.verticalPadding=3,
@@ -20,7 +20,7 @@ class CategoryButton extends StatelessWidget {
     required this.press,
     this.color = MyColor.primaryColor,
     this.textColor = Colors.white,
-  }):super(key: key) ;
+  }) ;
 
   @override
   Widget build(BuildContext context) {

@@ -15,7 +15,7 @@ import '../../home/widget/custom_network_image/custom_network_image.dart';
 
 
 class AllMovieListWidget extends StatefulWidget {
-  const AllMovieListWidget({Key? key}) : super(key: key);
+  const AllMovieListWidget({super.key});
 
   @override
   State<AllMovieListWidget> createState() => _AllMovieListWidgetState();
@@ -57,7 +57,7 @@ class _AllMovieListWidgetState extends State<AllMovieListWidget> {
   Widget build(BuildContext context) {
     return GetBuilder<AllMoviesController>(
         builder: (controller) => controller.isLoading
-            ? GridShimmer()
+            ? const GridShimmer()
             : AnimationLimiter(
               child: GridView.builder(
                   shrinkWrap: true,

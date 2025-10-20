@@ -14,7 +14,7 @@ class RoundedButton extends StatelessWidget {
   final double vPadding;
 
   const RoundedButton({
-    Key? key,
+    super.key,
     this.width=1,
     required this.text,
     required this.press,
@@ -22,7 +22,7 @@ class RoundedButton extends StatelessWidget {
     this.textColor = Colors.white,
     this.hPadding = 23,
     this.vPadding = 15
-  }):super(key: key) ;
+  }) ;
 
   @override
   Widget build(BuildContext context) {

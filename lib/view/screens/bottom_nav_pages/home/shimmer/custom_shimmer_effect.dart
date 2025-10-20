@@ -8,12 +8,12 @@ class MyShimmerEffectUI extends StatelessWidget {
   final double height;
   final ShapeBorder shapeBorder;
 
-  const MyShimmerEffectUI.rectangular({
+  const MyShimmerEffectUI.rectangular({super.key, 
     this.width = double.infinity,
     required this.height
   }): shapeBorder = const RoundedRectangleBorder();
 
-  const MyShimmerEffectUI.circular({
+  const MyShimmerEffectUI.circular({super.key, 
     this.width = double.infinity,
     required this.height,
     this.shapeBorder = const CircleBorder()

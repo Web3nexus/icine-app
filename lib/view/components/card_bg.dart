@@ -14,7 +14,7 @@ class RadiusCardShape extends StatelessWidget {
   final bool isCircle;
 
   const RadiusCardShape({
-    Key? key,this.height=0,
+    super.key,this.height=0,
     this.width=0,
     this.isCircle=false,
     this.padding=15.0,
@@ -22,7 +22,7 @@ class RadiusCardShape extends StatelessWidget {
     this.cardRadius=15,
     this.cardBgColor=MyColor.colorWhite,
     required this.widget
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

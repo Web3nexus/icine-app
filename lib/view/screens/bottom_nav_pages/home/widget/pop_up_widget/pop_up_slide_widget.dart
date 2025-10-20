@@ -16,7 +16,7 @@ class PopUpSliderWidget extends StatefulWidget {
   final bool autoSlide;
   final Duration slideChangeDuration;
   const PopUpSliderWidget({
-    Key? key,
+    super.key,
     required this.imageList,
     this.height = 180,
     required this.onClick,
@@ -29,7 +29,7 @@ class PopUpSliderWidget extends StatefulWidget {
     this.useDots = true,
     this.autoSlide = true,
     this.slideChangeDuration = const Duration(seconds: 6),
-  }) : super(key: key);
+  });
 
   @override
   State<PopUpSliderWidget> createState() => _PopUpSliderWidgetState();

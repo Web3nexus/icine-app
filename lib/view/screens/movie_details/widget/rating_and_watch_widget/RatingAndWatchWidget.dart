@@ -15,14 +15,14 @@ class RatingAndWatchWidget extends StatelessWidget {
   final Color textColor;
 
   const RatingAndWatchWidget({
-    Key? key,
+    super.key,
     this.textColor = MyColor.colorWhite,
     this.iconSpace = 5,
     required this.watch,
     required this.rating,
     this.iconSize=16,
     this.textSize=Dimensions.fontSmall
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

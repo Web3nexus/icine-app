@@ -22,7 +22,7 @@ class SmsVerificationController extends GetxController{
     bool submitLoading = false;
     verifyYourSms()async{
 
-       if(currentText.isEmpty){
+       if(currentText.isEmpty ?? true){
          return;
        }
 

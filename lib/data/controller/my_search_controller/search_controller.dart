@@ -52,7 +52,7 @@ class MySearchController extends GetxController{
       List<Data>?teamMovieList=searchResponse.data?.items?.data;
       nextPageUrl=searchResponse.data?.items?.nextPageUrl;
 
-      if(teamMovieList !=null && teamMovieList.isNotEmpty)
+      if(teamMovieList!.isNotEmpty ?? false)
       {
        if(page==1) movieList.clear();
         movieList.addAll(teamMovieList);
@@ -73,7 +73,7 @@ class MySearchController extends GetxController{
       List<Data>?teamMovieList=searchResponse.data?.items?.data;
       nextPageUrl=searchResponse.data?.items?.nextPageUrl;
 
-      if(teamMovieList !=null && teamMovieList.isNotEmpty) {
+      if(teamMovieList!.isNotEmpty ?? false) {
         movieList.addAll(teamMovieList);
       }
      update();
@@ -86,7 +86,7 @@ class MySearchController extends GetxController{
   }
 
   bool hasNext() {
-    return nextPageUrl != null && nextPageUrl!.isNotEmpty && nextPageUrl!='null'? true : false;
+    return nextPageUrl != null && nextPageUrl!.isNotEmpty ?? false && nextPageUrl!='null'? true : false;
   }
 
   void clearAllData(){
@@ -100,7 +100,7 @@ class MySearchController extends GetxController{
 
   bool isGuest(){
     String token = repo.apiClient.token;
-    if(token.isEmpty) {
+    if(token.isEmpty ?? true) {
       return true;
     }
     return false;

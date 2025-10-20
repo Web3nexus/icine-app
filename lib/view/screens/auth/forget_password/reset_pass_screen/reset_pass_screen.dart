@@ -18,7 +18,7 @@ import '../../../../components/from_errors.dart';
 
 
 class ResetPasswordScreen extends StatefulWidget {
-  const ResetPasswordScreen({Key? key}) : super(key: key);
+  const ResetPasswordScreen({super.key});
 
   @override
   State<ResetPasswordScreen> createState() => _ResetPasswordScreenState();
@@ -49,7 +49,7 @@ class _ResetPasswordScreenState extends State<ResetPasswordScreen> {
     Get.find<ForgetPasswordController>().isLoading=false;
     return Stack(
       children: [
-        const MyBgWidget(),
+        MyBgWidget(),
         WillPopScope(
           onWillPop: ()async{
             return false;
@@ -98,7 +98,7 @@ class _ResetPasswordScreenState extends State<ResetPasswordScreen> {
                               inputType: TextInputType.text,
                               onChanged: (value) {
                                 controller.password=value;
-                                if (value.isNotEmpty) {
+                                if (value?.isNotEmpty ?? false) {
                                   controller.removeError(error: MyStrings.kPassNullError);
                                 }else{
                                   controller.addError(error: MyStrings.kPassNullError);

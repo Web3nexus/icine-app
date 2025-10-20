@@ -9,7 +9,7 @@ import '../../../../../constants/my_strings.dart';
 
 class ButtonSkip extends StatelessWidget {
   final Callback press;
-  const ButtonSkip({Key? key,required this.press}) : super(key: key);
+  const ButtonSkip({super.key,required this.press});
 
   @override
   Widget build(BuildContext context) {

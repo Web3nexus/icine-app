@@ -9,7 +9,7 @@ import '../../all_live_tv/widget/live_tv_grid_item/live_tv_grid_item.dart';
 import '../../bottom_nav_pages/home/shimmer/live_tv_shimmer.dart';
 
 class RelatedTvList extends StatefulWidget {
-  const RelatedTvList({Key? key}) : super(key: key);
+  const RelatedTvList({super.key});
 
   @override
   State<RelatedTvList> createState() => _RelatedTvListState();

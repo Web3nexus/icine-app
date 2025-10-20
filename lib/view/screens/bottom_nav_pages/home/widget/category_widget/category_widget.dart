@@ -8,7 +8,7 @@ import '../../../../../../data/controller/category/category_controller/category_
 import '../../shimmer/category_shimmer.dart';
 
 class CategoryWidget extends StatelessWidget {
- const CategoryWidget({Key? key}) : super(key: key);
+ const CategoryWidget({super.key});
 
   @override
   Widget build(BuildContext context) {

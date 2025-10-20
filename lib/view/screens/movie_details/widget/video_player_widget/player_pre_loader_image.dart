@@ -11,11 +11,11 @@ class PlayerPreLoaderImage extends StatelessWidget {
   final bool isShowLoader;
 
   const PlayerPreLoaderImage({
-    Key? key,
+    super.key,
     this.isShowLoader = false,
     this.fromLiveTv=true,
     this.press,
-    required this.image}) : super(key: key);
+    required this.image});
 
   @override
   Widget build(BuildContext context) {

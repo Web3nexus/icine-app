@@ -13,7 +13,7 @@ import '../bottom_nav_pages/home/shimmer/category_shimmer.dart';
 class SubCategoryScreen extends StatefulWidget {
   final int categoryId;
   final String categoryName;
-  const SubCategoryScreen({Key? key,required this.categoryId,required this.categoryName}) : super(key: key);
+  const SubCategoryScreen({super.key,required this.categoryId,required this.categoryName});
 
   @override
   State<SubCategoryScreen> createState() => _SubCategoryScreenState();

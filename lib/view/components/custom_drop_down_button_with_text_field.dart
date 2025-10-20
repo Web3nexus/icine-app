@@ -14,14 +14,14 @@ class CustomDropDownTextField extends StatefulWidget {
   final double paddingRight;
 
   const CustomDropDownTextField({
-    Key? key,
+    super.key,
     this.title,
     this.paddingLeft=10,
     this.paddingRight=10,
     this.selectedValue,
     this.list,
     this.onChanged
-  }) : super(key: key);
+  });
 
   @override
   State<CustomDropDownTextField> createState() => _CustomDropDownTextFieldState();

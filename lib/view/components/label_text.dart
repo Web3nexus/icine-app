@@ -4,7 +4,7 @@ import '../../core/utils/dimensions.dart';
 import '../../core/utils/styles.dart';
 
 class LabelText extends StatelessWidget {
-  const LabelText({Key? key,required this.text,this.size=Dimensions.fontLarge,this.space=8,this.bottom=8}) : super(key: key);
+  const LabelText({super.key,required this.text,this.size=Dimensions.fontLarge,this.space=8,this.bottom=8});
   final String text;
   final double size;
   final double space;

@@ -2,13 +2,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:get/get.dart';
-import 'package:pin_code_fields/pin_code_fields.dart';
 import 'package:play_lab/view/components/app_bar/custom_appbar.dart';
 import 'package:play_lab/view/components/otp_field_widget/otp_field_widget.dart';
 
 
 import '../../../../../constants/my_strings.dart';
-import '../../../../../core/route/route.dart';
 import '../../../../../../core/utils/my_color.dart';
 import '../../../../../core/utils/dimensions.dart';
 import '../../../../../core/utils/styles.dart';
@@ -16,12 +14,11 @@ import '../../../../../data/controller/auth/auth/forget_password_controller.dart
 import '../../../../../data/repo/auth/login_repo.dart';
 import '../../../../../data/services/api_service.dart';
 import '../../../../components/auth_image.dart';
-import '../../../../components/custom_back_support_appbar.dart';
 import '../../../../components/bg_widget/bg_image_widget.dart';
 import '../../../../components/buttons/rounded_button.dart';
 
 class VerifyForgetPassScreen extends StatefulWidget {
-  const VerifyForgetPassScreen({Key? key}) : super(key: key);
+  const VerifyForgetPassScreen({super.key});
 
   @override
   State<VerifyForgetPassScreen> createState() => _VerifyForgetPassScreenState();
@@ -54,7 +51,7 @@ class _VerifyForgetPassScreenState extends State<VerifyForgetPassScreen> {
           },
           child: Scaffold(
             backgroundColor: Colors.transparent,
-            appBar:const CustomAppBar(title:  MyStrings.passVerification,fromAuth: true,),
+            appBar:CustomAppBar(title:  MyStrings.passVerification,fromAuth: true,),
             body: SizedBox(
               child: GetBuilder<ForgetPasswordController>(builder: (controller)=>SingleChildScrollView(
                 child: Stack(

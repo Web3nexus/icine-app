@@ -40,9 +40,9 @@ class SubscribePlanController extends GetxController {
       nextPageUrl = responseModel.data?.plans?.nextPageUrl;
       portraitImagePath = responseModel.data?.image ?? '';
 
-      if (tempPlanList?.isNotEmpty == true) {
+      if (tempPlanList!.isNotEmpty ?? false == true) {
          if (page == 1) planList.clear();
-         planList.addAll(tempPlanList!);
+         planList.addAll(tempPlanList);
       }
       updateStatus(false);
     } else {
@@ -59,8 +59,8 @@ class SubscribePlanController extends GetxController {
       List<Data>? tempPlanList = responseModel.data?.plans?.data;
       nextPageUrl = responseModel.data?.plans?.nextPageUrl;
 
-      if (tempPlanList?.isNotEmpty == true) {
-        planList.addAll(tempPlanList!);
+      if (tempPlanList!.isNotEmpty ?? false == true) {
+        planList.addAll(tempPlanList);
       }
       update();
     }
@@ -72,7 +72,7 @@ class SubscribePlanController extends GetxController {
   }
 
   bool hasNext() {
-    return nextPageUrl != null && nextPageUrl!='null' && nextPageUrl!.isNotEmpty ? true : false;
+    return nextPageUrl != null && nextPageUrl!='null' && nextPageUrl!.isNotEmpty ?? false ? true : false;
   }
 
   void clearAllData() {

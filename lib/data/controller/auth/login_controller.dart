@@ -96,7 +96,7 @@ class LoginController extends GetxController{
       final GoogleSignInAuthentication googleAuth = await googleUser.authentication;
       String accessToken = googleAuth.accessToken??'';
 
-      if(accessToken.isEmpty){
+      if(accessToken.isEmpty ?? true){
         await GoogleSignIn().signOut();
         CustomSnackbar.showCustomSnackbar(errorList: [MyStrings.noAccessTokenFound], msg: [], isError: true);
       } else{

@@ -5,7 +5,7 @@ import '../../../core/utils/dimensions.dart';
 import '../../../core/utils/my_color.dart';
 
 class OTPFieldWidget extends StatelessWidget {
-  const OTPFieldWidget({Key? key,required this.onChanged}) : super(key: key);
+  const OTPFieldWidget({super.key,required this.onChanged});
 
   final ValueChanged<String>? onChanged;
 

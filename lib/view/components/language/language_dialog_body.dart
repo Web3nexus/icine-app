@@ -20,7 +20,7 @@ class LanguageDialogBody extends StatefulWidget {
   final List<MyLanguageModel>langList ;
   final bool fromSplashScreen;
 
-  const LanguageDialogBody({Key? key,required this.langList,this.fromSplashScreen = false}) : super(key: key);
+  const LanguageDialogBody({super.key,required this.langList,this.fromSplashScreen = false});
 
   @override
   State<LanguageDialogBody> createState() => _LanguageDialogBodyState();

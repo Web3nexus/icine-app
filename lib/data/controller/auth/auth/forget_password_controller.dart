@@ -37,13 +37,13 @@ class ForgetPasswordController extends GetxController {
   }
 
   void submitForgetPassCode() async {
-    if (errors.isNotEmpty) {
+    if (errors.isNotEmpty ?? false) {
     }
-    if(email.isEmpty){
+    if(email.isEmpty ?? true){
       addError(error: MyStrings.kEmailNullError);
       return;
     }
-    if(email.isNotEmpty){
+    if(email.isNotEmpty ?? false){
       removeError(error: MyStrings.kEmailNullError);
 
     }
@@ -53,7 +53,7 @@ class ForgetPasswordController extends GetxController {
       String value = email;
       String type = value.contains('@') ? 'email' : 'username';
       String responseEmail = await loginRepo.forgetPassword(type, value);
-      if(responseEmail.isNotEmpty){
+      if(responseEmail.isNotEmpty ?? false){
         Get.toNamed(RouteHelper.verifyPassCodeScreen,arguments: responseEmail);
       }else{
 
@@ -77,7 +77,7 @@ class ForgetPasswordController extends GetxController {
 
   void verifyForgetPasswordCode(String value) async{
 
-       if(value.isNotEmpty){
+       if(value.isNotEmpty ?? false){
          isLoading=true;
          update();
         EmailVerificationModel model= await loginRepo.verifyForgetPassCode(value);
@@ -103,7 +103,7 @@ class ForgetPasswordController extends GetxController {
   RegExp regex =
   RegExp(r'^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[!@#\$&*~]).{8,}$');
   bool isValidPassword(String value) {
-    if (value.isEmpty) {
+    if (value.isEmpty ?? true) {
       return false;
     } else {
       if (checkPasswordStrength) {
@@ -121,7 +121,7 @@ class ForgetPasswordController extends GetxController {
 
   void resetPassword() async {
 
-       if(errors.isEmpty&&password.isNotEmpty&&email.isNotEmpty){
+       if(errors.isEmpty ?? true&&password.isNotEmpty ?? false&&email.isNotEmpty ?? false){
          isLoading=true;
          update();
         EmailVerificationModel model= await loginRepo.resetPassword(email,password);

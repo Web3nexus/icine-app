@@ -11,10 +11,10 @@ class ShowMoreText extends StatelessWidget {
   final Callback onTap;
 
   const ShowMoreText({
-    Key? key,
+    super.key,
     required this.onTap,
     this.text = MyStrings.showMore
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

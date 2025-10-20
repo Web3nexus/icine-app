@@ -10,7 +10,7 @@ import '../../../components/app_bar/custom_appbar.dart';
 
 
 class CustomWebViewScreen extends StatefulWidget {
-  const CustomWebViewScreen({Key? key,required this.redirectUrl}) : super(key: key);
+  const CustomWebViewScreen({super.key,required this.redirectUrl});
   final String redirectUrl;
 
   @override

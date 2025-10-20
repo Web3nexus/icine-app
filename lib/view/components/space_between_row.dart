@@ -21,7 +21,7 @@ class SpaceBetweenRow extends StatelessWidget {
   final bool isSecondIcon;
 
   const SpaceBetweenRow({
-      Key? key,
+      super.key,
       this.isShowBorder = false,
       this.isFirstTextBold = false,
       this.isShowDetailsBG = false,
@@ -33,8 +33,7 @@ class SpaceBetweenRow extends StatelessWidget {
       this.isSecondIcon=false,
       this.text1Color = MyColor.colorBlack,
       this.text2Color = MyColor.primaryColor
-  })
-      : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

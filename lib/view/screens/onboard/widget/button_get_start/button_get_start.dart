@@ -8,7 +8,7 @@ import '../../../../../constants/my_strings.dart';
 
 class ButtonGetStart extends StatelessWidget {
   final Callback press;
-  const ButtonGetStart({Key? key,required this.press}) : super(key: key);
+  const ButtonGetStart({super.key,required this.press});
 
   @override
   Widget build(BuildContext context) {

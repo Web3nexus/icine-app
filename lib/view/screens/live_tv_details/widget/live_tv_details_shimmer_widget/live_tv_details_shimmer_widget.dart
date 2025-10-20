@@ -7,7 +7,7 @@ import '../.././../../../core/utils/dimensions.dart';
 import '../../../../components/custom_sized_box.dart';
 
 class LiveTvDetailsShimmerWidget extends StatefulWidget {
-  const LiveTvDetailsShimmerWidget({Key? key}) : super(key: key);
+  const LiveTvDetailsShimmerWidget({super.key});
 
   @override
   State<LiveTvDetailsShimmerWidget> createState() =>
@@ -29,13 +29,13 @@ class _LiveTvDetailsShimmerWidgetState
               const SizedBox(
                 height: 15,
               ),
-              Padding(
-                padding: const EdgeInsets.only(left: 10, right: 10),
+              const Padding(
+                padding: EdgeInsets.only(left: 10, right: 10),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Row(
-                      children: const [
+                      children: [
                         MyShimmerEffectUI.rectangular(
                           height: 15,
                           width: 60,

@@ -112,74 +112,74 @@ class MovieDetailsController extends GetxController {
           },
           additionalOptions: (context) {
             return <OptionItem>[
-              if (subTitleLangList.isNotEmpty)
-                OptionItem(
-                  onTap: () async {
-                    await Get.bottomSheet(
-                      Container(
-                        padding: const EdgeInsets.only(
-                          bottom: Dimensions.space50,
-                          top: Dimensions.space20,
-                          left: Dimensions.space15,
-                          right: Dimensions.space15,
-                        ),
-                        decoration: const BoxDecoration(
-                          color: MyColor.secondaryColor,
-                          borderRadius: BorderRadius.only(
-                            topLeft: Radius.circular(Dimensions.space10),
-                            topRight: Radius.circular(Dimensions.space10),
-                          ),
-                        ),
-                        child: SizedBox(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            mainAxisSize: MainAxisSize.min,
-                            children: [
-                              Text(
-                                MyStrings.selectALanguage,
-                                style: mulishSemiBold.copyWith(fontSize: Dimensions.fontLarge),
-                              ),
-                              const SizedBox(height: 25,),
-                              ListView.builder(
-                                shrinkWrap: true,
-                                itemCount: subTitleLangList.length,
-                                itemBuilder: (context, index) {
-                                  return GestureDetector(
-                                    onTap: () async {
-                                      Get.back();
-                                      changeSubtitleLang(subTitleLangList[index]);
-                                      await loadSubtitles();
-                                      chewieController?.setSubtitle(getSubtitlesData(subtitleString));
-                                      Get.back();
-                                    },
-                                    child: Container(
-                                      width: MediaQuery.of(context).size.width,
-                                      margin: const EdgeInsets.only(bottom: Dimensions.space15),
-                                      padding: const EdgeInsets.symmetric(horizontal: Dimensions.space15, vertical: Dimensions.space12),
-                                      decoration: BoxDecoration(
-                                        color: subTitleLangList[index] == selectedSubTitle ? MyColor.primaryColor.withOpacity(.8) : MyColor.shimmerBaseColor,
-                                        borderRadius: BorderRadius.circular(4),
-                                        border: Border.all(color: subTitleLangList[index] == selectedSubTitle ? MyColor.primaryColor.withOpacity(.8) : MyColor.shimmerBaseColor),
+              if (subTitleLangList.isNotEmpty ?? false)
+                              OptionItem(
+                                onTap: (BuildContext context) {
+                                  Get.bottomSheet(
+                                    Container(
+                                      padding: const EdgeInsets.only(
+                                        bottom: Dimensions.space50,
+                                        top: Dimensions.space20,
+                                        left: Dimensions.space15,
+                                        right: Dimensions.space15,
                                       ),
-                                      child: Row(
-                                        mainAxisAlignment: MainAxisAlignment.start,
-                                        children: [
-                                          Text(subTitleLangList[index].language ?? '', style: mulishSemiBold.copyWith(color: MyColor.colorWhite)),
-                                        ],
+                                      decoration: const BoxDecoration(
+                                        color: MyColor.secondaryColor,
+                                        borderRadius: BorderRadius.only(
+                                          topLeft: Radius.circular(Dimensions.space10),
+                                          topRight: Radius.circular(Dimensions.space10),
+                                        ),
+                                      ),
+                                      child: SizedBox(
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          mainAxisSize: MainAxisSize.min,
+                                          children: [
+                                            Text(
+                                              MyStrings.selectALanguage,
+                                              style: mulishSemiBold.copyWith(fontSize: Dimensions.fontLarge),
+                                            ),
+                                            const SizedBox(height: 25,),
+                                            ListView.builder(
+                                              shrinkWrap: true,
+                                              itemCount: subTitleLangList.length,
+                                              itemBuilder: (context, index) {
+                                                return GestureDetector(
+                                                  onTap: () async {
+                                                    Get.back();
+                                                    changeSubtitleLang(subTitleLangList[index]);
+                                                    await loadSubtitles();
+                                                    chewieController?.setSubtitle(getSubtitlesData(subtitleString));
+                                                    Get.back();
+                                                  },
+                                                  child: Container(
+                                                    width: MediaQuery.of(context).size.width,
+                                                    margin: const EdgeInsets.only(bottom: Dimensions.space15),
+                                                    padding: const EdgeInsets.symmetric(horizontal: Dimensions.space15, vertical: Dimensions.space12),
+                                                    decoration: BoxDecoration(
+                                                      color: subTitleLangList[index] == selectedSubTitle ? MyColor.primaryColor.withOpacity(.8) : MyColor.shimmerBaseColor,
+                                                      borderRadius: BorderRadius.circular(4),
+                                                      border: Border.all(color: subTitleLangList[index] == selectedSubTitle ? MyColor.primaryColor.withOpacity(.8) : MyColor.shimmerBaseColor),
+                                                    ),
+                                                    child: Row(
+                                                      mainAxisAlignment: MainAxisAlignment.start,
+                                                      children: [
+                                                        Text(subTitleLangList[index].language ?? '', style: mulishSemiBold.copyWith(color: MyColor.colorWhite)),
+                                                      ],
+                                                    ),
+                                                  ),
+                                                );
+                                              },
+                                            ),
+                                          ],
+                                        ),
                                       ),
                                     ),
                                   );
                                 },
+                                iconData: Icons.subtitles,
+                                title: MyStrings.subtitles.tr,
                               ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    );
-                  },
-                  iconData: Icons.subtitles,
-                  title: MyStrings.subtitles.tr,
-                ),
             ];
           },
           subtitle:Subtitles(getSubtitlesData(subtitleString)),
@@ -214,7 +214,7 @@ class MovieDetailsController extends GetxController {
       final responseModel = PlayVideoResponseModel.fromJson(jsonDecode(model.responseJson));
       if (responseModel.data != null && responseModel.data?.video != null) {
         subTitleLangList = responseModel.data?.subtitles ?? [];
-        if (subTitleLangList.isNotEmpty) {
+        if (subTitleLangList.isNotEmpty ?? false) {
           selectedSubTitle = subTitleLangList[0];
         }
         await initializePlayer(responseModel.data!.video ?? '');
@@ -282,13 +282,13 @@ class MovieDetailsController extends GetxController {
         playerImage = movieDetails.data?.item?.image?.landscape ?? '';
         playerAssetPath = movieDetails.data?.landscapePath ?? '';
 
-        if (responseModel.data?.relatedItems != null && responseModel.data!.relatedItems!.isNotEmpty) {
+        if (responseModel.data?.relatedItems != null && responseModel.data!.relatedItems!.isNotEmpty ?? false) {
           relatedItemsList = responseModel.data!.relatedItems!;
           portraitImagePath = responseModel.data?.portraitPath ?? '';
           episodePath = responseModel.data?.episodePath ?? '';
         }
 
-        if (responseModel.data?.episodes != null && responseModel.data!.episodes!.isNotEmpty) {
+        if (responseModel.data?.episodes != null && responseModel.data!.episodes!.isNotEmpty ?? false) {
           episodeList = responseModel.data!.episodes!;
           episodeId = episodeId == -1 ? episodeList[0].id ?? -1 : episodeId;
         }
@@ -445,7 +445,7 @@ class MovieDetailsController extends GetxController {
 
   bool isAuthorized(){
    String token = movieDetailsRepo.apiClient.sharedPreferences.getString(SharedPreferenceHelper.accessTokenKey)??'';
-   return token.isEmpty?false:true;
+   return token.isEmpty ?? true?false:true;
   }
 
   List<Subtitle> selectedSubtitleDataList = [];

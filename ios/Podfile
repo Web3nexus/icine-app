@@ -1,4 +1,4 @@
-# Uncomment this line to define a global platform for your project
+source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '14.0'
 
 # CocoaPods analytics sends network stats synchronously affecting flutter build latency.
@@ -34,17 +34,31 @@ target 'Runner' do
   flutter_install_all_ios_pods File.dirname(File.realpath(__FILE__))
 end
 
+# --- Use versions compatible with google_sign_in_ios (8.x) ---
+pod 'AppAuth', '>= 1.7.4'
+pod 'GoogleSignIn', '~> 8.0'
+pod 'GoogleUtilities', '~> 8.0'
+# -------------------------------------------------------------
+
+
+
+# 👇 ADD THIS BLOCK TO FORCE OLDER FIREBASE SDK (compatible with older Xcode)
+$FirebaseSDKVersion = '10.15.0'
+
 post_install do |installer|
   installer.generated_projects.each do |project|
     project.targets.each do |target|
       target.build_configurations.each do |config|
+        # Set minimum iOS deployment version
         config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '13.0'
+        # Force Swift 5.0 for compatibility with old Xcode
+        config.build_settings['SWIFT_VERSION'] = '5.0'
       end
     end
   end
 
+  # Fix Firebase/Swift incompatibility for older toolchains
   installer.pods_project.targets.each do |target|
     flutter_additional_ios_build_settings(target)
   end
 end
-

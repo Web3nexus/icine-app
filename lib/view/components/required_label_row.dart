@@ -5,7 +5,7 @@ import '../../core/utils/styles.dart';
 import '../../view/components/small_text.dart';
 
 class RequiredLabelRow extends StatelessWidget {
-  const RequiredLabelRow({Key? key,required this.label,this.required=true}) : super(key: key);
+  const RequiredLabelRow({super.key,required this.label,this.required=true});
   final String label;
   final bool required;
 

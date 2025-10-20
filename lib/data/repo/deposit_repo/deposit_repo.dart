@@ -1,7 +1,6 @@
 
 import 'dart:convert';
 
-import 'package:get/get.dart';
 import 'package:play_lab/data/model/global/response_model/response_model.dart';
 
 import '../../../constants/method.dart' as m;
@@ -30,10 +29,10 @@ class DepositRepo{
     String url ='${UrlContainer.baseUrl}${UrlContainer.depositMethodEndPoint}';
     final response = await apiClient.request(url, m.Method.getMethod, null,passHeader: true);
     MainDepositMethodResponseModel model= MainDepositMethodResponseModel.fromJson(jsonDecode(response.responseJson));
-    if(model.data!=null && model.data?.methods?.isNotEmpty == true){
+    if (model.data != null && model.data!.methods != null && model.data!.methods!.isNotEmpty) {
       model.setCode(200);
       return model;
-    }else{
+    } else {
       model.setCode(400);
       return model;
     }

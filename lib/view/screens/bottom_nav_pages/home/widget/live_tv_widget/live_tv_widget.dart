@@ -8,7 +8,7 @@ import '../../../../all_live_tv/widget/live_tv_grid_item/live_tv_grid_item.dart'
 import '../../shimmer/live_tv_shimmer.dart';
 
 class LiveTvWidget extends StatefulWidget {
-  const LiveTvWidget({Key? key}) : super(key: key);
+  const LiveTvWidget({super.key});
 
   @override
   State<LiveTvWidget> createState() => _LiveTvWidgetState();

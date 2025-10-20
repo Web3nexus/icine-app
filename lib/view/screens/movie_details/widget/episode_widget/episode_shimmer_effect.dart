@@ -4,7 +4,7 @@ import 'package:play_lab/core/utils/dimensions.dart';
 import '../../../bottom_nav_pages/home/shimmer/custom_shimmer_effect.dart';
 
 class EpisodeShimmerEffect extends StatelessWidget {
-  const EpisodeShimmerEffect({Key? key}) : super(key: key);
+  const EpisodeShimmerEffect({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -12,7 +12,7 @@ import '../../shimmer/portrait_movie_shimmer.dart';
 import '../custom_network_image/custom_network_image.dart';
 
 class RecentlyAddedWidget extends StatefulWidget {
-  const RecentlyAddedWidget({Key? key}) : super(key: key);
+  const RecentlyAddedWidget({super.key});
 
   @override
   State<RecentlyAddedWidget> createState() => _RecentlyAddedWidgetState();

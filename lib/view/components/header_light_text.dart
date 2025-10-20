@@ -6,7 +6,7 @@ import '../../core/utils/dimensions.dart';
 import '../../core/utils/styles.dart';
 
 class HeaderLightText extends StatelessWidget {
-  const HeaderLightText({Key? key,required this.text,this.textColor=MyColor.colorWhite,this.showCustomColor=false }) : super(key: key);
+  const HeaderLightText({super.key,required this.text,this.textColor=MyColor.colorWhite,this.showCustomColor=false });
   final String text;
   final Color textColor;
   final bool showCustomColor;

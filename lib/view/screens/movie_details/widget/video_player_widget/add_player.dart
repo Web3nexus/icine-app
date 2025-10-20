@@ -1,10 +1,4 @@
-import 'package:chewie/chewie.dart';
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:play_lab/core/utils/my_color.dart';
-import 'package:play_lab/data/controller/movie_details_controller/movie_details_controller.dart';
 
-import '../../../../../constants/my_strings.dart';
 
 /*class AddPlayerWidget extends StatefulWidget {
   const AddPlayerWidget({Key? key}) : super(key: key);

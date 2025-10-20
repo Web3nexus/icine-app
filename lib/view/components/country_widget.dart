@@ -15,13 +15,13 @@ class CountryFieldWidget extends StatefulWidget {
   final ValueChanged? onChanged;
 
   const CountryFieldWidget({
-    Key? key,
+    super.key,
     required this.onChanged,
     required this.controller,
     required this.hintText,
     this.keyboardType,
     this.currency
-  }) : super(key: key);
+  });
 
 
   @override

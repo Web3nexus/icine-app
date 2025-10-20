@@ -15,7 +15,7 @@ class CustomRoundedButton extends StatelessWidget {
   final double verticalMargin;
 
   const CustomRoundedButton(
-      {Key? key,
+      {super.key,
       required this.text,
       required this.press,
       this.color = MyColor.primaryColor,
@@ -23,8 +23,7 @@ class CustomRoundedButton extends StatelessWidget {
       this.horizontalPadding = 10,
       this.verticalPadding = 4,
       this.horizontalMargin = 0,
-      this.verticalMargin = 0})
-      : super(key: key);
+      this.verticalMargin = 0});
 
   @override
   Widget build(BuildContext context) {

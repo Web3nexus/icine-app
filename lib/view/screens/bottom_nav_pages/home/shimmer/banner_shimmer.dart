@@ -4,7 +4,7 @@ import 'package:play_lab/core/utils/my_color.dart';
 import 'package:shimmer/shimmer.dart';
 
 class BannerShimmer extends StatefulWidget {
-  const BannerShimmer({Key? key}) : super(key: key);
+  const BannerShimmer({super.key});
 
   @override
   State<BannerShimmer> createState() => _BannerShimmerState();

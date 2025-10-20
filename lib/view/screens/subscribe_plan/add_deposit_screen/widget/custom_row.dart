@@ -6,13 +6,13 @@ import '../../../../../core/utils/my_color.dart';
 class CustomRow extends StatelessWidget {
 
   const CustomRow({
-    Key? key,
+    super.key,
     required this.firstText,
     required this.lastText,
     this.imageSrc,
     this.showDivider = true,
     this.showImage = false,
-  }) : super(key: key);
+  });
 
   final String firstText,lastText;
   final bool showDivider;

@@ -13,7 +13,7 @@ import '../../../constants/my_strings.dart';
 
 class SearchScreen extends StatefulWidget {
   final String searchText;
-  const SearchScreen({Key? key,required this.searchText}) : super(key: key);
+  const SearchScreen({super.key,required this.searchText});
 
   @override
   State<SearchScreen> createState() => _SearchScreenState();
@@ -40,7 +40,7 @@ class _SearchScreenState extends State<SearchScreen> {
         appBar: const CustomAppBar(title:MyStrings.searchResult),
         body: Padding(
           padding: const EdgeInsets.all(10),
-          child: !controller.isLoading && controller.movieList.isEmpty?const NoDataFoundScreen():Column(
+          child: !controller.isLoading && controller.movieList.isEmpty ?? true?const NoDataFoundScreen():Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               SearchResultListWidget(searchText: widget.searchText,),

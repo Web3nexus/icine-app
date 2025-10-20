@@ -17,7 +17,7 @@ import '../../../components/buttons/rounded_button.dart';
 
 
 class ChangePasswordScreen extends StatefulWidget {
-  const ChangePasswordScreen({Key? key}) : super(key: key);
+  const ChangePasswordScreen({super.key});
 
   @override
   State<ChangePasswordScreen> createState() => _ChangePasswordScreenState();
@@ -80,10 +80,10 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
                     controller: controller.currentPassController,
                     onSuffixTap: () {},
                     onChanged: (value) {
-                      if (value.isNotEmpty) {
+                      if (value?.isNotEmpty ?? false) {
                         controller.removeError(error:MyStrings.currentPassNullError);
                       }
-                      if (value.isEmpty) {
+                      if (value?.isEmpty ?? true) {
                         controller.addError(error:MyStrings.currentPassNullError);
                       }
                       return;
@@ -108,10 +108,10 @@ class _ChangePasswordScreenState extends State<ChangePasswordScreen> {
                       }else{
                         controller.addError(error:MyStrings.kMatchPassError);
                       }
-                      if (value.isNotEmpty) {
+                      if (value?.isNotEmpty ?? false) {
                         controller.removeError(error:MyStrings.kPassNullError);
                       }
-                      if (value.isEmpty) {
+                      if (value?.isEmpty ?? true) {
                         controller.addError(error:MyStrings.kPassNullError);
                       }
                       return;

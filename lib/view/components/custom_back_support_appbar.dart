@@ -17,7 +17,7 @@ class CustomBackSupportAppBar extends StatelessWidget {
  final bool showActionIconInStart;
 
 const CustomBackSupportAppBar({
-  Key? key,
+  super.key,
   this.showTitle=true,
   this.showActionIconInStart=false,
   this.title='',
@@ -26,7 +26,7 @@ const CustomBackSupportAppBar({
   required this.press,
   this.isShowActionBtn=false,
   this.press2
-}) : super(key: key);
+});
 
   Size get preferredSize => Size.fromHeight(AppBar().preferredSize.height);
 

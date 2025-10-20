@@ -33,7 +33,7 @@ class AllEpisodeController extends GetxController{
       portraitImagePath=allEpisodeResponse.data?.portraitPath??'';
       nextPageUrl=allEpisodeResponse.data?.episodes?.nextPageUrl??'';
 
-      if(tempEpisodeList !=null && tempEpisodeList.isNotEmpty)
+      if (tempEpisodeList != null && tempEpisodeList.isNotEmpty)
       {
         episodeList.clear();
         episodeList.addAll(tempEpisodeList);
@@ -56,9 +56,9 @@ class AllEpisodeController extends GetxController{
      AllEpisodeResponseModel allMovieResponseModel=AllEpisodeResponseModel.fromJson(jsonDecode(model.responseJson));
       List<Data>?tempMovieList=allMovieResponseModel.data?.episodes?.data;
       nextPageUrl=allMovieResponseModel.data?.episodes?.nextPageUrl;
-      if(tempMovieList !=null && !(tempMovieList==[]) )
+      if (tempMovieList!.isNotEmpty)
       {
-        episodeList.addAll(tempMovieList);
+        episodeList.addAll(tempMovieList!);
       }
       update();
     }
@@ -72,7 +72,7 @@ class AllEpisodeController extends GetxController{
   }
 
   bool hasNext() {
-    return nextPageUrl != null && nextPageUrl!.isNotEmpty && nextPageUrl != 'null' ? true : false;
+    return nextPageUrl != null && nextPageUrl!.isNotEmpty ?? false && nextPageUrl != 'null' ? true : false;
   }
 
   void clearAllData(){
@@ -85,7 +85,7 @@ class AllEpisodeController extends GetxController{
 
   bool isGuest(){
     String token = repo.apiClient.token;
-    if(token.isEmpty) {
+    if(token.isEmpty ?? true) {
       return true;
     }
     return false;

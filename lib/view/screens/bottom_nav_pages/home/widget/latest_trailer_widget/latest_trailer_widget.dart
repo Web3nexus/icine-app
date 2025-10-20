@@ -10,7 +10,7 @@ import '../../shimmer/portrait_movie_shimmer.dart';
 import '../custom_network_image/custom_network_image.dart';
 
 class LatestTrailerWidget extends StatefulWidget {
-  const LatestTrailerWidget({Key? key}) : super(key: key);
+  const LatestTrailerWidget({super.key});
 
   @override
   State<LatestTrailerWidget> createState() => _LatestTrailerWidgetState();

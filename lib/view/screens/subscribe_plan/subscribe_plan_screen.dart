@@ -14,7 +14,7 @@ import 'package:play_lab/view/screens/subscribe_plan/widget/subscrible_plan_shim
 import '../../../constants/my_strings.dart';
 
 class SubscribePlanScreen extends StatefulWidget {
-  const SubscribePlanScreen({Key? key}) : super(key: key);
+  const SubscribePlanScreen({super.key});
 
   @override
   State<SubscribePlanScreen> createState() => _SubscribePlanScreenState();
@@ -69,7 +69,7 @@ class _SubscribePlanScreenState extends State<SubscribePlanScreen>{
       appBar: const CustomAppBar(title:MyStrings.subscribePLan,bgColor: Colors.transparent,),
           body:Column(
             children: [
-              controller.isLoading?const SubscribePlanShimmer(): !(controller.isLoading) && controller.planList.isEmpty?const NoDataFoundScreen():Flexible(
+              controller.isLoading?const SubscribePlanShimmer(): !(controller.isLoading) && controller.planList.isEmpty ?? true?const NoDataFoundScreen():Flexible(
                 child: ListView.builder(
                     shrinkWrap: true,
                     controller: _controller,

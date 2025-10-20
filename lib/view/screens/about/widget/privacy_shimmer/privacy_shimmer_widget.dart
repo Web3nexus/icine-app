@@ -5,7 +5,7 @@ import '../../../bottom_nav_pages/home/shimmer/custom_shimmer_effect.dart';
 
 
 class PrivacyPolicyShimmer extends StatefulWidget {
-  const PrivacyPolicyShimmer({Key? key}) : super(key: key);
+  const PrivacyPolicyShimmer({super.key});
 
   @override
   State<PrivacyPolicyShimmer> createState() => _PrivacyPolicyShimmerState();

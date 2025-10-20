@@ -12,7 +12,7 @@ import '../../../data/services/api_service.dart';
 
 
 class AllFreeZoneScreen extends StatefulWidget {
-  const AllFreeZoneScreen({Key? key}) : super(key: key);
+  const AllFreeZoneScreen({super.key});
 
   @override
   State<AllFreeZoneScreen> createState() => _AllFreeZoneScreenState();
@@ -42,7 +42,7 @@ class _AllFreeZoneScreenState extends State<AllFreeZoneScreen> {
       appBar:const CustomAppBar(bgColor:Colors.transparent,title:MyStrings.freeZone,isShowBackBtn: true,),
       body: Padding(
         padding: const EdgeInsets.only(left: 10,right: 10,top: 10,bottom: 10),
-        child: !controller.isLoading && controller.movieList.isEmpty?const NoDataFoundScreen():const AllFreeZoneListWidget()
+        child: !controller.isLoading && controller.movieList.isEmpty ?? true?const NoDataFoundScreen():const AllFreeZoneListWidget()
       ),
     ));
   }

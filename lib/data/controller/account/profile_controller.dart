@@ -88,7 +88,7 @@ class ProfileController extends GetxController implements GetxService {
     String state=stateController.text.toString();
     User? user=model.data?.user;
 
-    if(firstName.isNotEmpty && lastName.isNotEmpty){
+    if(firstName.isNotEmpty ?? false && lastName.isNotEmpty ?? false){
       isLoading=true;
       update();
       UserPostModel model=UserPostModel(
@@ -115,9 +115,9 @@ class ProfileController extends GetxController implements GetxService {
       isLoading=false;
       update();
     }else{
-      if(firstName.isEmpty){
+      if(firstName.isEmpty ?? true){
         addError(error: MyStrings.kFirstNameNullError);
-      } if(lastName.isEmpty){
+      } if(lastName.isEmpty ?? true){
         addError(error:MyStrings.kLastNameNullError);
       }
     }

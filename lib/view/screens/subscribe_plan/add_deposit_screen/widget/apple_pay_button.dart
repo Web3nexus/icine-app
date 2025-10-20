@@ -13,10 +13,10 @@ class MyApplePayButton extends StatelessWidget {
   final String planName;
 
   const MyApplePayButton({
-    Key? key,
+    super.key,
     required this.price,
     required this.planName
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

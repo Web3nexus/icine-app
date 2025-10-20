@@ -45,7 +45,7 @@ class MyWatchHistoryController extends GetxController implements GetxService{
       WatchHistoryResponseModel responseModel=WatchHistoryResponseModel.fromJson(jsonDecode(model.responseJson));
       List<Data>?tempHistoryList=responseModel.data?.histories?.data;
       nextPageUrl=responseModel.data?.histories?.nextPageUrl;
-      if(tempHistoryList !=null && tempHistoryList.isNotEmpty ) {
+      if(tempHistoryList!.isNotEmpty ?? false ) {
        if(page==1)movieList.clear();
         movieList.addAll(tempHistoryList);
       }
@@ -64,7 +64,7 @@ class MyWatchHistoryController extends GetxController implements GetxService{
       List<Data>?tempHistoryList=responseModel.data?.histories?.data;
       nextPageUrl=responseModel.data?.histories?.nextPageUrl;
 
-      if(tempHistoryList !=null && tempHistoryList.isNotEmpty ) {
+      if(tempHistoryList!.isNotEmpty ?? false ) {
         movieList.addAll(tempHistoryList);
       }
       update();

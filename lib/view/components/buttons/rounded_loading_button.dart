@@ -11,13 +11,13 @@ class RoundedLoadingButton extends StatelessWidget {
   final double vPadding;
 
   const RoundedLoadingButton({
-    Key? key,
+    super.key,
     this.width=1,
     this.color = MyColor.primaryColor,
     this.textColor = Colors.white,
     this.hPadding = 35,
     this.vPadding = 15
-  }):super(key: key) ;
+  }) ;
 
   @override
   Widget build(BuildContext context) {

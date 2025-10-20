@@ -14,14 +14,14 @@ class LiveTvGridItem extends StatelessWidget {
   final double marginLeft;
 
   const LiveTvGridItem({
-    Key? key,
+    super.key,
     this.bgColor=MyColor.textFieldColor,
     this.textColor=MyColor.colorWhite,
     required this.liveTvName,
     required this.imageUrl,
     required this.press,
     this.marginLeft = 10,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

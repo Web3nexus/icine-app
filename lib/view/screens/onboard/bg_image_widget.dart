@@ -11,10 +11,10 @@ class BgImageWidget extends StatelessWidget {
   final bool isAssetImage;
 
   const BgImageWidget({
-    Key? key,
+    super.key,
     this.isAssetImage=false,
     required this.bgImage
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

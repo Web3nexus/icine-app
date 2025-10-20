@@ -9,7 +9,7 @@ class CustomIconButton extends StatefulWidget {
   final VoidCallback press;
   final Color iconColor;
   final bool isLoading;
-  const CustomIconButton({Key? key,this.isLoading=false,this.iconColor=MyColor.primaryColor,required this.icon,required this.press}) : super(key: key);
+  const CustomIconButton({super.key,this.isLoading=false,this.iconColor=MyColor.primaryColor,required this.icon,required this.press});
 
   @override
   State<CustomIconButton> createState() => _CustomIconButtonState();

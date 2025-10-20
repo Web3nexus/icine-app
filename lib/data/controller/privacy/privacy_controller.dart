@@ -22,7 +22,7 @@ class PrivacyController extends GetxController{
     ResponseModel model=await repo.loadAboutData();
     if(model.statusCode==200){
       PrivacyResponseModel responseModel=PrivacyResponseModel.fromJson(jsonDecode(model.responseJson));
-      if(responseModel.data?.policyPages?.isNotEmpty == true){
+      if(responseModel.data?.policyPages?.isNotEmpty ?? false){
         list.clear();
         list.addAll(responseModel.data!.policyPages!);
         changeIndex(0);

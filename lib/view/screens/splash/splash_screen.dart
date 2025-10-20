@@ -12,7 +12,7 @@ import '../../../data/controller/localization/localization_controller.dart';
 import '../../../data/controller/splash_controller.dart';
 
 class SplashScreen extends StatefulWidget {
-  const SplashScreen({Key? key}) : super(key: key);
+  const SplashScreen({super.key});
 
   @override
   State<SplashScreen> createState() => _SplashScreenState();
@@ -51,7 +51,7 @@ class _SplashScreenState extends State<SplashScreen> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: MyColor.transparentColor,
+        backgroundColor: const Color(0xff4a7ffc),
         body: GetBuilder<SplashController>(
           builder: (controller) {
           return Container(

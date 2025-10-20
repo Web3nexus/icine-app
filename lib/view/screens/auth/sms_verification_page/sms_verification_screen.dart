@@ -18,8 +18,7 @@ import '../../../components/otp_field_widget/otp_field_widget.dart';
 
 class SmsVerificationScreen extends StatefulWidget {
   const SmsVerificationScreen(
-      {Key? key, required this.isProfileCompleteEnabled})
-      : super(key: key);
+      {super.key, required this.isProfileCompleteEnabled});
 
   final bool isProfileCompleteEnabled;
 
@@ -48,16 +47,16 @@ class _SmsVerificationScreenState extends State<SmsVerificationScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return  Stack(
+    return Stack(
       children: [
-        const MyBgWidget(),
+        MyBgWidget(),
         WillPopScope(
           onWillPop: () async {
             return false;
           },
           child: Scaffold(
             backgroundColor: Colors.transparent,
-            appBar: const CustomAppBar(title: MyStrings.smsVerification,isShowBackBtn: true,fromAuth: true,textColor: MyColor.colorWhite,bgColor: Colors.transparent,),
+            appBar: CustomAppBar(title: MyStrings.smsVerification,isShowBackBtn: true,fromAuth: true,textColor: MyColor.colorWhite,bgColor: Colors.transparent,),
             body: GetBuilder<SmsVerificationController>(
               builder: (controller) => controller.isLoading
                   ? const SizedBox(

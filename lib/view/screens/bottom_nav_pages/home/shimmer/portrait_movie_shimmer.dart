@@ -5,7 +5,7 @@ import 'custom_shimmer_effect.dart';
 
 
 class PortraitShimmer extends StatelessWidget {
-  const PortraitShimmer({Key? key}) : super(key: key);
+  const PortraitShimmer({super.key});
 
   @override
   Widget build(BuildContext context) {

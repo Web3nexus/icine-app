@@ -10,7 +10,7 @@ class ExpandedTextWidget extends StatefulWidget {
   final String text;
   final int teamLine;
 
-  const ExpandedTextWidget({Key? key, required this.text,this.teamLine = 4}) : super(key: key);
+  const ExpandedTextWidget({super.key, required this.text,this.teamLine = 4});
 
   @override
   State<ExpandedTextWidget> createState() => _ExpandedTextWidgetState();

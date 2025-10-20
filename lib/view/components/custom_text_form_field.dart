@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import '../../constants/my_strings.dart';
-import '../../core/helper/string_format_helper.dart';
 import '../../core/utils/my_color.dart';
 import '../../core/utils/dimensions.dart';
 import '../../core/utils/styles.dart';
@@ -19,7 +18,7 @@ class InputTextFieldWidget extends StatefulWidget {
   final bool isPassword;
 
   const InputTextFieldWidget({
-    Key? key,
+    super.key,
     this.isPassword=false,
     this.isAddMargin=true,
     this.textColor=MyColor.colorWhite,
@@ -30,7 +29,7 @@ class InputTextFieldWidget extends StatefulWidget {
     this.keyboardType,
     this.readOnly = false,
     this.onChanged
-  }) : super(key: key);
+  });
 
   @override
   State<InputTextFieldWidget> createState() => _InputTextFieldWidgetState();
@@ -51,7 +50,7 @@ class _InputTextFieldWidgetState extends State<InputTextFieldWidget> {
           controller: widget.controller,
           keyboardType: widget.keyboardType,
           validator: (String? value){
-            if(value!.isEmpty){
+            if(value!.isEmpty ?? true){
               return MyStrings.pleaseFillOutTheField;
             }else{
               return null;

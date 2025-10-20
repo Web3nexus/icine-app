@@ -5,13 +5,13 @@ import 'package:flutter/material.dart';
 
 class MyBgWidget extends StatelessWidget {
   final String image;
-  const MyBgWidget({Key? key,this.image=MyImages.onboardingBG}) : super(key: key);
+  const MyBgWidget({super.key,this.image=MyImages.onboardingBG});
 
   @override
   Widget build(BuildContext context) {
     return  ShaderMask(
       shaderCallback: (bounds) =>  LinearGradient(
-        colors: [Colors.black.withOpacity(.9), Colors.black.withOpacity(.9)],
+        colors: [Colors.black.withOpacity(.1), Colors.black.withOpacity(.1)],
         begin: Alignment.bottomCenter,
         end: Alignment.center,
       ).createShader(bounds),

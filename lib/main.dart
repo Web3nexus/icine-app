@@ -53,7 +53,7 @@ Future<void> main() async {
 class MyApp extends StatelessWidget {
   final Map<String, Map<String, String>> languages;
 
-  const MyApp({Key? key, required this.languages}) : super(key: key);
+  const MyApp({super.key, required this.languages});
 
   @override
   Widget build(BuildContext context) {

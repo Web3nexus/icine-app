@@ -10,7 +10,7 @@ import '../custom_network_image/custom_network_image.dart';
 
 
 class SingleBannerWidget extends StatefulWidget {
-  const SingleBannerWidget({Key? key}) : super(key: key);
+  const SingleBannerWidget({super.key});
 
   @override
   State<SingleBannerWidget> createState() => _SingleBannerWidgetState();
@@ -19,7 +19,7 @@ class SingleBannerWidget extends StatefulWidget {
 class _SingleBannerWidgetState extends State<SingleBannerWidget> {
   @override
   Widget build(BuildContext context) {
-    return GetBuilder<HomeController>(builder: (controller)=>controller.singleBannerImageLoading || controller.singleBannerList.isEmpty?
+    return GetBuilder<HomeController>(builder: (controller)=>controller.singleBannerImageLoading || controller.singleBannerList.isEmpty ?? true?
     Container(
       width: double.infinity,
       height: 160,

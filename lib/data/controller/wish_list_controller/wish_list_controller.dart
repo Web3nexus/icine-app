@@ -36,7 +36,7 @@ class WishListController extends GetxController {
       portraitImagePath = 'assets/images/item/portrait/' ;
       nextPageUrl = responseModel.data?.wishlists?.nextPageUrl;
 
-      if(tempWishList !=null && tempWishList.isNotEmpty)
+      if(tempWishList!.isNotEmpty ?? false)
       {
         if(page==1) wishlist.clear();
         wishlist.addAll(tempWishList);
@@ -58,7 +58,7 @@ class WishListController extends GetxController {
       portraitImagePath='assets/images/item/portrait/';
       nextPageUrl=responseModel.data?.wishlists?.nextPageUrl;
 
-      if(tempWishList !=null && tempWishList.isNotEmpty) {
+      if(tempWishList!.isNotEmpty ?? false) {
         wishlist.addAll(tempWishList);
       }
       update();
