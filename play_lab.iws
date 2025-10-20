@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="af05446b-1919-4be3-b928-60374e75ad2f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/lib/core/utils/url_container.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/core/utils/url_container.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/data/repo/movie_details_repo/movie_details_repo.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/repo/movie_details_repo/movie_details_repo.dart" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="valueResourceFile" />
+        <option value="Dart File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2PK06UEhbrC95cG0e6e8w5No0uJ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="sortByType" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="io.flutter.reload.alreadyRun" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/app/Files/signal_lab" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.13908207" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\kawcher\code_canyon_test\play_lab\lib\view\screens\movie_details\widget\video_player_widget" />
+      <recent name="D:\kawcher\code_canyon_test\play_lab\lib\view\screens\subscribe_plan\add_deposit_screen\widget" />
+      <recent name="D:\kawcher\code_canyon_test\play_lab\android\app\src\main\kotlin" />
+      <recent name="D:\kawcher\code_canyon_test\play_lab\lib\view\components" />
+      <recent name="D:\kawcher\code_canyon_test\play_lab\ios\Runner\Assets.xcassets" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\kawcher\code_canyon_test\play_lab\lib\data\controller\all_free_zone_controller" />
+      <recent name="D:\kawcher\code_canyon_test\play_lab\assets\images" />
+      <recent name="D:\kawcher\code_canyon_test\play_lab\lib\view\components\buttons" />
+      <recent name="D:\kawcher\code_canyon_test\play_lab\lib\view\components\button" />
+      <recent name="D:\kawcher\code_canyon_test\play_lab\lib\view\components" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="dev.vlab.play_lab" />
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter">
+      <option name="filePath" value="$PROJECT_DIR$/lib/main.dart" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="af05446b-1919-4be3-b928-60374e75ad2f" name="Changes" comment="" />
+      <created>1683190293324</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1683190293324</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="Dart">
+          <url>file://$PROJECT_DIR$/lib/core/helper/config_helper.dart</url>
+          <line>4</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
