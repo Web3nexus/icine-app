@@ -1,9 +1,9 @@
-import 'package:play_lab/view/screens/all_free_zone/widget/free_zone_list_item.dart';
+import 'package:Icine/view/screens/all_free_zone/widget/free_zone_list_item.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:play_lab/core/utils/util.dart';
-import 'package:play_lab/view/components/no_data_widget.dart';
-import 'package:play_lab/view/components/app_bar/custom_appbar.dart';
+import 'package:Icine/core/utils/util.dart';
+import 'package:Icine/view/components/no_data_widget.dart';
+import 'package:Icine/view/components/app_bar/custom_appbar.dart';
 import '../../../constants/my_strings.dart';
 import '../../../core/utils/my_color.dart';
 import '../../../data/controller/all_free_zone_controller/all_free_zone_controller.dart';

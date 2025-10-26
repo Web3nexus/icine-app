@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:play_lab/core/utils/my_color.dart';
-import 'package:play_lab/view/components/app_bar/custom_appbar.dart';
-import 'package:play_lab/view/components/buttons/rounded_loading_button.dart';
+import 'package:Icine/core/utils/my_color.dart';
+import 'package:Icine/view/components/app_bar/custom_appbar.dart';
+import 'package:Icine/view/components/buttons/rounded_loading_button.dart';
 
 import '../../../../constants/my_strings.dart';
 import '../../../../core/utils/dimensions.dart';

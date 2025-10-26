@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:play_lab/core/utils/dimensions.dart';
+import 'package:Icine/core/utils/dimensions.dart';
 
 import '../../../bottom_nav_pages/home/shimmer/custom_shimmer_effect.dart';
 

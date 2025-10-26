@@ -2,11 +2,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:play_lab/core/utils/my_color.dart';
-import 'package:play_lab/core/utils/my_images.dart';
-import 'package:play_lab/data/repo/auth/general_setting_repo.dart';
-import 'package:play_lab/data/repo/splash/splash_repo.dart';
-import 'package:play_lab/data/services/api_service.dart';
+import 'package:Icine/core/utils/my_color.dart';
+import 'package:Icine/core/utils/my_images.dart';
+import 'package:Icine/data/repo/auth/general_setting_repo.dart';
+import 'package:Icine/data/repo/splash/splash_repo.dart';
+import 'package:Icine/data/services/api_service.dart';
 
 import '../../../data/controller/localization/localization_controller.dart';
 import '../../../data/controller/splash_controller.dart';

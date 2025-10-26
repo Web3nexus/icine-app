@@ -1,9 +1,9 @@
 
 import 'dart:convert';
 import 'package:get/get.dart';
-import 'package:play_lab/data/model/category/category_response_model.dart';
-import 'package:play_lab/data/model/global/response_model/response_model.dart';
-import 'package:play_lab/data/repo/category_repo/category_repo/category_repo.dart';
+import 'package:Icine/data/model/category/category_response_model.dart';
+import 'package:Icine/data/model/global/response_model/response_model.dart';
+import 'package:Icine/data/repo/category_repo/category_repo/category_repo.dart';
 
 class CategoryController extends GetxController{
 

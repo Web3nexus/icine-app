@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_rx/src/rx_typedefs/rx_typedefs.dart';
-import 'package:play_lab/core/utils/dimensions.dart';
-import 'package:play_lab/core/utils/my_color.dart';
-import 'package:play_lab/core/utils/styles.dart';
+import 'package:Icine/core/utils/dimensions.dart';
+import 'package:Icine/core/utils/my_color.dart';
+import 'package:Icine/core/utils/styles.dart';
 import '../../../../../constants/my_strings.dart';
 
 

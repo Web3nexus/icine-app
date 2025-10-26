@@ -2,7 +2,7 @@
 import 'dart:convert';
 
 import 'package:get/get.dart';
-import 'package:play_lab/data/repo/live_tv_repo/live_tv_repo.dart';
+import 'package:Icine/data/repo/live_tv_repo/live_tv_repo.dart';
 
 import '../../model/global/response_model/response_model.dart';
 import '../../model/live_tv/live_tv_response_model.dart';

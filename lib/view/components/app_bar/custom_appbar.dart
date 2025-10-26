@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:play_lab/core/route/route.dart';
-import 'package:play_lab/core/utils/styles.dart';
+import 'package:Icine/core/route/route.dart';
+import 'package:Icine/core/utils/styles.dart';
 
 import '../../../core/utils/my_color.dart';
 import '../../../data/services/api_service.dart';

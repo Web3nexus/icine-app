@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:pay/pay.dart';
-import 'package:play_lab/core/helper/string_format_helper.dart';
-import 'package:play_lab/data/controller/deposit_controller/add_new_deposit_controller.dart';
-import 'package:play_lab/view/components/buttons/rounded_loading_button.dart';
+import 'package:Icine/core/helper/string_format_helper.dart';
+import 'package:Icine/data/controller/deposit_controller/add_new_deposit_controller.dart';
+import 'package:Icine/view/components/buttons/rounded_loading_button.dart';
 
 import '../../../../../core/helper/config_helper.dart';
 

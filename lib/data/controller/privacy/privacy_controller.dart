@@ -1,8 +1,8 @@
 
 import 'dart:convert';
 import 'package:get/get.dart';
-import 'package:play_lab/data/model/global/response_model/response_model.dart';
-import 'package:play_lab/view/components/show_custom_snackbar.dart';
+import 'package:Icine/data/model/global/response_model/response_model.dart';
+import 'package:Icine/view/components/show_custom_snackbar.dart';
 import '../../model/about/privacy_response_model.dart';
 import '../../repo/privacy_repo/privacy_repo.dart';
 

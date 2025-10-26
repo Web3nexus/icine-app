@@ -1,7 +1,7 @@
-import 'package:play_lab/core/route/route.dart';
-import 'package:play_lab/core/utils/my_images.dart';
-import 'package:play_lab/data/controller/home/home_controller.dart';
-import 'package:play_lab/view/components/dialog/login_dialog.dart';
+import 'package:Icine/core/route/route.dart';
+import 'package:Icine/core/utils/my_images.dart';
+import 'package:Icine/data/controller/home/home_controller.dart';
+import 'package:Icine/view/components/dialog/login_dialog.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

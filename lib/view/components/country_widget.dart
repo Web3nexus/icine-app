@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:play_lab/view/components/custom_text_form_field.dart';
+import 'package:Icine/view/components/custom_text_form_field.dart';
 
 import '../../core/utils/my_color.dart';
 import '../../core/utils/dimensions.dart';

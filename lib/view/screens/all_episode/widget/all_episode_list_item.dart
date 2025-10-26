@@ -1,10 +1,10 @@
-import 'package:play_lab/view/components/dialog/login_dialog.dart';
+import 'package:Icine/view/components/dialog/login_dialog.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:play_lab/core/utils/my_color.dart';
-import 'package:play_lab/core/utils/styles.dart';
-import 'package:play_lab/data/controller/all_episode_controller/all_episode_controller.dart';
-import 'package:play_lab/data/repo/all_episode_repo/all_episode_repo.dart';
+import 'package:Icine/core/utils/my_color.dart';
+import 'package:Icine/core/utils/styles.dart';
+import 'package:Icine/data/controller/all_episode_controller/all_episode_controller.dart';
+import 'package:Icine/data/repo/all_episode_repo/all_episode_repo.dart';
 import '../../../components/dialog/subscribe_now_dialog.dart';
 import '../../bottom_nav_pages/home/widget/custom_network_image/custom_network_image.dart';
 import '../../../../core/route/route.dart';

@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:play_lab/core/utils/my_color.dart';
-import 'package:play_lab/core/utils/my_images.dart';
-import 'package:play_lab/core/utils/util.dart';
-import 'package:play_lab/data/controller/onboardering/onboardering_controller.dart';
-import 'package:play_lab/data/services/api_service.dart';
-import 'package:play_lab/view/screens/onboard/bg_image_widget.dart';
+import 'package:Icine/core/utils/my_color.dart';
+import 'package:Icine/core/utils/my_images.dart';
+import 'package:Icine/core/utils/util.dart';
+import 'package:Icine/data/controller/onboardering/onboardering_controller.dart';
+import 'package:Icine/data/services/api_service.dart';
+import 'package:Icine/view/screens/onboard/bg_image_widget.dart';
 
 import '../../../data/repo/onboarding_repo/onboarding_repo.dart';
 import 'widget/button_continue/button_continue.dart';

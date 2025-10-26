@@ -1,6 +1,6 @@
-import 'package:play_lab/constants/my_strings.dart';
-import 'package:play_lab/view/components/dialog/exit_dialog.dart';
-import 'package:play_lab/view/will_pop_widget.dart';
+import 'package:Icine/constants/my_strings.dart';
+import 'package:Icine/view/components/dialog/exit_dialog.dart';
+import 'package:Icine/view/will_pop_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../../../core/utils/my_color.dart';

@@ -1,4 +1,4 @@
-import 'package:play_lab/core/utils/my_images.dart';
+import 'package:Icine/core/utils/my_images.dart';
 import 'package:flutter/material.dart';
 
 

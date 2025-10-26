@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:get/get.dart';
-import 'package:play_lab/core/utils/dimensions.dart';
-import 'package:play_lab/core/utils/my_color.dart';
-import 'package:play_lab/core/utils/styles.dart';
-import 'package:play_lab/data/controller/wish_list_controller/wish_list_controller.dart';
-import 'package:play_lab/data/repo/wish_list_repo/wish_list_repo.dart';
-import 'package:play_lab/view/components/no_data_widget.dart';
-import 'package:play_lab/view/screens/movie_details/widget/rating_and_watch_widget/RatingAndWatchWidget.dart';
-import 'package:play_lab/view/screens/wish_list/widget/wish_list_shimmer.dart';
+import 'package:Icine/core/utils/dimensions.dart';
+import 'package:Icine/core/utils/my_color.dart';
+import 'package:Icine/core/utils/styles.dart';
+import 'package:Icine/data/controller/wish_list_controller/wish_list_controller.dart';
+import 'package:Icine/data/repo/wish_list_repo/wish_list_repo.dart';
+import 'package:Icine/view/components/no_data_widget.dart';
+import 'package:Icine/view/screens/movie_details/widget/rating_and_watch_widget/RatingAndWatchWidget.dart';
+import 'package:Icine/view/screens/wish_list/widget/wish_list_shimmer.dart';
 
 import '../../../../core/route/route.dart';
 import '../../../../core/utils/url_container.dart';

@@ -1,6 +1,6 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:play_lab/core/utils/my_color.dart';
+import 'package:Icine/core/utils/my_color.dart';
 import 'package:shimmer/shimmer.dart';
 
 class BannerShimmer extends StatefulWidget {

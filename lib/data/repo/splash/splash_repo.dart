@@ -1,8 +1,8 @@
 
 
-import 'package:play_lab/data/services/api_service.dart';
+import 'package:Icine/data/services/api_service.dart';
 
-import 'package:play_lab/constants/my_strings.dart';
+import 'package:Icine/constants/my_strings.dart';
 import '../../../constants/method.dart';
 import '../../../core/utils/url_container.dart';
 import '../../model/global/response_model/response_model.dart';

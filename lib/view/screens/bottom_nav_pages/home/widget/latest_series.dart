@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:play_lab/core/route/route.dart';
-import 'package:play_lab/core/utils/dimensions.dart';
-import 'package:play_lab/core/utils/url_container.dart';
-import 'package:play_lab/data/controller/home/home_controller.dart';
+import 'package:Icine/core/route/route.dart';
+import 'package:Icine/core/utils/dimensions.dart';
+import 'package:Icine/core/utils/url_container.dart';
+import 'package:Icine/data/controller/home/home_controller.dart';
 import '../../../bottom_nav_pages/home/widget/custom_network_image/custom_network_image.dart';
 import '../shimmer/latest_series_shimmer.dart';
 

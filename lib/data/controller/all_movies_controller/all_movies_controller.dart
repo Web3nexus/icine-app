@@ -1,8 +1,8 @@
 
 import 'dart:convert';
 import 'package:get/get.dart';
-import 'package:play_lab/data/model/all_movie/all_movies_response_model.dart';
-import 'package:play_lab/data/repo/all_movies_repo/all_movies_repo.dart';
+import 'package:Icine/data/model/all_movie/all_movies_response_model.dart';
+import 'package:Icine/data/repo/all_movies_repo/all_movies_repo.dart';
 import '../../model/global/response_model/response_model.dart';
 
 class AllMoviesController extends GetxController {

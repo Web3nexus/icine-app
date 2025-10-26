@@ -1,7 +1,7 @@
 
-import 'package:play_lab/constants/method.dart';
-import 'package:play_lab/core/utils/url_container.dart';
-import 'package:play_lab/data/services/api_service.dart';
+import 'package:Icine/constants/method.dart';
+import 'package:Icine/core/utils/url_container.dart';
+import 'package:Icine/data/services/api_service.dart';
 
 class MyWatchHistoryRepo{
 

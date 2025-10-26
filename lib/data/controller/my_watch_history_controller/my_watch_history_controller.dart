@@ -2,9 +2,9 @@
 import 'dart:convert';
 
 import 'package:get/get.dart';
-import 'package:play_lab/core/route/route.dart';
-import 'package:play_lab/data/model/watch_history/watch_history_response_model.dart';
-import 'package:play_lab/data/repo/mywatch_repo/my_watch_history_repo.dart';
+import 'package:Icine/core/route/route.dart';
+import 'package:Icine/data/model/watch_history/watch_history_response_model.dart';
+import 'package:Icine/data/repo/mywatch_repo/my_watch_history_repo.dart';
 
 import '../../../core/utils/url_container.dart';
 import '../../model/global/response_model/response_model.dart';

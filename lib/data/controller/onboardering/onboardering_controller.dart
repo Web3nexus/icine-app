@@ -1,9 +1,9 @@
 import 'dart:convert';
 
 import 'package:get/get.dart';
-import 'package:play_lab/core/route/route.dart';
-import 'package:play_lab/core/utils/url_container.dart';
-import 'package:play_lab/data/model/onboarding/onboarding_response_model.dart';
+import 'package:Icine/core/route/route.dart';
+import 'package:Icine/core/utils/url_container.dart';
+import 'package:Icine/data/model/onboarding/onboarding_response_model.dart';
 import '../../../view/components/show_custom_snackbar.dart';
 import '../../model/global/response_model/response_model.dart';
 import '../../repo/onboarding_repo/onboarding_repo.dart';

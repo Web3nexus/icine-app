@@ -1,4 +1,4 @@
-import 'package:play_lab/data/model/auth/registration_response_model.dart';
+import 'package:Icine/data/model/auth/registration_response_model.dart';
 
 class AllEpisodeResponseModel {
   AllEpisodeResponseModel({

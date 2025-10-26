@@ -1,5 +1,5 @@
-import 'package:play_lab/constants/my_strings.dart';
-import 'package:play_lab/view/screens/about/widget/privacy_shimmer/privacy_shimmer_widget.dart';
+import 'package:Icine/constants/my_strings.dart';
+import 'package:Icine/view/screens/about/widget/privacy_shimmer/privacy_shimmer_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_widget_from_html/flutter_widget_from_html.dart';
 import 'package:get/get.dart';

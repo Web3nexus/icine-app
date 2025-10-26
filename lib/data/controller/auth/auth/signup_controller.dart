@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
 import 'package:get/get.dart';
 import 'package:google_sign_in/google_sign_in.dart';
-import 'package:play_lab/constants/my_strings.dart';
-import 'package:play_lab/view/components/show_custom_snackbar.dart';
+import 'package:Icine/constants/my_strings.dart';
+import 'package:Icine/view/components/show_custom_snackbar.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../../../constants/constant_helper.dart';

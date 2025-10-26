@@ -2,11 +2,11 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:play_lab/core/utils/my_color.dart';
-import 'package:play_lab/data/controller/wish_list_controller/wish_list_controller.dart';
-import 'package:play_lab/view/components/app_bar/custom_appbar.dart';
-import 'package:play_lab/view/components/nav_drawer/custom_nav_drawer.dart';
-import 'package:play_lab/view/screens/wish_list/widget/wishlist_widget.dart';
+import 'package:Icine/core/utils/my_color.dart';
+import 'package:Icine/data/controller/wish_list_controller/wish_list_controller.dart';
+import 'package:Icine/view/components/app_bar/custom_appbar.dart';
+import 'package:Icine/view/components/nav_drawer/custom_nav_drawer.dart';
+import 'package:Icine/view/screens/wish_list/widget/wishlist_widget.dart';
 import '../../../constants/my_strings.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart' as ads;
 

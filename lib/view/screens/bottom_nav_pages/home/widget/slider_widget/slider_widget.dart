@@ -1,7 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:play_lab/core/utils/dimensions.dart';
+import 'package:Icine/core/utils/dimensions.dart';
 import '../../../../../../core/route/route.dart';
 import '../../../../../../core/utils/my_color.dart';
 import '../../../../../../core/utils/url_container.dart';

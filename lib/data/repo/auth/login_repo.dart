@@ -1,10 +1,10 @@
 import 'dart:convert';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:get/get.dart';
-import 'package:play_lab/constants/method.dart';
-import 'package:play_lab/constants/my_strings.dart';
-import 'package:play_lab/data/model/global/response_model/response_model.dart';
-import 'package:play_lab/data/services/api_service.dart';
+import 'package:Icine/constants/method.dart';
+import 'package:Icine/constants/my_strings.dart';
+import 'package:Icine/data/model/global/response_model/response_model.dart';
+import 'package:Icine/data/services/api_service.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../../core/helper/shared_pref_helper.dart';

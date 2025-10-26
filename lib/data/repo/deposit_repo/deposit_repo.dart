@@ -1,7 +1,7 @@
 
 import 'dart:convert';
 
-import 'package:play_lab/data/model/global/response_model/response_model.dart';
+import 'package:Icine/data/model/global/response_model/response_model.dart';
 
 import '../../../constants/method.dart' as m;
 import '../../../core/utils/url_container.dart';

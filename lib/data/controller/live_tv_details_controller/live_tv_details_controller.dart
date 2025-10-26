@@ -3,10 +3,10 @@ import 'dart:convert';
 
 import 'package:chewie/chewie.dart';
 import 'package:get/get.dart';
-import 'package:play_lab/data/model/global/response_model/response_model.dart';
-import 'package:play_lab/data/model/live_tv/live_tv_details_response_model.dart';
-import 'package:play_lab/data/repo/live_tv_repo/live_tv_repo.dart';
-import 'package:play_lab/view/components/show_custom_snackbar.dart';
+import 'package:Icine/data/model/global/response_model/response_model.dart';
+import 'package:Icine/data/model/live_tv/live_tv_details_response_model.dart';
+import 'package:Icine/data/repo/live_tv_repo/live_tv_repo.dart';
+import 'package:Icine/view/components/show_custom_snackbar.dart';
 import 'package:video_player/video_player.dart';
 
 class LiveTvDetailsController extends GetxController implements GetxService{

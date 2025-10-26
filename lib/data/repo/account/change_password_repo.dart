@@ -1,7 +1,7 @@
 
 import 'dart:convert';
 
-import 'package:play_lab/constants/my_strings.dart';
+import 'package:Icine/constants/my_strings.dart';
 
 import '../../../constants/method.dart';
 import '../../../core/utils/url_container.dart';

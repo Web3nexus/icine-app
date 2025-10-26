@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:play_lab/core/helper/string_format_helper.dart';
-import 'package:play_lab/core/utils/dimensions.dart';
-import 'package:play_lab/core/utils/my_color.dart';
-import 'package:play_lab/core/utils/styles.dart';
-import 'package:play_lab/data/controller/subscribe_plan_controller/subscribe_plan_controller.dart';
-import 'package:play_lab/data/repo/subscribe_plan_repo/subscribe_plan_repo.dart';
-import 'package:play_lab/data/services/api_service.dart';
-import 'package:play_lab/view/components/no_data_widget.dart';
-import 'package:play_lab/view/components/app_bar/custom_appbar.dart';
-import 'package:play_lab/view/components/header_text.dart';
-import 'package:play_lab/view/screens/subscribe_plan/widget/subscrible_plan_shimmer.dart';
+import 'package:Icine/core/helper/string_format_helper.dart';
+import 'package:Icine/core/utils/dimensions.dart';
+import 'package:Icine/core/utils/my_color.dart';
+import 'package:Icine/core/utils/styles.dart';
+import 'package:Icine/data/controller/subscribe_plan_controller/subscribe_plan_controller.dart';
+import 'package:Icine/data/repo/subscribe_plan_repo/subscribe_plan_repo.dart';
+import 'package:Icine/data/services/api_service.dart';
+import 'package:Icine/view/components/no_data_widget.dart';
+import 'package:Icine/view/components/app_bar/custom_appbar.dart';
+import 'package:Icine/view/components/header_text.dart';
+import 'package:Icine/view/screens/subscribe_plan/widget/subscrible_plan_shimmer.dart';
 import '../../../constants/my_strings.dart';
 
 class SubscribePlanScreen extends StatefulWidget {

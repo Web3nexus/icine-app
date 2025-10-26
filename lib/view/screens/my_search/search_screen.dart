@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:play_lab/core/utils/my_color.dart';
-import 'package:play_lab/data/controller/my_search_controller/search_controller.dart';
-import 'package:play_lab/data/repo/my_search/my_search_repo.dart';
-import 'package:play_lab/data/services/api_service.dart';
-import 'package:play_lab/view/components/no_data_widget.dart';
-import 'package:play_lab/view/components/app_bar/custom_appbar.dart';
-import 'package:play_lab/view/screens/sub_category/widget/search_result_widget.dart';
+import 'package:Icine/core/utils/my_color.dart';
+import 'package:Icine/data/controller/my_search_controller/search_controller.dart';
+import 'package:Icine/data/repo/my_search/my_search_repo.dart';
+import 'package:Icine/data/services/api_service.dart';
+import 'package:Icine/view/components/no_data_widget.dart';
+import 'package:Icine/view/components/app_bar/custom_appbar.dart';
+import 'package:Icine/view/screens/sub_category/widget/search_result_widget.dart';
 
 import '../../../constants/my_strings.dart';
 

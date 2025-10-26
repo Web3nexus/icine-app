@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 import 'package:get/get.dart';
-import 'package:play_lab/core/route/route.dart';
-import 'package:play_lab/core/utils/url_container.dart';
-import 'package:play_lab/data/controller/live_tv_details_controller/live_tv_details_controller.dart';
+import 'package:Icine/core/route/route.dart';
+import 'package:Icine/core/utils/url_container.dart';
+import 'package:Icine/data/controller/live_tv_details_controller/live_tv_details_controller.dart';
 import '../../../../core/utils/dimensions.dart';
 import '../../all_live_tv/widget/live_tv_grid_item/live_tv_grid_item.dart';
 import '../../bottom_nav_pages/home/shimmer/live_tv_shimmer.dart';

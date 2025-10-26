@@ -3,11 +3,11 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
 import 'package:get/get.dart';
 import 'package:google_sign_in/google_sign_in.dart';
-import 'package:play_lab/constants/constant_helper.dart';
-import 'package:play_lab/constants/my_strings.dart';
-import 'package:play_lab/data/model/auth/login_response_model.dart';
-import 'package:play_lab/data/model/global/response_model/response_model.dart';
-import 'package:play_lab/view/components/show_custom_snackbar.dart';
+import 'package:Icine/constants/constant_helper.dart';
+import 'package:Icine/constants/my_strings.dart';
+import 'package:Icine/data/model/auth/login_response_model.dart';
+import 'package:Icine/data/model/global/response_model/response_model.dart';
+import 'package:Icine/view/components/show_custom_snackbar.dart';
 
 
 import '../../../core/helper/shared_pref_helper.dart';

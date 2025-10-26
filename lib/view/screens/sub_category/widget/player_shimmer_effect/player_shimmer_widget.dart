@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:get/get.dart';
-import 'package:play_lab/core/utils/my_color.dart';
+import 'package:Icine/core/utils/my_color.dart';
 
 
 class PlayerShimmerWidget extends StatelessWidget {

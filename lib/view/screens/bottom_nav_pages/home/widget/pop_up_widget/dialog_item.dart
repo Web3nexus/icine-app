@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:play_lab/view/screens/bottom_nav_pages/home/widget/pop_up_widget/pop_up_slide_widget.dart';
+import 'package:Icine/view/screens/bottom_nav_pages/home/widget/pop_up_widget/pop_up_slide_widget.dart';
 
 class DialogItem extends StatelessWidget {
 

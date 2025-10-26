@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:play_lab/core/utils/my_images.dart';
+import 'package:Icine/core/utils/my_images.dart';
 import '../../../../../core/utils/my_color.dart';
 
 class ProfileWidget extends StatefulWidget {

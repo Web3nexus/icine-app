@@ -1,4 +1,4 @@
-import 'package:play_lab/data/model/video_details/video_details_response_model/video_details.dart';
+import 'package:Icine/data/model/video_details/video_details_response_model/video_details.dart';
 
 import '../auth/registration_response_model.dart';
 

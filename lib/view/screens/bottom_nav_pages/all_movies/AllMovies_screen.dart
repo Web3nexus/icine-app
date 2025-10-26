@@ -1,21 +1,21 @@
 
 import 'dart:io';
 import 'package:google_mobile_ads/google_mobile_ads.dart' as ads;
-import 'package:play_lab/view/screens/bottom_nav_pages/all_movies/widget/all_movie_list_item.dart';
+import 'package:Icine/view/screens/bottom_nav_pages/all_movies/widget/all_movie_list_item.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import '../../../../constants/my_strings.dart';
 import '../../../../core/utils/my_color.dart';
 import '../../../../data/services/api_service.dart';
-import 'package:play_lab/core/route/route.dart';
-import 'package:play_lab/view/will_pop_widget.dart';
-import 'package:play_lab/data/controller/all_movies_controller/all_movies_controller.dart';
-import 'package:play_lab/data/repo/all_movies_repo/all_movies_repo.dart';
-import 'package:play_lab/view/components/no_data_widget.dart';
-import 'package:play_lab/view/components/app_bar/custom_appbar.dart';
-import 'package:play_lab/view/components/bottom_Nav/bottom_nav.dart';
-import 'package:play_lab/view/components/nav_drawer/custom_nav_drawer.dart';
+import 'package:Icine/core/route/route.dart';
+import 'package:Icine/view/will_pop_widget.dart';
+import 'package:Icine/data/controller/all_movies_controller/all_movies_controller.dart';
+import 'package:Icine/data/repo/all_movies_repo/all_movies_repo.dart';
+import 'package:Icine/view/components/no_data_widget.dart';
+import 'package:Icine/view/components/app_bar/custom_appbar.dart';
+import 'package:Icine/view/components/bottom_Nav/bottom_nav.dart';
+import 'package:Icine/view/components/nav_drawer/custom_nav_drawer.dart';
 
 
 

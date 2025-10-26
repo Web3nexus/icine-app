@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:play_lab/core/utils/dimensions.dart';
-import 'package:play_lab/core/utils/my_color.dart';
-import 'package:play_lab/core/utils/styles.dart';
-import 'package:play_lab/data/controller/category/sub_category/sub_category_controller.dart';
-import 'package:play_lab/data/repo/category_repo/sub_category_repo/sub_category_repo.dart';
-import 'package:play_lab/data/services/api_service.dart';
-import 'package:play_lab/view/components/app_bar/custom_appbar.dart';
-import 'package:play_lab/view/screens/sub_category/widget/search_result_widget.dart';
+import 'package:Icine/core/utils/dimensions.dart';
+import 'package:Icine/core/utils/my_color.dart';
+import 'package:Icine/core/utils/styles.dart';
+import 'package:Icine/data/controller/category/sub_category/sub_category_controller.dart';
+import 'package:Icine/data/repo/category_repo/sub_category_repo/sub_category_repo.dart';
+import 'package:Icine/data/services/api_service.dart';
+import 'package:Icine/view/components/app_bar/custom_appbar.dart';
+import 'package:Icine/view/screens/sub_category/widget/search_result_widget.dart';
 import '../bottom_nav_pages/home/shimmer/category_shimmer.dart';
 
 class SubCategoryScreen extends StatefulWidget {

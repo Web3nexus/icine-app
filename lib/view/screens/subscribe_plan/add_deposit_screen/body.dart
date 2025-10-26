@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:pay/pay.dart';
-import 'package:play_lab/core/helper/string_format_helper.dart';
-import 'package:play_lab/view/components/buttons/rounded_loading_button.dart';
-import 'package:play_lab/view/screens/subscribe_plan/add_deposit_screen/widget/add_money_info_widget.dart';
-import 'package:play_lab/view/screens/subscribe_plan/add_deposit_screen/widget/apple_pay_button.dart';
-import 'package:play_lab/view/screens/subscribe_plan/add_deposit_screen/widget/google_pay_button.dart';
+import 'package:Icine/core/helper/string_format_helper.dart';
+import 'package:Icine/view/components/buttons/rounded_loading_button.dart';
+import 'package:Icine/view/screens/subscribe_plan/add_deposit_screen/widget/add_money_info_widget.dart';
+import 'package:Icine/view/screens/subscribe_plan/add_deposit_screen/widget/apple_pay_button.dart';
+import 'package:Icine/view/screens/subscribe_plan/add_deposit_screen/widget/google_pay_button.dart';
 import '../../../../constants/my_strings.dart';
 import '../../../../core/utils/my_color.dart';
 import '../../../../core/utils/dimensions.dart';

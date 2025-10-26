@@ -1,7 +1,7 @@
-import 'package:play_lab/constants/my_strings.dart';
+import 'package:Icine/constants/my_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:play_lab/core/utils/my_color.dart';
+import 'package:Icine/core/utils/my_color.dart';
 import '../../../../data/controller/account/profile_controller.dart';
 import '../../../../data/repo/account/profile_repo.dart';
 import '../../../../data/services/api_service.dart';

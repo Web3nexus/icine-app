@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:play_lab/core/utils/my_color.dart';
+import 'package:Icine/core/utils/my_color.dart';
 import 'package:shimmer/shimmer.dart';
 
 class MyShimmerEffectUI extends StatelessWidget {

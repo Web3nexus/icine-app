@@ -3,7 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:permission_handler/permission_handler.dart';
-import 'package:play_lab/view/screens/subscribe_plan/web_view/webview_widget.dart';
+import 'package:Icine/view/screens/subscribe_plan/web_view/webview_widget.dart';
 
 import '../../../../core/utils/my_color.dart';
 import '../../../components/app_bar/custom_appbar.dart';

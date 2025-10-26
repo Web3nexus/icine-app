@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:play_lab/view/components/buttons/rounded_loading_button.dart';
+import 'package:Icine/view/components/buttons/rounded_loading_button.dart';
 
 import '../../../../../constants/my_strings.dart';
 import '../../../../../core/utils/dimensions.dart';
