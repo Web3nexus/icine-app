@@ -7,9 +7,7 @@ import 'firebase_options.dart';
 
 class PushNotificationService {
   Future<void> setupInteractedMessage() async {
-    await Firebase.initializeApp(
-      options: DefaultFirebaseOptions.currentPlatform,
-    );
+    // Firebase is already initialized in main.dart, no need to initialize again
     FirebaseMessaging messaging = FirebaseMessaging.instance;
     await _requestPermissions();
 

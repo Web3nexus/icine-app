@@ -22,34 +22,49 @@ class SplashController extends GetxController implements GetxService {
 
   SplashController({required this.splashRepo, required this.gsRepo,required this.localizationController});
 
-  gotoNextPage() async {
-
+gotoNextPage() async {
+  print("🟢 gotoNextPage started");
+  try {
     await loadLanguage();
+    print("✅ Language loaded");
 
     GeneralSettingsResponseModel model = await gsRepo.getGeneralSetting();
+    print("🛰️ General settings fetched: ${model.data != null}");
+
     if (model.data == null) {
+      print("⚠️ model.data is null, going to login");
+      Get.offAndToNamed(RouteHelper.loginScreen);
       return;
     }
+
     isLoading = false;
     update();
-    bool isRemember = splashRepo.apiClient.sharedPreferences.getBool(SharedPreferenceHelper.rememberMeKey) ?? false;
-    if (isRemember) {
-      Future.delayed(const Duration(seconds: 1), () {
-        Get.offAndToNamed(RouteHelper.homeScreen);
-      });
-    } else {
-      ResponseModel responseModel = await splashRepo.getOnboardingData();
-      if (responseModel.statusCode == 200) {
-        Future.delayed(const Duration(seconds: 1), () {
-          Get.offAndToNamed(RouteHelper.onboardScreen,arguments: responseModel);
-        });
-      } else {
-        CustomSnackbar.showCustomSnackbar(
-            errorList: [responseModel.message], msg: [], isError: true);
-      }
-    }
+  } catch (e) {
+    print("💥 Error in gotoNextPage: $e");
+    Get.offAndToNamed(RouteHelper.loginScreen);
+    return;
   }
 
+  bool isRemember = splashRepo.apiClient.sharedPreferences
+          .getBool(SharedPreferenceHelper.rememberMeKey) ??
+      false;
+  print("🔑 RememberMe: $isRemember");
+
+  if (isRemember) {
+    print("➡️ Going to home");
+    Get.offAndToNamed(RouteHelper.homeScreen);
+  } else {
+    ResponseModel responseModel = await splashRepo.getOnboardingData();
+    print("📦 Onboarding data: ${responseModel.statusCode}");
+    if (responseModel.statusCode == 200) {
+      print("➡️ Going to onboard");
+      Get.offAndToNamed(RouteHelper.onboardScreen, arguments: responseModel);
+    } else {
+      print("⚠️ Onboard failed, going to login");
+      Get.offAndToNamed(RouteHelper.loginScreen);
+    }
+  }
+}
 
   Future<bool> initSharedData() {
     if(!gsRepo.apiClient.sharedPreferences.containsKey(SharedPreferenceHelper.countryCode)) {

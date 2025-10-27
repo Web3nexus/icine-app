@@ -54,6 +54,6 @@ class DefaultFirebaseOptions {
     projectId: 'playlab-55c29',
     storageBucket: 'playlab-55c29.appspot.com',
     iosClientId: '478780527317-81sac2ls2klt3n6nnuffjfve26lgic6h.apps.googleusercontent.com',
-    iosBundleId: 'dev.vlab.playlab.playLab',
+    iosBundleId: 'com.icinevideo.icine',
   );
 }

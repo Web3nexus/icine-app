@@ -31,7 +31,13 @@ Future<void> _messageHandler(RemoteMessage message) async {
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
+  // Initialize Firebase FIRST before any other Firebase-dependent services
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+
+  // Now initialize MobileAds (depends on Firebase)
   MobileAds.instance.initialize();
+
   Map<String, Map<String, String>> languages = await di_service.init();
 
   FirebaseMessaging.onBackgroundMessage(_messageHandler);
