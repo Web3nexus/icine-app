@@ -1,10 +1,10 @@
 
 import 'dart:convert';
 import 'package:get/get.dart';
-import 'package:Icine/data/model/wishlist_model/add_in_wishlist_response_model.dart';
-import 'package:Icine/data/model/wishlist_model/wish_list_response_model.dart';
-import 'package:Icine/data/repo/wish_list_repo/wish_list_repo.dart';
-import 'package:Icine/view/components/show_custom_snackbar.dart';
+import 'package:icine/data/model/wishlist_model/add_in_wishlist_response_model.dart';
+import 'package:icine/data/model/wishlist_model/wish_list_response_model.dart';
+import 'package:icine/data/repo/wish_list_repo/wish_list_repo.dart';
+import 'package:icine/view/components/show_custom_snackbar.dart';
 import '../../model/global/response_model/response_model.dart';
 
 class WishListController extends GetxController {

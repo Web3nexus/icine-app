@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import 'package:flutter/foundation.dart';
-import 'package:Icine/data/services/api_service.dart';
+import 'package:icine/data/services/api_service.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../../constants/method.dart';

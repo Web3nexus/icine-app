@@ -1,13 +1,13 @@
-import 'package:Icine/view/screens/all_live_tv/widget/all_live_tv_shimmer/all_live_tv_shimmer.dart';
+import 'package:icine/view/screens/all_live_tv/widget/all_live_tv_shimmer/all_live_tv_shimmer.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:Icine/core/route/route.dart';
-import 'package:Icine/core/utils/my_color.dart';
-import 'package:Icine/data/controller/live_tv_controller/live_tv_controller.dart';
-import 'package:Icine/data/repo/live_tv_repo/live_tv_repo.dart';
-import 'package:Icine/data/services/api_service.dart';
-import 'package:Icine/view/components/app_bar/custom_appbar.dart';
-import 'package:Icine/view/screens/all_live_tv/widget/live_tv_grid_item/live_tv_grid_item.dart';
+import 'package:icine/core/route/route.dart';
+import 'package:icine/core/utils/my_color.dart';
+import 'package:icine/data/controller/live_tv_controller/live_tv_controller.dart';
+import 'package:icine/data/repo/live_tv_repo/live_tv_repo.dart';
+import 'package:icine/data/services/api_service.dart';
+import 'package:icine/view/components/app_bar/custom_appbar.dart';
+import 'package:icine/view/screens/all_live_tv/widget/live_tv_grid_item/live_tv_grid_item.dart';
 
 import '../../../constants/my_strings.dart';
 import '../../../core/utils/url_container.dart';

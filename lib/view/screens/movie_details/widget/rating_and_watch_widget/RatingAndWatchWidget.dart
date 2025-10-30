@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:Icine/core/utils/dimensions.dart';
-import 'package:Icine/core/utils/my_color.dart';
-import 'package:Icine/core/utils/styles.dart';
-import 'package:Icine/view/components/row_item/icon_with_text.dart';
+import 'package:icine/core/utils/dimensions.dart';
+import 'package:icine/core/utils/my_color.dart';
+import 'package:icine/core/utils/styles.dart';
+import 'package:icine/view/components/row_item/icon_with_text.dart';
 
 
 class RatingAndWatchWidget extends StatelessWidget {

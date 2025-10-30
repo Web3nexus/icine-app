@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:Icine/core/utils/my_color.dart';
-import 'package:Icine/core/utils/styles.dart';
+import 'package:icine/core/utils/my_color.dart';
+import 'package:icine/core/utils/styles.dart';
 
 class TeamRow extends StatelessWidget {
   final String firstText;

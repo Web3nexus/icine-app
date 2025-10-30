@@ -1,4 +1,4 @@
-import 'package:Icine/data/services/api_service.dart';
+import 'package:icine/data/services/api_service.dart';
 
 class NavDrawerRepo{
   ApiClient apiClient;

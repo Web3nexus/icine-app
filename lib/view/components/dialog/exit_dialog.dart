@@ -1,9 +1,9 @@
 import 'package:awesome_dialog/awesome_dialog.dart';
 import 'package:get/get.dart';
-import 'package:Icine/constants/my_strings.dart';
-import 'package:Icine/core/utils/dimensions.dart';
-import 'package:Icine/core/utils/styles.dart';
-import 'package:Icine/view/components/buttons/rounded_button.dart';
+import 'package:icine/constants/my_strings.dart';
+import 'package:icine/core/utils/dimensions.dart';
+import 'package:icine/core/utils/styles.dart';
+import 'package:icine/view/components/buttons/rounded_button.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';

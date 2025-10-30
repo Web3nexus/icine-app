@@ -1,7 +1,7 @@
 
 import 'dart:io';
 
-import 'package:Icine/core/route/route.dart';
+import 'package:icine/core/route/route.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

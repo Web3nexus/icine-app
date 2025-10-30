@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_rx/src/rx_typedefs/rx_typedefs.dart';
-import 'package:Icine/core/utils/my_color.dart';
-import 'package:Icine/core/utils/styles.dart';
+import 'package:icine/core/utils/my_color.dart';
+import 'package:icine/core/utils/styles.dart';
 import '../../../../../constants/my_strings.dart';
 
 

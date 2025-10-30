@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:Icine/core/utils/my_color.dart';
+import 'package:icine/core/utils/my_color.dart';
 import '../../../bottom_nav_pages/home/widget/custom_network_image/custom_network_image.dart';
 
 class PlayerPreLoaderImage extends StatelessWidget {

@@ -1,8 +1,8 @@
 
-import 'package:Icine/view/screens/account/profile/body/profile_image.dart';
+import 'package:icine/view/screens/account/profile/body/profile_image.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:Icine/core/utils/my_images.dart';
+import 'package:icine/core/utils/my_images.dart';
 
 import '../../../../../constants/my_strings.dart';
 import '../../../../../core/utils/my_color.dart';

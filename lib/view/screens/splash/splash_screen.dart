@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:Icine/core/utils/my_color.dart';
-import 'package:Icine/core/utils/my_images.dart';
-import 'package:Icine/data/repo/auth/general_setting_repo.dart';
-import 'package:Icine/data/repo/splash/splash_repo.dart';
-import 'package:Icine/data/services/api_service.dart';
+import 'package:icine/core/utils/my_color.dart';
+import 'package:icine/core/utils/my_images.dart';
+import 'package:icine/data/repo/auth/general_setting_repo.dart';
+import 'package:icine/data/repo/splash/splash_repo.dart';
+import 'package:icine/data/services/api_service.dart';
 import '../../../core/route/route.dart';
 
 

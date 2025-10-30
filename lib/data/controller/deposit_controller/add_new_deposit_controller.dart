@@ -4,8 +4,8 @@ import 'dart:convert';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:get/get.dart';
-import 'package:Icine/data/model/authorization/authorization_response_model.dart';
-import 'package:Icine/data/model/global/response_model/response_model.dart';
+import 'package:icine/data/model/authorization/authorization_response_model.dart';
+import 'package:icine/data/model/global/response_model/response_model.dart';
 
 import '../../../constants/my_strings.dart';
 import '../../../core/helper/string_format_helper.dart';

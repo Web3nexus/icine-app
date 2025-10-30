@@ -1,4 +1,4 @@
-import 'package:Icine/data/model/auth/registration_response_model.dart';
+import 'package:icine/data/model/auth/registration_response_model.dart';
 
 class AllMovieResponseModel {
   AllMovieResponseModel({

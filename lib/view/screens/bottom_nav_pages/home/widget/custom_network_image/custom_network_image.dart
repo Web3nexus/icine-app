@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:octo_image/octo_image.dart';
-import 'package:Icine/core/utils/my_color.dart';
-import 'package:Icine/core/utils/my_images.dart';
+import 'package:icine/core/utils/my_color.dart';
+import 'package:icine/core/utils/my_images.dart';
 
 class CustomNetworkImage extends StatelessWidget {
 

@@ -2,8 +2,8 @@
 import 'dart:convert';
 
 import 'package:get/get.dart';
-import 'package:Icine/data/model/all_episode/all_episodes_response_model.dart';
-import 'package:Icine/data/repo/all_episode_repo/all_episode_repo.dart';
+import 'package:icine/data/model/all_episode/all_episodes_response_model.dart';
+import 'package:icine/data/repo/all_episode_repo/all_episode_repo.dart';
 
 import '../../model/global/response_model/response_model.dart';
 

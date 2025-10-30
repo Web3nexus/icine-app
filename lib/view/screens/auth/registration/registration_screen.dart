@@ -3,7 +3,7 @@ import 'package:country_picker/country_picker.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:Icine/view/components/buttons/rounded_loading_button.dart';
+import 'package:icine/view/components/buttons/rounded_loading_button.dart';
 
 import '../../../../constants/my_strings.dart';
 import '../../../../core/route/route.dart';

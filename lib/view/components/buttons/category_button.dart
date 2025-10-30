@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:Icine/core/utils/dimensions.dart';
-import 'package:Icine/core/utils/styles.dart';
+import 'package:icine/core/utils/dimensions.dart';
+import 'package:icine/core/utils/styles.dart';
 
 import '../../../core/utils/my_color.dart';
 

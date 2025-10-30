@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'package:get/get.dart';
-import 'package:Icine/data/model/category/sub_category_response_model.dart';
-import 'package:Icine/data/repo/category_repo/sub_category_repo/sub_category_repo.dart';
+import 'package:icine/data/model/category/sub_category_response_model.dart';
+import 'package:icine/data/repo/category_repo/sub_category_repo/sub_category_repo.dart';
 import '../../../model/global/response_model/response_model.dart';
 
 class SubCategoryController extends GetxController{

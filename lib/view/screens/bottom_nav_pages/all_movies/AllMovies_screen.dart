@@ -1,21 +1,21 @@
 
 import 'dart:io';
-import 'package:google_mobile_ads/google_mobile_ads.dart' as ads;
-import 'package:Icine/view/screens/bottom_nav_pages/all_movies/widget/all_movie_list_item.dart';
+// import 'package:google_mobile_ads/google_mobile_ads.dart' as ads;
+import 'package:icine/view/screens/bottom_nav_pages/all_movies/widget/all_movie_list_item.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import '../../../../constants/my_strings.dart';
 import '../../../../core/utils/my_color.dart';
 import '../../../../data/services/api_service.dart';
-import 'package:Icine/core/route/route.dart';
-import 'package:Icine/view/will_pop_widget.dart';
-import 'package:Icine/data/controller/all_movies_controller/all_movies_controller.dart';
-import 'package:Icine/data/repo/all_movies_repo/all_movies_repo.dart';
-import 'package:Icine/view/components/no_data_widget.dart';
-import 'package:Icine/view/components/app_bar/custom_appbar.dart';
-import 'package:Icine/view/components/bottom_Nav/bottom_nav.dart';
-import 'package:Icine/view/components/nav_drawer/custom_nav_drawer.dart';
+import 'package:icine/core/route/route.dart';
+import 'package:icine/view/will_pop_widget.dart';
+import 'package:icine/data/controller/all_movies_controller/all_movies_controller.dart';
+import 'package:icine/data/repo/all_movies_repo/all_movies_repo.dart';
+import 'package:icine/view/components/no_data_widget.dart';
+import 'package:icine/view/components/app_bar/custom_appbar.dart';
+import 'package:icine/view/components/bottom_Nav/bottom_nav.dart';
+import 'package:icine/view/components/nav_drawer/custom_nav_drawer.dart';
 
 
 
@@ -28,27 +28,27 @@ class AllMovieScreen extends StatefulWidget {
 
 class _AllMovieScreenState extends State<AllMovieScreen> {
 
-  ads.BannerAd? _bannerAd;
+  // ads.BannerAd? _bannerAd;
 
-  final adUnitId = Platform.isAndroid
-      ? MyStrings.homeAndroidBanner
-      : MyStrings.homeIOSBanner;
+  // final adUnitId = Platform.isAndroid
+  //     ? MyStrings.homeAndroidBanner
+  //     : MyStrings.homeIOSBanner;
 
 
-  void loadAd() {
-    _bannerAd = ads.BannerAd(
-      adUnitId: adUnitId,
-      request: const ads.AdRequest(),
-      size: ads.AdSize.banner,
-      listener: ads.BannerAdListener(
-        onAdLoaded: (ad) {
-        },
-        onAdFailedToLoad: (ad, err) {
-          ad.dispose();
-        },
-      ),
-    )..load();
-  }
+  // void loadAd() {
+  //   _bannerAd = ads.BannerAd(
+  //     adUnitId: adUnitId,
+  //     request: const ads.AdRequest(),
+  //     size: ads.AdSize.banner,
+  //     listener: ads.BannerAdListener(
+  //       onAdLoaded: (ad) {
+  //       },
+  //       onAdFailedToLoad: (ad, err) {
+  //         ad.dispose();
+  //       },
+  //     ),
+  //   )..load();
+  // }
 
   @override
   void initState() {
@@ -60,9 +60,9 @@ class _AllMovieScreenState extends State<AllMovieScreen> {
     super.initState();
 
     WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
-      if(controller.repo.apiClient.isShowAdmobAds()){
-        loadAd();
-      }
+      // if(controller.repo.apiClient.isShowAdmobAds()){
+      //   loadAd();
+      // }
       SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
           systemNavigationBarColor: MyColor.colorBlack2,
           statusBarColor: MyColor.colorBlack2,
@@ -74,7 +74,7 @@ class _AllMovieScreenState extends State<AllMovieScreen> {
 
   @override
   void dispose() {
-    _bannerAd?.dispose();
+    // _bannerAd?.dispose();
     super.dispose();
   }
 
@@ -90,17 +90,18 @@ class _AllMovieScreenState extends State<AllMovieScreen> {
           children: [
 
             !controller.isLoading && controller.movieList.isEmpty ?? true?const NoDataFoundScreen(): const AllMovieListWidget(),
-            if (_bannerAd != null)
-              Align(
-                alignment: Alignment.bottomCenter,
-                child: SafeArea(
-                  child: SizedBox(
-                    width: _bannerAd!.size.width.toDouble(),
-                    height: _bannerAd!.size.height.toDouble(),
-                    child: ads.AdWidget(ad: _bannerAd!),
-                  ),
-                ),
-              ),
+            // if (_bannerAd != null)
+            //   Align(
+            //     alignment: Alignment.bottomCenter,
+            //     child: SafeArea(
+            //       child: SizedBox(
+            //         width: _bannerAd!.size.width.toDouble(),
+            //         height: _bannerAd!.size.height.toDouble(),
+            //         child: ads.AdWidget(ad: _bannerAd!),
+            //       ),
+            //     ),
+            //   ),
+            SizedBox(height: 0),
           ],
         ),
         bottomNavigationBar: const CustomBottomNav(

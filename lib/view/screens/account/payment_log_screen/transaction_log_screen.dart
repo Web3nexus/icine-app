@@ -1,6 +1,6 @@
-import 'package:Icine/constants/my_strings.dart';
-import 'package:Icine/view/components/no_data_widget.dart';
-import 'package:Icine/view/screens/account/payment_log_screen/widget/payment_log_list_item/payment_log_list_item.dart';
+import 'package:icine/constants/my_strings.dart';
+import 'package:icine/view/components/no_data_widget.dart';
+import 'package:icine/view/screens/account/payment_log_screen/widget/payment_log_list_item/payment_log_list_item.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../../../core/utils/my_color.dart';

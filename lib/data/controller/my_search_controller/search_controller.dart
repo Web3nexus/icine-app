@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'package:get/get.dart';
-import 'package:Icine/data/model/search/my_search_response_model.dart';
-import 'package:Icine/data/repo/my_search/my_search_repo.dart';
+import 'package:icine/data/model/search/my_search_response_model.dart';
+import 'package:icine/data/repo/my_search/my_search_repo.dart';
 import '../../model/global/response_model/response_model.dart';
 
 class MySearchController extends GetxController{

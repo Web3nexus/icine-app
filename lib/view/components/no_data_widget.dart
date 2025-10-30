@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
-import 'package:Icine/constants/my_strings.dart';
+import 'package:icine/constants/my_strings.dart';
 import 'package:shimmer/shimmer.dart';
 
 import '../../core/utils/dimensions.dart';

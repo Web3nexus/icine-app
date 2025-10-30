@@ -133,10 +133,10 @@ Java Threads: ( => current thread )
   0x000002883b64fec0 JavaThread "Cache worker for file hash cache (C:\Users\MADI\.gradle\caches\7.5\fileHashes)" [_thread_blocked, id=11504, stack(0x000000e07a400000,0x000000e07a500000)]
   0x000002883b64ef90 JavaThread "File watcher server" daemon [_thread_in_native, id=25184, stack(0x000000e07a500000,0x000000e07a600000)]
   0x000002883b64e060 JavaThread "File watcher consumer" daemon [_thread_blocked, id=1020, stack(0x000000e07a600000,0x000000e07a700000)]
-  0x000002883b6503d0 JavaThread "Cache worker for checksums cache (X:\Fiverr\Icine\Icine\android\.gradle\7.5\checksums)" [_thread_blocked, id=12932, stack(0x000000e07a700000,0x000000e07a800000)]
+  0x000002883b6503d0 JavaThread "Cache worker for checksums cache (X:\Fiverr\icine\icine\android\.gradle\7.5\checksums)" [_thread_blocked, id=12932, stack(0x000000e07a700000,0x000000e07a800000)]
   0x000002883b6508e0 JavaThread "Cache worker for cache directory md-rule (C:\Users\MADI\.gradle\caches\7.5\md-rule)" [_thread_blocked, id=9760, stack(0x000000e07a800000,0x000000e07a900000)]
   0x000002883b651300 JavaThread "Cache worker for file content cache (C:\Users\MADI\.gradle\caches\7.5\fileContent)" [_thread_blocked, id=20552, stack(0x000000e07a900000,0x000000e07aa00000)]
-  0x000002883b651d20 JavaThread "Cache worker for file hash cache (X:\Fiverr\Icine\Icine\android\.gradle\7.5\fileHashes)" [_thread_blocked, id=14208, stack(0x000000e07aa00000,0x000000e07ab00000)]
+  0x000002883b651d20 JavaThread "Cache worker for file hash cache (X:\Fiverr\icine\icine\android\.gradle\7.5\fileHashes)" [_thread_blocked, id=14208, stack(0x000000e07aa00000,0x000000e07ab00000)]
   0x000002883b651810 JavaThread "Cache worker for cache directory md-supplier (C:\Users\MADI\.gradle\caches\7.5\md-supplier)" [_thread_blocked, id=17136, stack(0x000000e07ab00000,0x000000e07ac00000)]
   0x000002883b652230 JavaThread "Cache worker for execution history cache (C:\Users\MADI\.gradle\caches\7.5\executionHistory)" [_thread_blocked, id=13772, stack(0x000000e07ac00000,0x000000e07ad00000)]
   0x000002883b653b80 JavaThread "jar transforms" [_thread_blocked, id=2344, stack(0x000000e07ae00000,0x000000e07af00000)]
@@ -145,9 +145,9 @@ Java Threads: ( => current thread )
   0x000002883d50b060 JavaThread "jar transforms Thread 4" [_thread_blocked, id=19928, stack(0x000000e07b100000,0x000000e07b200000)]
   0x000002883d50c9b0 JavaThread "jar transforms Thread 5" [_thread_blocked, id=22256, stack(0x000000e07b200000,0x000000e07b300000)]
   0x000002883d50cec0 JavaThread "jar transforms Thread 6" [_thread_blocked, id=13300, stack(0x000000e07b300000,0x000000e07b400000)]
-  0x000002883d50d3d0 JavaThread "Cache worker for dependencies-accessors (X:\Fiverr\Icine\Icine\android\.gradle\7.5\dependencies-accessors)" [_thread_blocked, id=24520, stack(0x000000e07b400000,0x000000e07b500000)]
+  0x000002883d50d3d0 JavaThread "Cache worker for dependencies-accessors (X:\Fiverr\icine\icine\android\.gradle\7.5\dependencies-accessors)" [_thread_blocked, id=24520, stack(0x000000e07b400000,0x000000e07b500000)]
   0x000002883d50ddf0 JavaThread "jar transforms Thread 7" [_thread_blocked, id=8204, stack(0x000000e07b500000,0x000000e07b600000)]
-  0x000002883d50fc50 JavaThread "Cache worker for Build Output Cleanup Cache (X:\Fiverr\Icine\Icine\android\.gradle\buildOutputCleanup)" [_thread_blocked, id=24528, stack(0x000000e07b600000,0x000000e07b700000)]
+  0x000002883d50fc50 JavaThread "Cache worker for Build Output Cleanup Cache (X:\Fiverr\icine\icine\android\.gradle\buildOutputCleanup)" [_thread_blocked, id=24528, stack(0x000000e07b600000,0x000000e07b700000)]
   0x000002883d50f740 JavaThread "Unconstrained build operations" [_thread_blocked, id=24672, stack(0x000000e07b700000,0x000000e07b800000)]
   0x000002883d50d8e0 JavaThread "Unconstrained build operations Thread 2" [_thread_blocked, id=6424, stack(0x000000e07b800000,0x000000e07b900000)]
   0x000002883d511ab0 JavaThread "Unconstrained build operations Thread 3" [_thread_blocked, id=11964, stack(0x000000e07b900000,0x000000e07ba00000)]
@@ -243,7 +243,7 @@ Java Threads: ( => current thread )
   0x00000288489aade0 JavaThread "Execution worker Thread 5" [_thread_blocked, id=6584, stack(0x000000e001700000,0x000000e001800000)]
   0x00000288489abd10 JavaThread "Execution worker Thread 6" [_thread_blocked, id=15248, stack(0x000000e001800000,0x000000e001900000)]
   0x00000288489ac220 JavaThread "Execution worker Thread 7" [_thread_blocked, id=5592, stack(0x000000e001900000,0x000000e001a00000)]
-  0x0000028849020030 JavaThread "Cache worker for execution history cache (X:\Fiverr\Icine\Icine\android\.gradle\7.5\executionHistory)" [_thread_blocked, id=23968, stack(0x000000e001a00000,0x000000e001b00000)]
+  0x0000028849020030 JavaThread "Cache worker for execution history cache (X:\Fiverr\icine\icine\android\.gradle\7.5\executionHistory)" [_thread_blocked, id=23968, stack(0x000000e001a00000,0x000000e001b00000)]
 
 Other Threads:
   0x00000288345acbe0 VMThread "VM Thread" [stack: 0x000000e078200000,0x000000e078300000] [id=3784]
@@ -1272,7 +1272,7 @@ Log output configuration:
 
 Environment Variables:
 JAVA_HOME=C:\Program Files\Android\Android Studio\jbr
-CLASSPATH=X:\Fiverr\Icine\Icine\android\\gradle\wrapper\gradle-wrapper.jar
+CLASSPATH=X:\Fiverr\icine\icine\android\\gradle\wrapper\gradle-wrapper.jar
 PATH=C:\Program Files\Android\Android Studio\jbr\bin;C:\Program Files\Microsoft MPI\Bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python 3\Scripts\;C:\Python 3\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;H:\VS CODE\MinGW\bin;C:\Program Files\Git\cmd;H:\MinGW\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\Java\jdk-19;C:\src\flutter\bin;C:\Program Files\dotnet\;C:\Program Files\nodejs\;C:\Python 3\Scripts\;C:\Python 3\;C:\Users\MADI\AppData\Local\Microsoft\WindowsApps;C:\Users\MADI\AppData\Local\Programs\Microsoft VS Code\bin;%DevEco Studio%;C:\Program Files\Azure Data Studio\bin;C:\Users\MADI\IntelliJ IDEA Community Edition 2022.1.2\bin;;C:\src\flutter\bin;C:\Users\MADI\AppData\Local\Android\Sdk\platform-tools;C:\MinGW\bin;C:\tools\dart-sdk\bin;C:\Users\MADI\AppData\Roaming\Pub\Cache\bin;C:\Program Files\nodejs;C:\Users\MADI\AppData\Local\Pub\Cache\bin;C:\Users\MADI\.android;C:\Program Files\Java\jdk-19\bin;C:\Users\MADI\.dotnet\tools;C:\Users\MADI\Downloads\gradle-8.2-bin\gradle-8.2\bin;C:\Users\MADI\AppData\Roaming\npm;C:\Windows\Microsoft.NET\Framework\v2.0.50727;C:\Users\MADI\AppData\Local\GitHubDesktop\bin;C:\src\flutter\bin\mingit\cmd
 USERNAME=MADI
 OS=Windows_NT

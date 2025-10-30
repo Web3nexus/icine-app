@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:Icine/core/route/route.dart';
-import 'package:Icine/core/utils/dimensions.dart';
-import 'package:Icine/core/utils/my_color.dart';
-import 'package:Icine/core/utils/styles.dart';
-import 'package:Icine/core/utils/url_container.dart';
-import 'package:Icine/data/controller/movie_details_controller/movie_details_controller.dart';
-import 'package:Icine/view/components/buttons/category_button.dart';
-import 'package:Icine/view/components/header_light_text.dart';
-import 'package:Icine/view/screens/movie_details/widget/episode_widget/episode_shimmer_effect.dart';
+import 'package:icine/core/route/route.dart';
+import 'package:icine/core/utils/dimensions.dart';
+import 'package:icine/core/utils/my_color.dart';
+import 'package:icine/core/utils/styles.dart';
+import 'package:icine/core/utils/url_container.dart';
+import 'package:icine/data/controller/movie_details_controller/movie_details_controller.dart';
+import 'package:icine/view/components/buttons/category_button.dart';
+import 'package:icine/view/components/header_light_text.dart';
+import 'package:icine/view/screens/movie_details/widget/episode_widget/episode_shimmer_effect.dart';
 
 import '../../../../../constants/my_strings.dart';
 import '../../../bottom_nav_pages/home/widget/custom_network_image/custom_network_image.dart';

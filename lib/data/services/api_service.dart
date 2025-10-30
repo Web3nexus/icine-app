@@ -4,7 +4,7 @@ import 'dart:io';
 import 'package:flutter/foundation.dart';
 import 'package:get/get.dart';
 import 'package:http/http.dart' as http;
-import 'package:Icine/core/helper/date_converter.dart';
+import 'package:icine/core/helper/date_converter.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../constants/method.dart';

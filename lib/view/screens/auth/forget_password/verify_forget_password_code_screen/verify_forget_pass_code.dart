@@ -2,8 +2,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:get/get.dart';
-import 'package:Icine/view/components/app_bar/custom_appbar.dart';
-import 'package:Icine/view/components/otp_field_widget/otp_field_widget.dart';
+import 'package:icine/view/components/app_bar/custom_appbar.dart';
+import 'package:icine/view/components/otp_field_widget/otp_field_widget.dart';
 
 
 import '../../../../../constants/my_strings.dart';

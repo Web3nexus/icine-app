@@ -1,10 +1,10 @@
 
 import 'package:awesome_dialog/awesome_dialog.dart';
-import 'package:Icine/constants/my_strings.dart';
-import 'package:Icine/core/route/route.dart';
-import 'package:Icine/core/utils/dimensions.dart';
-import 'package:Icine/core/utils/styles.dart';
-import 'package:Icine/view/components/buttons/rounded_button.dart';
+import 'package:icine/constants/my_strings.dart';
+import 'package:icine/core/route/route.dart';
+import 'package:icine/core/utils/dimensions.dart';
+import 'package:icine/core/utils/styles.dart';
+import 'package:icine/view/components/buttons/rounded_button.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../../core/utils/my_color.dart';

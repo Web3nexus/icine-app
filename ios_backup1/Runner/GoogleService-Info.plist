@@ -13,7 +13,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.icinevideo.icine</string>
+	<string>dev.vlab.playlab.playLab</string>
 	<key>PROJECT_ID</key>
 	<string>playlab-55c29</string>
 	<key>STORAGE_BUCKET</key>

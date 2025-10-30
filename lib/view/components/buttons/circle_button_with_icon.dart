@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_rx/src/rx_typedefs/rx_typedefs.dart';
-import 'package:Icine/core/utils/dimensions.dart';
-import 'package:Icine/core/utils/styles.dart';
+import 'package:icine/core/utils/dimensions.dart';
+import 'package:icine/core/utils/styles.dart';
 import '../../../core/utils/my_color.dart';
 import '../../screens/bottom_nav_pages/home/widget/custom_network_image/custom_network_image.dart';
 

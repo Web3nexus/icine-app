@@ -1,8 +1,8 @@
 import 'package:awesome_dialog/awesome_dialog.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:Icine/constants/my_strings.dart';
-import 'package:Icine/core/route/route.dart';
+import 'package:icine/constants/my_strings.dart';
+import 'package:icine/core/route/route.dart';
 
 import '../../../core/helper/shared_pref_helper.dart';
 import '../../../core/utils/dimensions.dart';

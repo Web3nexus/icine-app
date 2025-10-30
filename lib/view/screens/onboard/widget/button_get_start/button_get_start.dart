@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_rx/src/rx_typedefs/rx_typedefs.dart';
-import 'package:Icine/view/components/buttons/rounded_button.dart';
+import 'package:icine/view/components/buttons/rounded_button.dart';
 
 import '../../../../../constants/my_strings.dart';
 

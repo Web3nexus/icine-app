@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 import 'package:get/get.dart';
-import 'package:Icine/core/utils/dimensions.dart';
-import 'package:Icine/core/utils/my_color.dart';
-import 'package:Icine/core/utils/styles.dart';
+import 'package:icine/core/utils/dimensions.dart';
+import 'package:icine/core/utils/my_color.dart';
+import 'package:icine/core/utils/styles.dart';
 import '../../../../core/route/route.dart';
 import '../../../../core/utils/url_container.dart';
 import '../../../../data/controller/all_free_zone_controller/all_free_zone_controller.dart';

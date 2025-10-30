@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:Icine/constants/my_strings.dart';
-import 'package:Icine/view/components/divider/custom_divider.dart';
+import 'package:icine/constants/my_strings.dart';
+import 'package:icine/view/components/divider/custom_divider.dart';
 import '../../../../../../core/helper/string_format_helper.dart';
 import '../../../../../../../core/utils/my_color.dart';
 import '../../.././../../../core/utils/dimensions.dart';

@@ -3,8 +3,8 @@
 import 'dart:convert';
 
 import 'package:firebase_messaging/firebase_messaging.dart';
-import 'package:Icine/constants/method.dart';
-import 'package:Icine/data/services/api_service.dart';
+import 'package:icine/constants/method.dart';
+import 'package:icine/data/services/api_service.dart';
 
 import '../../../core/helper/shared_pref_helper.dart';
 import '../../../core/utils/url_container.dart';

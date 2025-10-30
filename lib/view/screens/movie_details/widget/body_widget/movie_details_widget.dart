@@ -1,14 +1,14 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:Icine/core/utils/styles.dart';
-import 'package:Icine/data/controller/movie_details_controller/movie_details_controller.dart';
-import 'package:Icine/view/components/custom_sized_box.dart';
-import 'package:Icine/view/components/buttons/category_button.dart';
-import 'package:Icine/view/components/buttons/custom_icon_button.dart';
-import 'package:Icine/view/components/row_item/icon_with_text.dart';
-import 'package:Icine/view/components/row_item/header_row.dart';
-import 'package:Icine/view/screens/movie_details/widget/body_widget/team_row.dart';
+import 'package:icine/core/utils/styles.dart';
+import 'package:icine/data/controller/movie_details_controller/movie_details_controller.dart';
+import 'package:icine/view/components/custom_sized_box.dart';
+import 'package:icine/view/components/buttons/category_button.dart';
+import 'package:icine/view/components/buttons/custom_icon_button.dart';
+import 'package:icine/view/components/row_item/icon_with_text.dart';
+import 'package:icine/view/components/row_item/header_row.dart';
+import 'package:icine/view/screens/movie_details/widget/body_widget/team_row.dart';
 
 import '../../../../../constants/my_strings.dart';
 import '../../../../../core/utils/dimensions.dart';

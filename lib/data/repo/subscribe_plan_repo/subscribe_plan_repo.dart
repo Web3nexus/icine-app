@@ -1,6 +1,6 @@
-import 'package:Icine/core/utils/url_container.dart';
-import 'package:Icine/data/model/global/response_model/response_model.dart';
-import 'package:Icine/data/services/api_service.dart';
+import 'package:icine/core/utils/url_container.dart';
+import 'package:icine/data/model/global/response_model/response_model.dart';
+import 'package:icine/data/services/api_service.dart';
 
 import '../../../constants/method.dart';
 

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:Icine/core/utils/my_color.dart';
+import 'package:icine/core/utils/my_color.dart';
 
 import '../../../core/utils/dimensions.dart';
 

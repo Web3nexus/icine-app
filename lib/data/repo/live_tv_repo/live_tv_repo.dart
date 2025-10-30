@@ -1,5 +1,5 @@
 
-import 'package:Icine/data/services/api_service.dart';
+import 'package:icine/data/services/api_service.dart';
 
 import '../../../constants/method.dart';
 import '../../../core/utils/url_container.dart';

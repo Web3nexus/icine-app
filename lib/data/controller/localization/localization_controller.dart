@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:Icine/data/model/language/language_model.dart';
+import 'package:icine/data/model/language/language_model.dart';
 
-import 'package:Icine/constants/my_strings.dart';
+import 'package:icine/constants/my_strings.dart';
 import '../../../core/helper/shared_pref_helper.dart';
 
 class LocalizationController extends GetxController {

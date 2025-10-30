@@ -2,9 +2,9 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:Icine/constants/my_strings.dart';
-import 'package:Icine/core/utils/styles.dart';
-import 'package:Icine/view/components/show_custom_snackbar.dart';
+import 'package:icine/constants/my_strings.dart';
+import 'package:icine/core/utils/styles.dart';
+import 'package:icine/view/components/show_custom_snackbar.dart';
 import '../../../core/helper/messages.dart';
 import '../../../core/helper/shared_pref_helper.dart';
 import '../../../core/route/route.dart';

@@ -1,11 +1,11 @@
 import 'dart:convert';
 import 'package:get/get.dart';
-import 'package:Icine/constants/constant_helper.dart';
-import 'package:Icine/constants/my_strings.dart';
-import 'package:Icine/core/route/route.dart';
-import 'package:Icine/data/model/subscribe_plan/buy_subscribe_plan_response_model.dart';
-import 'package:Icine/data/model/subscribe_plan/subscribe_plan_response_model.dart';
-import 'package:Icine/data/repo/subscribe_plan_repo/subscribe_plan_repo.dart';
+import 'package:icine/constants/constant_helper.dart';
+import 'package:icine/constants/my_strings.dart';
+import 'package:icine/core/route/route.dart';
+import 'package:icine/data/model/subscribe_plan/buy_subscribe_plan_response_model.dart';
+import 'package:icine/data/model/subscribe_plan/subscribe_plan_response_model.dart';
+import 'package:icine/data/repo/subscribe_plan_repo/subscribe_plan_repo.dart';
 import '../../../view/components/show_custom_snackbar.dart';
 import '../../model/global/response_model/response_model.dart';
 

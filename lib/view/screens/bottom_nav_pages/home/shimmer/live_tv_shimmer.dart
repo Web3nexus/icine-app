@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:Icine/core/utils/my_color.dart';
+import 'package:icine/core/utils/my_color.dart';
 import 'package:shimmer/shimmer.dart';
 import '../../../all_live_tv/widget/live_tv_grid_item/live_tv_grid_item.dart';
 

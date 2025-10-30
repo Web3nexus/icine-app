@@ -1,7 +1,7 @@
 
 import 'dart:convert';
 import 'package:get/get.dart';
-import 'package:Icine/data/model/home/free_zone/free_zone_response_model.dart';
+import 'package:icine/data/model/home/free_zone/free_zone_response_model.dart';
 import '../../model/global/response_model/response_model.dart';
 import '../../repo/free_zone_repo/free_zone_repo.dart';
 

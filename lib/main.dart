@@ -4,10 +4,10 @@ import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:google_mobile_ads/google_mobile_ads.dart';
-import 'package:Icine/data/controller/localization/localization_controller.dart';
-import 'package:Icine/firebase_options.dart';
-import 'package:Icine/push_notification_service.dart';
+// import 'package:google_mobile_ads/google_mobile_ads.dart';
+import 'package:icine/data/controller/localization/localization_controller.dart';
+import 'package:icine/firebase_options.dart';
+import 'package:icine/push_notification_service.dart';
 
 import 'constants/my_strings.dart';
 import 'core/di_service/di_service.dart' as di_service;
@@ -36,7 +36,7 @@ Future<void> main() async {
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
 
   // Now initialize MobileAds (depends on Firebase)
-  MobileAds.instance.initialize();
+  // MobileAds.instance.initialize();
 
   Map<String, Map<String, String>> languages = await di_service.init();
 

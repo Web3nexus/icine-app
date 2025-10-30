@@ -2,13 +2,13 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:Icine/core/utils/my_color.dart';
-import 'package:Icine/data/controller/wish_list_controller/wish_list_controller.dart';
-import 'package:Icine/view/components/app_bar/custom_appbar.dart';
-import 'package:Icine/view/components/nav_drawer/custom_nav_drawer.dart';
-import 'package:Icine/view/screens/wish_list/widget/wishlist_widget.dart';
+import 'package:icine/core/utils/my_color.dart';
+import 'package:icine/data/controller/wish_list_controller/wish_list_controller.dart';
+import 'package:icine/view/components/app_bar/custom_appbar.dart';
+import 'package:icine/view/components/nav_drawer/custom_nav_drawer.dart';
+import 'package:icine/view/screens/wish_list/widget/wishlist_widget.dart';
 import '../../../constants/my_strings.dart';
-import 'package:google_mobile_ads/google_mobile_ads.dart' as ads;
+// import 'package:google_mobile_ads/google_mobile_ads.dart' as ads;
 
 import '../../../data/repo/wish_list_repo/wish_list_repo.dart';
 
@@ -21,28 +21,28 @@ class WishListScreen extends StatefulWidget {
 
 class _WishListScreenState extends State<WishListScreen> {
 
-  ads.BannerAd? _bannerAd;
+  // ads.BannerAd? _bannerAd;
 
-  final adUnitId = Platform.isAndroid
-      ? MyStrings.wishListAndroidBanner
-      : MyStrings.wishListIOSBanner;
+  // final adUnitId = Platform.isAndroid
+  //     ? MyStrings.wishListAndroidBanner
+  //     : MyStrings.wishListIOSBanner;
 
 
-  void loadAd() {
-    _bannerAd = ads.BannerAd(
-      adUnitId: adUnitId,
-      request: const ads.AdRequest(),
-      size: ads.AdSize.banner,
-      listener: ads.BannerAdListener(
-        onAdLoaded: (ad) {
+  // void loadAd() {
+  //   _bannerAd = ads.BannerAd(
+  //     adUnitId: adUnitId,
+  //     request: const ads.AdRequest(),
+  //     size: ads.AdSize.banner,
+  //     listener: ads.BannerAdListener(
+  //       onAdLoaded: (ad) {
 
-        },
-        onAdFailedToLoad: (ad, err) {
-          ad.dispose();
-        },
-      ),
-    )..load();
-  }
+  //       },
+  //       onAdFailedToLoad: (ad, err) {
+  //         ad.dispose();
+  //       },
+  //     ),
+  //   )..load();
+  // }
 
   @override
   void initState() {
@@ -50,15 +50,15 @@ class _WishListScreenState extends State<WishListScreen> {
     final  controller= Get.put(WishListController(repo: Get.find()));
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((timeStamp) {
-      if(controller.repo.apiClient.isShowAdmobAds()){
-        loadAd();
-      }
+      // if(controller.repo.apiClient.isShowAdmobAds()){
+      //   loadAd();
+      // }
     });
   }
 
   @override
   void dispose() {
-    _bannerAd?.dispose();
+    // _bannerAd?.dispose();
     super.dispose();
   }
 
@@ -69,11 +69,8 @@ class _WishListScreenState extends State<WishListScreen> {
               backgroundColor: MyColor.colorBlack,
               appBar: const CustomAppBar(title:MyStrings.wishList,isShowBackBtn: true,),
               body: const WishlistWidget(),
-              bottomNavigationBar: _bannerAd!=null?SizedBox(
-                width: _bannerAd!.size.width.toDouble(),
-                height: _bannerAd!.size.height.toDouble(),
-                child: ads.AdWidget(ad: _bannerAd!),
-              ):const SizedBox(),
+              bottomNavigationBar: const SizedBox(height: 0),
+
             );
   }
 

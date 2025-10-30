@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:Icine/constants/my_strings.dart';
-import 'package:Icine/core/utils/styles.dart';
+import 'package:icine/constants/my_strings.dart';
+import 'package:icine/core/utils/styles.dart';
 import 'package:readmore/readmore.dart';
 import '../../../../../core/utils/my_color.dart';
 

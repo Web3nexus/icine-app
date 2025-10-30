@@ -1,4 +1,4 @@
-import 'package:Icine/view/components/dialog/exit_dialog.dart';
+import 'package:icine/view/components/dialog/exit_dialog.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

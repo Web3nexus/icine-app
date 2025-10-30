@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:Icine/view/components/auth_image.dart';
-import 'package:Icine/view/components/buttons/rounded_button.dart';
-import 'package:Icine/view/components/delete_account_dialog/delete_account_dialog.dart';
-import 'package:Icine/view/components/show_custom_snackbar.dart';
+import 'package:icine/view/components/auth_image.dart';
+import 'package:icine/view/components/buttons/rounded_button.dart';
+import 'package:icine/view/components/delete_account_dialog/delete_account_dialog.dart';
+import 'package:icine/view/components/show_custom_snackbar.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../../../constants/my_strings.dart';

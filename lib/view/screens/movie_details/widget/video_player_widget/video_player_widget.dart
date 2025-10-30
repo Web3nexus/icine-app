@@ -1,10 +1,10 @@
 import 'package:chewie/chewie.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:Icine/core/utils/my_color.dart';
-import 'package:Icine/core/utils/url_container.dart';
-import 'package:Icine/data/controller/movie_details_controller/movie_details_controller.dart';
-import 'package:Icine/view/screens/sub_category/widget/player_shimmer_effect/player_shimmer_widget.dart';
+import 'package:icine/core/utils/my_color.dart';
+import 'package:icine/core/utils/url_container.dart';
+import 'package:icine/data/controller/movie_details_controller/movie_details_controller.dart';
+import 'package:icine/view/screens/sub_category/widget/player_shimmer_effect/player_shimmer_widget.dart';
 import 'player_pre_loader_image.dart';
 
 

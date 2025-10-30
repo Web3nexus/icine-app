@@ -1,11 +1,11 @@
 import 'dart:convert';
 
-import 'package:Icine/constants/method.dart';
-import 'package:Icine/core/helper/shared_pref_helper.dart';
-import 'package:Icine/core/utils/url_container.dart';
-import 'package:Icine/data/model/authorization/authorization_response_model.dart';
-import 'package:Icine/data/model/global/response_model/response_model.dart';
-import 'package:Icine/data/services/api_service.dart';
+import 'package:icine/constants/method.dart';
+import 'package:icine/core/helper/shared_pref_helper.dart';
+import 'package:icine/core/utils/url_container.dart';
+import 'package:icine/data/model/authorization/authorization_response_model.dart';
+import 'package:icine/data/model/global/response_model/response_model.dart';
+import 'package:icine/data/services/api_service.dart';
 
 class MovieDetailsRepo{
 
