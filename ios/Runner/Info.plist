@@ -7,7 +7,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>icine</string>
+	<string>Icine</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -47,7 +47,7 @@
         <array>
           <string>fb1444391756488315</string>
           <!-- Copied from GoogleService-Info.plist key REVERSED_CLIENT_ID -->
-          <string>510125109930-8abk4ho3ah6uc317virtchc2af7t6e9g.apps.googleusercontent.com</string>
+          <string>com.googleusercontent.apps.510125109930-8abk4ho3ah6uc317virtchc2af7t6e9g</string>
         </array>
       </dict>
     </array>

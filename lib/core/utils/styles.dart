@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:icine/core/utils/my_color.dart';
-import 'dimensions.dart';
+import 'package:icine/core/utils/dimensions.dart';
 
  const mulishBold = TextStyle(
   fontFamily: 'Mulish',

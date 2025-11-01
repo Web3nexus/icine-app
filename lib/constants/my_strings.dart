@@ -25,7 +25,7 @@ class MyStrings{
   static const String google                      = "Google";
   static const String facebook                    = "Facebook";
   static const String payable                     = "Payable";
-  static const String purchaseAPlan               = "Pls Purchase a Plan";
+  static const String purchaseAPlan               = "Please Purchase a Plan";
   static const String or                          = "OR";
   static const String movie                       = "Movie";
   static const String home                        = "Home";
